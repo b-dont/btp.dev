@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   {% block head %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ get_url(path="simple.css") | safe }}"/>
+  <link rel="stylesheet" href="{{ get_url(path="readable.css") | safe }}"/>
   <title>Brandon Phillips</title>
   {% endblock head %}
 </head>
@@ -14,20 +15,31 @@
   <header>
     </br>
     <h1>Brandon Phillips</h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/blog">Blog</a>
-      <a href="/portfolio">Portfolio</a>
-      <a href="/socials">Socials</a>
-      <a href="/contact">Contact</a>
-    </nav>
   </header>
+  <nav>
+    <span><a href="/">Home</a></span>
+    <span><a href="/blog">Blog</a></span>
+    <span><a href="/projects">Projects</a></span>
+    <span><a href="/contact">Contact</a></span>
+  </nav>
+
+  <!-- Body content -->
+  <section class="section">
+    <div class="container">
+      {% block content %} {% endblock %}
+    </div>
+  </section>
 
   <!-- Footer content -->
   <footer>
     {% block footer %}
-    <p>Placeholder footer text</p>
+    <p><small>
+    The code of this site is free and <a rel="source-code" href="https://codeberg.org/brandont/brandont.dev">open-source</a> licensed under the <a rel="license" href="https://www.gnu.org/licenses/agpl-3.0.en.html">GNU AGPLv3</a>
+    </br>
+    The content of this site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.
+    </small></p>
     {% endblock footer %}
   </footer>
+
 </body>
 </html>
