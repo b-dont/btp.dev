@@ -15,3 +15,7 @@ The site will be developed using the [Zola](https://getzola.org/) static site en
 - Links to public repos and examples
 3. `Contact` page
 - Fillable email form with ReCaptcha and other contact links (socials)
+4. Finish `Blog` pages
+- Add tags to blogs 
+- Look into possible search engine
+- RSS Feed
