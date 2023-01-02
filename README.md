@@ -20,3 +20,5 @@ Deployment is planned to be handled in [Podman](https://podman.io/); additionall
 4. Finish `Blog` pages
 - Add tags to blogs 
 - Look into possible search engine
+5. Blogroll page
+- Include what media I'm consuming from blogs, books, shows, movies, and internet content
