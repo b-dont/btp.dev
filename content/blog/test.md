@@ -4,8 +4,13 @@ date = 2019-11-27
 +++
 
 ## Header 2
+
+This is a test blog post
+***
+
 ### Header 3
-This is a test blog post. _Here's some italics._ **Also, some bold text.**
+
+_Here's some italics._ **Also, some bold text.**
 
 ```
 testing code bocks.
