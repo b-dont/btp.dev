@@ -234,3 +234,11 @@ form:not(.exclude) :is(input:not([type="checkbox"], [type="radio"]), textarea, s
 form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label) {
   font-weight: bold;
 }
+
+.contact-box {
+}
+
+.contact-names {
+  display: flex;
+  justify-content: space-between;
+}
