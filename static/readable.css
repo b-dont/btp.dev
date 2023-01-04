@@ -50,7 +50,7 @@ a {
 }
 
 a:active {
-  color: red;
+  color: grey;
 }
 
 header, footer, h1, h2 {
@@ -59,6 +59,7 @@ header, footer, h1, h2 {
 
 footer:not(.exclude) {
   border-top: var(--line-width) solid;
+  padding-top: 10px;
 }
 
 summary {
@@ -143,12 +144,14 @@ h3, h4, h5, h6 {
 
 /* Navbar */
 
-body > nav:first-of-type:not(.exclude) { /* This styling only affects the first nav element that is the direct child of the body */
+/* This styling only affects the first nav element that is the direct child of the body */
+body > nav:first-of-type:not(.exclude) {   
   text-align: center;
   border-width: var(--line-width) 0;
   border-style: solid;
   line-height: var(--line-height);
-  padding: calc((var(--line-height) * 0.5rem) - var(--line-width)); /* Put half a line's height on both top and bottom, then remove the width of the border */
+  /* Put half a line's height on both top and bottom, then remove the width of the border */
+  padding: calc((var(--line-height) * 0.5rem) - var(--line-width)); 
   display: flex;
   flex-flow: row wrap;
 }
@@ -180,9 +183,11 @@ body > nav:first-of-type:not(.exclude) > * {
 }
 
 /* Column */
-body {
+html, body {
   margin: 0 auto;
   width: min(95%, var(--column-width));
+  position: relative;
+  min-height: 100%;
 }
 
 /* Justification (default off; use data-justify="on" on <html> to enable) */
@@ -213,12 +218,13 @@ table:not(.exclude) td {
 
 /* Forms */
 form {
-  max-width: var(--form-width)
+  max-width: var(--form-width);
+  margin: var(--half-line) auto;
 }
 
 form:not(.exclude) :is(label:not(input:is([type="checkbox"], [type="radio"]) ~ label), input:not([type="checkbox"], [type="radio"]), textarea, select) {
   display: block;
-  margin: var(--half-line) 0;
+  margin: var(--half-line) auto;
 }
 
 form:not(.exclude) :is(input:not([type="checkbox"], [type="radio"]), textarea, select) {
@@ -233,12 +239,4 @@ form:not(.exclude) :is(input:not([type="checkbox"], [type="radio"]), textarea, s
 
 form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label) {
   font-weight: bold;
-}
-
-.contact-box {
-}
-
-.contact-names {
-  display: flex;
-  justify-content: space-between;
 }

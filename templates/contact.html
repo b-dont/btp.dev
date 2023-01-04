@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block content %}
 
 <h1 class="title">
@@ -7,14 +6,15 @@
 </h1>
 
 <form>
-  <div class="contact-box">
-    <div class="contact-names">
-      <input type="text" id="fristname" name="firstname" placeholder="First" style="padding: 5px">
-      <input type="text" id="lastname" name="lastname" placeholder="Last" style="padding: 5px">
+  <div>
+    <div style="display: flex">
+      <input type="text" id="name" name="name" placeholder="Your name" style="text-align: center; padding: 5px">
+      <input type="email" id="email" name="email" placeholder="you@example.com" style="text-align: center; width:100%; padding: 5px">
     </div>
-    <input type="email" id="email" name="email" placeholder="you@example.com" style="width:100%; padding: 5px">
-    <input type="text" id="messagefield" name="messagefield" placeholder="What's up?" style="width:100%; height:200px">
-    <input type="submit" value="Submit" style="width:100%">
+    <input type="text" id="message" name="message" placeholder="What's up?" style="text-align: justify; width:100%; height:200px">
+    <div style="display: flex">
+      <input type="submit" value="Send" style="width:50%">
+    </div>
   </div>
 </form> 
 
