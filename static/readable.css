@@ -240,3 +240,11 @@ form:not(.exclude) :is(input:not([type="checkbox"], [type="radio"]), textarea, s
 form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label) {
   font-weight: bold;
 }
+
+.cinput {
+  justify-content: space-between;
+}
+
+.cform {
+  display: flex;
+}
