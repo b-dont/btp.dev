@@ -295,6 +295,10 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
     width: 100%;
   }
 
+  a:focus {
+    outline: solid 0px;
+  }
+
   a:hover {
     color: #EBDBB2;
   }
