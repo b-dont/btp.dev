@@ -1,21 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h1 class="title">
+<h2 class="title">
   {{ section.title }}
-</h1>
+</h2>
 
 <form>
-  <div class="cform">
-    <div class="cinput">
+    <div class="contact-name">
       <input type="text" id="name" name="name" placeholder="Your name">
     </div>
-    <div class="cinput">
-      <input type="email" id="email" name="email" placeholder="you@example[dot]com">
+    <div class="contact-email">
+      <input type="email" id="email" name="email" placeholder="you@example.com">
     </div>
-  </div>
-    <input type="text" id="message" name="message" placeholder="What's up?" style="height:200px">
-    <input type="submit" value="Send" style="width:50%">
+  <input type="text" id="message" name="message" placeholder="What's up?" style="height:200px">
+  <input type="submit" value="Send" style="width:50%">
 </form> 
 
 {% endblock content %}
