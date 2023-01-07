@@ -222,11 +222,35 @@ form:not(.exclude) :is(label:not(input:is([type="checkbox"], [type="radio"]) ~ l
 form:not(.exclude) :is(input:not([type="checkbox"], [type="radio"]), textarea, select) {
   box-sizing: border-box;
   padding: var(--half-line);
-  background: transparent;
-  border: var(--line-width) solid;
+  background: #282828;
+  border: 0;
   color: inherit;
   font: inherit;
   width: 100%;
+}
+
+.form-top {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-name {
+  float: left;
+  padding-right: 5px;
+}
+
+.contact-email {
+  float: left;
+  padding-left: 5px;
+}
+
+input:focus {
+  outline: solid 0px;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
 }
 
 form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label) {
@@ -248,15 +272,14 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   float: left;
 }
 
-a {
-  color: #A89984;
-  text-decoration: none;
-}
-
+/* Add the header nav link animation to all links */
 @media (prefers-reduced-motion: no-preference) {
    a {
     text-decoration: none;
     display: inline-block;
+    color: #A89984;
+    text-decoration: none;
+
   }
 
    a::after {
@@ -295,3 +318,4 @@ blockquote {
 
 li::marker {
   color: #A89984;
+}

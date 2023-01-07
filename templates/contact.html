@@ -6,14 +6,16 @@
 </h2>
 
 <form>
-    <div class="contact-name">
-      <input type="text" id="name" name="name" placeholder="Your name">
+    <div class="form-top">
+      <div class="contact-name">
+        <input type="text" id="name" name="name" placeholder="Your name">
+      </div>
+      <div class="contact-email">
+        <input type="email" id="email" name="email" placeholder="you@example.com">
+      </div>
     </div>
-    <div class="contact-email">
-      <input type="email" id="email" name="email" placeholder="you@example.com">
-    </div>
-  <input type="text" id="message" name="message" placeholder="What's up?" style="height:200px">
-  <input type="submit" value="Send" style="width: 50%;">
+      <textarea name="message" placeholder="What's up?"></textarea>
+      <input type="submit" value="Send" style="width: 50%;">
 </form> 
 
 {% endblock content %}
