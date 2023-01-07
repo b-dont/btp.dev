@@ -3,12 +3,12 @@ title = "Test post"
 date = 2019-11-27
 +++
 
-## Header 2
+### Header 3
 
 This is a test blog post
 ***
 
-### Header 3
+#### Header 4
 
 _Here's some italics._ **Also, some bold text.**
 
