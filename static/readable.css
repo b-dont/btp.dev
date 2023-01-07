@@ -63,16 +63,6 @@ footer:not(.exclude) {
   display: block;
 }
 
-.footer-nav {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-links {
-  padding: 8px;
-  float: left;
-}
-
 summary {
   cursor: pointer;
 }
@@ -252,6 +242,17 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   font-weight: bold;
 }
 
+/* Custom CSS: Added classes that deviate from readable.css */
 .contact-form {
   display: flex;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links {
+  padding: 8px;
+  float: left;
 }
