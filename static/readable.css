@@ -32,7 +32,7 @@ html[data-theme="dark"] {
 :root {
   --column-width: 67ch;
   --form-width: 50ch;
-  --line-width: 0.125rem;
+  --line-width: 0.115rem;
   --line-height: 1.5;
 
   --one-line: calc(var(--line-height) * 1rem);
@@ -277,9 +277,9 @@ a {
   }
 }
 
+/* See `config.toml` for the code syntax highlighting generated in Zola */
 pre {
   padding: 20px;
-  background-color: #282828 !important;
 }
 
 code {
