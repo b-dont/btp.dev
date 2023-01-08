@@ -30,7 +30,7 @@ html[data-theme="dark"] {
 
 /* Generic styles */
 :root {
-  --column-width: 67ch;
+  --column-width: 75ch;
   --form-width: 50ch;
   --line-width: 0.115rem;
   --line-height: 1.5;
@@ -229,9 +229,13 @@ form:not(.exclude) :is(input:not([type="checkbox"], [type="radio"]), textarea, s
   width: 100%;
 }
 
+form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label) {
+  font-weight: bold;
+}
+
+/* Custom CSS: Added classes and other elements that deviate from readable.css */
 .form-top {
   display: flex;
-  justify-content: center;
 }
 
 .contact-name {
@@ -251,15 +255,6 @@ textarea, input:focus {
 textarea {
   resize: none;
   height: 200px;
-}
-
-form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label) {
-  font-weight: bold;
-}
-
-/* Custom CSS: Added classes and other elements that deviate from readable.css */
-.contact-form {
-  display: flex;
 }
 
 .footer-nav {
