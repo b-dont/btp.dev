@@ -165,7 +165,7 @@ body > nav:first-of-type:not(.exclude) > * {
     width: 0;
     height: var(--line-width);
     display: block;
-    background: var(--color);
+    background: #707682;
     transition: 150ms;
   }
 
@@ -269,8 +269,6 @@ textarea {
     text-decoration: none;
     display: inline-block;
     color: #61AFEF;
-    text-decoration: none;
-
   }
 
    a::after {
@@ -278,7 +276,7 @@ textarea {
     width: 0;
     height: var(--line-width);
     display: block;
-    background: #ABB2BF;
+    background: #707682;
     transition: 150ms;
   }
 
@@ -291,7 +289,7 @@ textarea {
   }
 
   a:hover {
-    color: #6285A2;
+    color: #707682;
   }
 }
 
@@ -317,12 +315,8 @@ li::marker {
 }
 
 article {
-  padding: 0 35px 2px 35px;
+  padding: 0 35px 1px 35px;
   color: var(--color);
   background-color: #2B303B;
   text-align: left;
-}
-
-.article-card {
-
 }
