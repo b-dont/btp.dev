@@ -30,9 +30,9 @@ html[data-theme="dark"] {
 
 /* Generic styles */
 :root {
-  --column-width: 75ch;
+  --column-width: 95ch;
   --form-width: 50ch;
-  --line-width: 0.115rem;
+  --line-width: 0.105rem;
   --line-height: 1.5;
 
   --one-line: calc(var(--line-height) * 1rem);
@@ -135,7 +135,6 @@ h3, h4, h5, h6 {
 }
 
 /* Navbar */
-
 /* This styling only affects the first nav element that is the direct child of the body */
 body > nav:first-of-type:not(.exclude) {   
   text-align: center;
@@ -152,7 +151,7 @@ body > nav:first-of-type:not(.exclude) {
 body > nav:first-of-type:not(.exclude) > * {
   flex-grow: 1;
   margin: 0 var(--half-line);
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -212,12 +211,11 @@ table:not(.exclude) td {
 
 /* Forms */
 form {
-  max-width: var(--form-width);
+  max-width: 90%;
   margin: var(--half-line) auto;
 }
 
 form:not(.exclude) :is(label:not(input:is([type="checkbox"], [type="radio"]) ~ label), input:not([type="checkbox"], [type="radio"]), textarea, select) {
-  display: block;
   margin: var(--half-line) auto;
 }
 
@@ -236,18 +234,14 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 }
 
 /* Custom CSS: Added classes and other elements that deviate from readable.css */
-.form-top {
-  display: flex;
-}
-
 .contact-name {
   float: left;
-  padding-right: 5px;
+  width: 48%
 }
 
 .contact-email {
-  float: left;
-  padding-left: 5px;
+  float: right;
+  width: 48%
 }
 
 textarea, input:focus {
@@ -313,10 +307,22 @@ code {
 
 blockquote {
   padding: 5px;
-  border-left: 3px solid #A89984;
   background-color: #2B303B;
+  border-left: 5px solid #A89984;
+  width: 80%;
 }
 
 li::marker {
   color: #888F99;
+}
+
+article {
+  padding: 0 35px 2px 35px;
+  color: var(--color);
+  background-color: #2B303B;
+  text-align: left;
+}
+
+.article-card {
+
 }

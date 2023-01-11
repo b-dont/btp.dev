@@ -1,6 +1,7 @@
 +++
 title = "Test post"
 date = 2019-11-27
+description = "This is the description for the test post. Nothing to see here, folks."
 +++
 
 ### Header 3

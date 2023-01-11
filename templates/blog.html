@@ -5,11 +5,20 @@
   {{ section.title }}
 </h2>
 
-<ul>
-  <!-- If using pagination, section.pages will be empty. You need to use the paginator object -->  
-  {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }} - {{ page.date }}</a></li>
-  {% endfor %}
-</ul>
+<!-- If using pagination, section.pages will be empty. You need to use the paginator object -->  
+{% for page in section.pages %}
+<!--  <li><a href="{{ page.permalink | safe }}">{{ page.title }} - {{ page.date }}</a></li> -->
+<center>
+<a class="article-card" href="{{ page.permalink | safe }}">
+  <article>
+    <h3>{{ page.title }}</h3>
+    <p>
+      <small>{{ page.date }}</small>
+    </br>
+      {{ page.description }}
+    </p>
+  </article>  
+</center>
+{% endfor %}
 
 {% endblock content %}
