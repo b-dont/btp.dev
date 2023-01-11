@@ -13,18 +13,18 @@ html[data-font-family="monospace"] {
 
 /* Color scheme support */
 html, html[data-theme="light"] {
-  --background-color: #EBDBB2;
-  --color: #32302F;
+  --background-color: #ABB2BF;
+  --color: #282C34;
 }
 
 html[data-theme="dark"] {
-  --background-color: #32302F;
+  --background-color: #282C34;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
-  --background-color: #32302F;
-  --color: #EBDBB2;
+  --background-color: #282C34;
+  --color: #ABB2BF;
   }
 }
 
@@ -50,6 +50,7 @@ header, footer, h1, h2 {
 
 footer:not(.exclude) {
   border-top: var(--line-width) solid;
+  border-color: #383D48;
   padding-top: 10px;
   display: block;
 }
@@ -91,7 +92,7 @@ pre {
 }
 
 hr {
-  color: inherit;
+  color: #383D48;
   border: 0;
   border-top: var(--line-width) solid;
 }
@@ -140,6 +141,7 @@ body > nav:first-of-type:not(.exclude) {
   text-align: center;
   border-width: var(--line-width) 0;
   border-style: solid;
+  border-color: #383D48;
   line-height: var(--line-height);
   /* Put half a line's height on both top and bottom, then remove the width of the border */
   padding: calc((var(--line-height) * 0.5rem) - var(--line-width)); 
@@ -201,7 +203,7 @@ table:not(.exclude) {
 table:not(.exclude) :is(td, th) {
   padding: calc(var(--line-height) * 0.25rem);
   border: var(--line-width) solid;
-  border-color: #A89984;
+  border-color: #383D48;
 }
 
 table:not(.exclude) td {
@@ -222,7 +224,7 @@ form:not(.exclude) :is(label:not(input:is([type="checkbox"], [type="radio"]) ~ l
 form:not(.exclude) :is(input:not([type="checkbox"], [type="radio"]), textarea, select) {
   box-sizing: border-box;
   padding: var(--half-line);
-  background: #282828;
+  background: #2B303B;
   border: 0;
   color: inherit;
   font: inherit;
@@ -272,7 +274,7 @@ textarea {
    a {
     text-decoration: none;
     display: inline-block;
-    color: #A89984;
+    color: #61AFEF;
     text-decoration: none;
 
   }
@@ -282,7 +284,7 @@ textarea {
     width: 0;
     height: var(--line-width);
     display: block;
-    background: var(--color);
+    background: #ABB2BF;
     transition: 150ms;
   }
 
@@ -295,7 +297,7 @@ textarea {
   }
 
   a:hover {
-    color: #EBDBB2;
+    color: #6285A2;
   }
 }
 
@@ -305,16 +307,16 @@ pre {
 }
 
 code {
-  background-color: #282828;
+  background-color: #2B303B;
   color: #D5C4A1;
 }
 
 blockquote {
   padding: 5px;
   border-left: 3px solid #A89984;
-  background-color: #282828;
+  background-color: #2B303B;
 }
 
 li::marker {
-  color: #A89984;
+  color: #888F99;
 }
