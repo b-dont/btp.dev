@@ -4,21 +4,24 @@
 <h2 class="title">
   {{ section.title }}
 </h2>
+<center>
+<p>Subscribe to the <a href="/rss.xml">RSS feed</a>.</p>
 
 <!-- If using pagination, section.pages will be empty. You need to use the paginator object -->  
 {% for page in section.pages %}
 <!--  <li><a href="{{ page.permalink | safe }}">{{ page.title }} - {{ page.date }}</a></li> -->
-<center>
 <a class="article-card" href="{{ page.permalink | safe }}">
   <article>
     <h3>{{ page.title }}</h3>
     <p>
-      <small>{{ page.date }}</small>
+      {% if page.updated %}
+      <small>Updated: {{ page.updated }}</small></br></small>
+      {% endif %}
+      <small>Published: {{ page.date }}</small>
     </br>
       {{ page.description }}
     </p>
   </article>  
-</center>
 {% endfor %}
-
+</center>
 {% endblock content %}
