@@ -5,7 +5,7 @@ base_url = "https://brandont.dev"
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+build_search_index = false
 
 # Generate RSS feed
 generate_feed = true
@@ -21,15 +21,15 @@ external_links_target_blank = true
 [extra]
 # Put all your custom variables here
 
-[search]
-# Whether to include the title of the page/section in the index
-include_title = true
-# Whether to include the description of the page/section in the index
-include_description = false
-# Whether to include the path of the page/section in the index
-include_path = false
-# Whether to include the rendered content of the page/section in the index
-include_content = true
-# At which character to truncate the content to. Useful if you have a lot of pages and the index would
-# become too big to load on the site. Defaults to not being set.
-# truncate_content_length = 100
+#[search]
+## Whether to include the title of the page/section in the index
+#include_title = true
+## Whether to include the description of the page/section in the index
+#include_description = false
+## Whether to include the path of the page/section in the index
+#include_path = false
+## Whether to include the rendered content of the page/section in the index
+#include_content = true
+## At which character to truncate the content to. Useful if you have a lot of pages and the index would
+## become too big to load on the site. Defaults to not being set.
+## truncate_content_length = 100

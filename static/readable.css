@@ -144,7 +144,6 @@ body > nav:first-of-type:not(.exclude) {
   line-height: var(--line-height);
   /* Put half a line's height on both top and bottom, then remove the width of the border */
   padding: calc((var(--line-height) * 0.5rem) - var(--line-width)); 
-  display: flex;
   flex-flow: row wrap;
 }
 
@@ -319,4 +318,5 @@ article {
   color: var(--color);
   background-color: #2B303B;
   text-align: left;
+  width: 550px;
 }

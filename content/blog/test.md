@@ -28,9 +28,9 @@ testing code bocks.
 - Lists
 
 
-|Testing|Markdown|Tables|
-|-------|--------|------|
-|1      |2       |3     |
+|Testing |Markdown|Tables |
+|--------|--------|-------|
+|1       |2       |3      |
 
 
 > Testing block quotes.

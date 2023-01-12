@@ -1,7 +1,7 @@
 +++
-title = "Test post"
+title = "Another Test post"
 date = 2019-11-27
-description = "This is the description for the test post. Nothing to see here, folks."
+description = "This is the description for yet another test post. Still nothing to see here, folks. Keep moving."
 +++
 
 ### Header 3
