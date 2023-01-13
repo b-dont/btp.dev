@@ -135,8 +135,7 @@ h3, h4, h5, h6 {
 }
 
 /* Navbar */
-/* This styling only affects the first nav element that is the direct child of the body */
-body > nav:first-of-type:not(.exclude) {   
+body > nav {   
   text-align: center;
   border-width: var(--line-width) 0;
   border-style: solid;
@@ -148,30 +147,10 @@ body > nav:first-of-type:not(.exclude) {
   flex-flow: row wrap;
 }
 
-body > nav:first-of-type:not(.exclude) > * {
+body > nav > * {
   flex-grow: 1;
   margin: 0 var(--half-line);
   text-transform: lowercase;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  body > nav:first-of-type:not(.exclude) a {
-    text-decoration: none;
-    display: inline-block;
-  }
-
-  body > nav:first-of-type:not(.exclude) a::after {
-    content: '';
-    width: 0;
-    height: var(--line-width);
-    display: block;
-    background: #707682;
-    transition: 150ms;
-  }
-
-  body > nav:first-of-type:not(.exclude) a:is(:hover, :focus)::after {
-    width: 100%;
-  }
 }
 
 /* Column */
@@ -211,7 +190,7 @@ table:not(.exclude) td {
 
 /* Forms */
 form {
-  max-width: 90%;
+  max-width: 60%;
   margin: var(--half-line) auto;
 }
 
@@ -231,6 +210,13 @@ form:not(.exclude) :is(input:not([type="checkbox"], [type="radio"]), textarea, s
 
 form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label) {
   font-weight: bold;
+}
+
+/* Forms on smaller screens need to be wider */
+@media (max-width: 800px) {
+  form {
+    max-width: 100%
+  }
 }
 
 /* Custom CSS: Added classes and other elements that deviate from readable.css */
@@ -265,13 +251,13 @@ textarea {
 
 /* Add the header nav link animation to all links */
 @media (prefers-reduced-motion: no-preference) {
-   a {
+   a:not(.article-link) {
     text-decoration: none;
     display: inline-block;
     color: #61AFEF;
   }
 
-   a::after {
+   a:after {
     content: '';
     width: 0;
     height: var(--line-width);
@@ -288,7 +274,7 @@ textarea {
     outline: solid 0px;
   }
 
-  a:hover {
+  a:not(.article-link):hover {
     color: #707682;
   }
 }
@@ -319,4 +305,10 @@ article {
   padding: 0 35px 1px 35px;
   color: var(--color);
   text-align: left;
+}
+
+.article-link {
+  text-decoration: none;
+  display: inline-block;
+  max-width: 70%;
 }
