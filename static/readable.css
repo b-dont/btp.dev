@@ -312,3 +312,8 @@ article {
   display: inline-block;
   max-width: 70%;
 }
+
+.footer-content {
+  text-align: center;
+  max-width: 90%;
+}
