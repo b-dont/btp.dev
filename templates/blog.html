@@ -6,14 +6,13 @@
 </h2>
 <p style="text-align: center;">Subscribe to the <a href="/rss.xml" target="_blank">RSS feed</a>.</p>
 
-<center>
 <!-- If using pagination, section.pages will be empty. You need to use the paginator object -->  
 {% for page in section.pages %}
 <a href="{{ page.permalink | safe }}">
   <article>
     <h3>{{ page.title }}</h3>
-      {{ page.description | safe }}
-      </br>
+    {{ page.description | safe }}
+    </br>
     <p>
       <hr>
       {% if page.updated %}
@@ -21,7 +20,6 @@
       {% endif %}
       <small style="color: #707682"><b>Published: </b>{{ page.date }}</small>
     </p>
-  </article>  
+  </article>
 {% endfor %}
-</center>
 {% endblock content %}

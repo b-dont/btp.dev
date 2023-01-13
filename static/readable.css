@@ -68,7 +68,7 @@ ul, ol {
 }
 
 :is(body, main, figure) > img:not(.exclude) {
-  max-width: 75%%;
+  max-width: 75%;
 }
 
 figure:not(.exclude) {
@@ -82,8 +82,8 @@ figure:not(.exclude) > * ~ figcaption {
 
 article > aside:not(.exclude) {
   border: var(--line-width) solid;
-  padding: 0 var(--one-line);
   border-radius: var(--half-line);
+  padding: 0 var(--one-line);
 }
 
 pre {
@@ -144,6 +144,7 @@ body > nav:first-of-type:not(.exclude) {
   line-height: var(--line-height);
   /* Put half a line's height on both top and bottom, then remove the width of the border */
   padding: calc((var(--line-height) * 0.5rem) - var(--line-width)); 
+  display:flex;
   flex-flow: row wrap;
 }
 
@@ -314,6 +315,7 @@ li::marker {
 }
 
 article {
+  background-color: #2B303B;
   padding: 0 35px 1px 35px;
   color: var(--color);
   text-align: left;
