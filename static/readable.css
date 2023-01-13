@@ -67,8 +67,8 @@ ul, ol {
   padding-left: calc(var(--line-height) * 2rem);
 }
 
-:is(body, article, main, figure) > img:not(.exclude) {
-  max-width: 100%;
+:is(body, main, figure) > img:not(.exclude) {
+  max-width: 75%%;
 }
 
 figure:not(.exclude) {
@@ -316,7 +316,5 @@ li::marker {
 article {
   padding: 0 35px 1px 35px;
   color: var(--color);
-  background-color: #2B303B;
   text-align: left;
-  width: 550px;
 }
