@@ -23,7 +23,7 @@
 
 <!-- If using pagination, section.pages will be empty. You need to use the paginator object -->  
 <center>
-{% for page in section.pages %}
+{% for page in paginator.pages %}
 <a class="article-link" href="{{ page.permalink | safe }}">
   <article>
     <h3>{{ page.title }}</h3>
@@ -40,4 +40,18 @@
   </br>
 {% endfor %}
 </center>
+<!-- Pagination navigation -->
+<nav class="pagination">
+  {% if paginator.previous %}
+  <div class="previous">
+    <a href="{{ paginator.previous }}">‹ Previous</a>
+  </div>
+  {% endif %}
+  {% if paginator.next %}
+  <div class="next">
+    <a href"{{ paginator.next }}">Next ›</a>
+  </div>
+  {% endif %}
+</nav>
+
 {% endblock content %}

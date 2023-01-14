@@ -11,10 +11,10 @@ build_search_index = false
 generate_feed = true
 feed_filename="rss.xml"
 
-# Taxonomies
-taxonomies = [
-    {name = "tag", feed = true, lang = "en"},
-]
+## Taxonomies
+#taxonomies = [
+#    {name = "tag", feed = true, lang = "en"},
+#]
 
 [markdown]
 # Whether to do syntax highlighting

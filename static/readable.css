@@ -253,6 +253,11 @@ input:focus {
   outline: solid 0px;
 }
 
+textarea::placeholder, 
+input::placeholder {
+  font-size: 85%;
+}
+
 textarea {
   resize: none;
   height: 200px;
@@ -322,6 +327,14 @@ article {
   padding: 0 35px 1px 35px;
   color: var(--color);
   text-align: left;
+}
+
+.previous {
+  text-align: left;
+}
+
+.next {
+  text-align: right;
 }
 
 .article-link {
