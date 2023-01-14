@@ -5,25 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ get_url(path="readable.css") | safe }}"/>
-  <title>contact</title>
+  <title>contact - brandont.dev</title>
   {% endblock head %}
 </head>
 
 {% block content %}
 
 <h2 class="title">
-  {{ section.title }}
+  Say Hi
 </h2>
 
 <form id="contact">
-
   <div class="form-top">
     <div class="contact-name">
       <input required type="text" id="name" name="name" placeholder="Name">
     </div>
-
     <div class="contact-email">
       <input required type="email" id="email" name="email" placeholder="you@example.com">
+    </div>
   </div>
 
   <input required type="subject" id="subject" name="subject" placeholder="Subject">
@@ -32,10 +31,10 @@
   <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
   <button class="h-captcha" data-sitekey="d02626c8-3c9b-4f16-9511-8ee4e668fbac" data-callback="onSubmit" form="contact" type="submit">
     <div class="button-text">
-    Send 
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 18">
-      <path id="mail" fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-6.54 4.09c-.65.41-1.47.41-2.12 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44z"/>
-    </svg>
+      Send 
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 18">
+        <path id="mail" fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-.4 4.25l-6.54 4.09c-.65.41-1.47.41-2.12 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44z"/>
+      </svg>
     </div>
   </button>
 </form> 

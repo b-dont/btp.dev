@@ -249,13 +249,14 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   width: 48%
 }
 
-textarea, input:focus {
+input:focus {
   outline: solid 0px;
 }
 
 textarea {
   resize: none;
   height: 200px;
+  outline: solid 0px;
 }
 
 .footer-nav {
@@ -294,7 +295,7 @@ textarea {
     outline: solid 0px;
   }
 
-a:hover {
+  a:hover {
     opacity: 100%;
   }
 }
