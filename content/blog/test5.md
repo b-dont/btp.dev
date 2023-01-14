@@ -2,6 +2,7 @@
 title = "Another Test post"
 date = 2019-11-27
 description = "This is the description for yet another test post. Still nothing to see here, folks. Keep moving."
+template = "blog_post.html"
 +++
 
 ### Header 3

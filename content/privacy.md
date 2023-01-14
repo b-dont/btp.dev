@@ -1,6 +1,5 @@
 +++
 title = "Privacy Policy"
-template = "privacy.html"
 +++
 
 ### Personal Data
