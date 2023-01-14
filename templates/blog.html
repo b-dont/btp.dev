@@ -1,27 +1,12 @@
 {% extends "base.html" %}
 
-<head>
-  {% block head %}
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ get_url(path="readable.css") | safe }}"/>
-
-  {% if page.title %}
-  <title>{{ page.title }}</title>
-  {% else %}
-  <title>blog - brandont.dev</title>
-  {% endif %}
-
-  {% endblock head %}
-</head>
-
 {% block content %}
+
 <h2 class="title">
   {{ section.title }}
 </h2>
 <p style="text-align: center;">Subscribe to the <a href="/rss.xml" target="_blank">RSS feed</a>.</p>
 
-<!-- If using pagination, section.pages will be empty. You need to use the paginator object -->  
 <center>
 {% for page in paginator.pages %}
 <a class="article-link" href="{{ page.permalink | safe }}">
@@ -40,6 +25,7 @@
   </br>
 {% endfor %}
 </center>
+
 <!-- Pagination navigation -->
 <nav class="pagination">
   {% if paginator.previous %}

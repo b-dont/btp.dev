@@ -6,8 +6,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ get_url(path="readable.css") | safe }}"/>
-  <title>brandont.dev</title>
 
+  <!-- Page Title -->
+  {% if page.title %}
+  <title>{{ page.title }}</title>
+  {% elif section.title %}
+  <title>{{ section.title }}</title>
+  {% else %}
+  <title>brandont.dev</title>
+  {% endif %}
+
+  <!-- RSS -->
   {% block rss %}
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
   {% endblock %}
@@ -20,6 +29,7 @@
   <h1>
     brandont.dev
   </h1>
+
   <nav>
     <span><a href="/">Home</a></span>
     <span><a href="/blog">Blog</a></span>

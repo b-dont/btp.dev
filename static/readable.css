@@ -323,7 +323,6 @@ li::marker {
 }
 
 article {
-  background-color: #2B303B;
   padding: 0 35px 1px 35px;
   color: var(--color);
   text-align: left;

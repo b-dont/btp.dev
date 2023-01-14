@@ -1,18 +1,9 @@
 {% extends "base.html" %}
 
-<head>
-  {% block head %}
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ get_url(path="readable.css") | safe }}"/>
-  <title>contact - brandont.dev</title>
-  {% endblock head %}
-</head>
-
 {% block content %}
 
 <h2 class="title">
-  Say Hi
+  {{ page.title }}
 </h2>
 
 <form id="contact">
@@ -28,6 +19,7 @@
   <input required type="subject" id="subject" name="subject" placeholder="Subject">
   <textarea required name="message" placeholder="What's up?"/></textarea>
 
+  <!-- hCaptcha integrated in form button -->
   <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
   <button class="h-captcha" data-sitekey="d02626c8-3c9b-4f16-9511-8ee4e668fbac" data-callback="onSubmit" form="contact" type="submit">
     <div class="button-text">
