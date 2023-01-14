@@ -4,7 +4,7 @@ title = "Privacy Policy"
 
 ### Personal Data
 
-This website does not store any private or personal data. There are currently no login or signup forms, or user accounts. 
+This website does not store any private or personal data. There are no login or signup forms, and no user accounts. 
 
 ### Analytics
 

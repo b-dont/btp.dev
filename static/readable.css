@@ -298,7 +298,7 @@ textarea {
     transition: 200ms;
   }
 
-   a:is(:hover, :focus):not(.footer-icon)::after {
+   a:is(:hover, :focus):not(.footer-icon, .article-link)::after {
     width: 100%;
   }
 
@@ -346,6 +346,10 @@ article {
   text-decoration: none;
   display: inline-block;
   max-width: 70%;
+}
+
+.article-link:hover h3 {
+  color: #61AFEF;
 }
 
 .footer-content {
