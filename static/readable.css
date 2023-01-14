@@ -250,6 +250,11 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   width: 48%
 }
 
+.contact-description {
+  max-width: 50%;
+  text-align: center;
+}
+
 input:focus {
   outline: solid 0px;
 }
