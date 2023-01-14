@@ -89,6 +89,7 @@ article > aside:not(.exclude) {
 pre {
   max-width: 100%;
   overflow: auto;
+  padding: 20px;
 }
 
 hr {
@@ -212,9 +213,9 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   font-weight: bold;
 }
 
-/* Forms on smaller screens need to be wider */
-@media (max-width: 800px) {
-  form {
+/* Some elements on smaller screens need to be wider */
+@media (max-width: 700px) {
+  form, a:is(.article-link), p:is(.footer-content) {
     max-width: 100%
   }
 }
@@ -255,15 +256,16 @@ textarea {
     text-decoration: none;
     display: inline-block;
     color: #61AFEF;
+    opacity: 60%;
   }
 
    a:after {
     content: '';
     width: 0;
-    height: var(--line-width);
+    height: 1px;
     display: block;
-    background: #707682;
-    transition: 150ms;
+    background: #61AFEF;
+    transition: 200ms;
   }
 
    a:is(:hover, :focus):not(.footer-icon)::after {
@@ -274,16 +276,12 @@ textarea {
     outline: solid 0px;
   }
 
-  a:not(.article-link):hover {
-    color: #707682;
+a:hover {
+    opacity: 100%;
   }
 }
 
 /* See `config.toml` for the code syntax highlighting generated in Zola */
-pre {
-  padding: 20px;
-}
-
 code {
   background-color: #2B303B;
   color: #D5C4A1;
