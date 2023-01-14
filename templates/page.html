@@ -7,19 +7,17 @@
 </h2>
 
 <small>
-{% if page.updated %}
-<p class="subtitle" style="color: #707682"><strong>Updated </strong>{{ page.updated }}</strong>
-</br>
-<strong>Published </strong>{{ page.date }}</strong>
-</p>
-{% else %}
-<p class="subtitle" style="color: #707682"><strong>Published </strong>{{ page.date }}</strong>
-</p>
-{% endif %}
+  {% if page.updated %}
+  <p class="subtitle" style="color: #707682"><strong>Updated </strong>{{ page.updated }}</strong>
+  </br>
+  <strong>Published </strong>{{ page.date }}</strong>
+  </p>
+  {% else %}
+  <p class="subtitle" style="color: #707682"><strong>Published </strong>{{ page.date }}</strong>
+  </p>
+  {% endif %}
 </small>
-
 <hr>
-
 {{ page.content | safe }}
 
 {% endblock content %}

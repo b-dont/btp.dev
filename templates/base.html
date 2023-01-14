@@ -6,10 +6,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{{ get_url(path="readable.css") | safe }}"/>
+  <title>Brandon Phillips</title>
+
   {% block rss %}
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
   {% endblock %}
-  <title>Brandon Phillips</title>
+
   {% endblock head %}
 </head>
 
@@ -25,7 +27,7 @@
     <span><a href="/contact">Contact</a></span>
   </nav>
 
-  <!-- Body -->
+  <!-- Front-Page Content -->
   <section class="section">
     <div class="container">
       {% block content %}
@@ -40,7 +42,6 @@
   
       <!-- Footer Nav -->
       <div class="footer-nav">
-  
         <div>
           <a class="footer-icon" rel="me" href="https://fosstodon.org/@brandont" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
