@@ -216,7 +216,7 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 .h-captcha {
   padding: var(--half-line);
   margin: var(--half-line) auto;
-  background: #2B303B;
+  background: transparent;
   color: #61AFEF;
   font: inherit;
   width: 40%;
@@ -225,6 +225,7 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 
 .button-text {
   opacity: 70%;
+  text-align: left;
 }
 
 .button-text:hover {
@@ -345,4 +346,9 @@ article {
 .footer-content {
   text-align: center;
   max-width: 90%;
+}
+
+.page-content {
+  max-width: 70%;
+  text-align: left;
 }
