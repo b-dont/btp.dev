@@ -4,7 +4,11 @@ title = "Privacy Policy"
 
 ### Personal Data
 
-This website does not store any private data. There are currently no login or signup forms, or user accounts. 
+This website does not store any private or personal data. There are currently no login or signup forms, or user accounts. 
+
+### Analytics
+
+This website's analytics are powered by [Plausible](https://plausible.io) and are publically available at [plausible.io/brandont.dev](https://plausible.io/brandont.dev).
 
 ### Cookies & Browser Storage
 
