@@ -3,6 +3,9 @@ title = "Test post"
 date = 2019-11-27
 description = "This is the description for the test post. Nothing to see here, folks. Putting more text in here to test the article elements."
 updated = 2023-01-11
+[taxonomies]
+tag=["test1"]
+tag=["test2"]
 +++
 
 ### Header 3

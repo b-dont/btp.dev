@@ -2,13 +2,13 @@
 
 /* Font family support */
 html, html[data-font-family="serif"] {
-  --font-family: serif;
+  --font-family: Fira-Code;
 }
 html[data-font-family="sans-serif"] {
-  --font-family: sans-serif;
+  --font-family: Fira-Code;
 }
 html[data-font-family="monospace"] {
-  --font-family: monospace;
+  --font-family: Fira-Code;
 }
 
 /* Color scheme support */
