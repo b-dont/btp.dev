@@ -231,6 +231,10 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   width: 48%
 }
 
+.contact-submit {
+  text-align: center;
+}
+
 textarea, input:focus {
   outline: solid 0px;
 }

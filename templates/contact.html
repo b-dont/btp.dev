@@ -5,18 +5,27 @@
   {{ section.title }}
 </h2>
 
-<form>
-    <div class="form-top">
-      <div class="contact-name">
-        <input type="text" id="name" name="name" placeholder="Name">
-      </div>
-      <div class="contact-email">
-        <input type="email" id="email" name="email" placeholder="you@example.com">
-      </div>
+<form id="contact">
+  <div class="form-top">
+    <div class="contact-name">
+      <input required type="text" id="name" name="name" placeholder="Name">
     </div>
-      <input type="subject" id="subject" name="subject" placeholder="Subject">
-      <textarea name="message" placeholder="What's up?"></textarea>
-      <input type="submit" value="Send" style="width: 50%;">
+    <div class="contact-email">
+      <input required type="email" id="email" name="email" placeholder="you@example.com">
+    </div>
+  </div>
+    <input required type="subject" id="subject" name="subject" placeholder="Subject">
+    <textarea required name="message" placeholder="What's up?"></textarea>
+    <select required form="contact" name="inquiry" id="inquiry">
+      <option value="" disabled selected>Why would you like to contact me?</option>
+      <option value="colab">Colaborate</option>
+      <option value="freelance">Freelance Work</option>
+      <option value="employment">Employment</option>
+    <option value="hi">Just sayin' hi :)</option>
+    </select>
+    <div class="contact-submit">
+      <input form="contact" type="submit" value="Send" style="width: 40%;">
+    </div>
 </form> 
 
 {% endblock content %}
