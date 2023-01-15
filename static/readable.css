@@ -214,12 +214,10 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 }
 
 .h-captcha {
-  padding: var(--half-line);
   margin: var(--half-line) auto;
   background: transparent;
   color: #61AFEF;
   font: inherit;
-  width: 40%;
   border: 0;
 }
 
@@ -349,15 +347,11 @@ article {
 
 .pagination-nav {
   text-align: center;
-  line-height: var(--line-height);
-  padding: calc((var(--line-height) * 0.5rem) - var(--line-width)); 
   display:flex;
-  flex-flow: row wrap;
 }
 
 .pagination-nav > * {
   flex-grow: 1;
-  margin: 0 var(--half-line);
 }
 
 .article-link {
@@ -378,4 +372,8 @@ article {
 .page-content {
   max-width: 70%;
   text-align: left;
+}
+
+.section {
+  padding-bottom: 5px;
 }
