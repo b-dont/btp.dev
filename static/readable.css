@@ -280,7 +280,6 @@ textarea {
   float: left;
 }
 
-/* Add the header nav link animation to all links */
 @media (prefers-reduced-motion: no-preference) {
    a:not(.article-link) {
     text-decoration: none;
@@ -298,7 +297,7 @@ textarea {
     transition: 200ms;
   }
 
-   a:is(:hover, :focus):not(.footer-icon, .article-link)::after {
+  a:is(:hover, :focus):not(.footer-icon, .article-link)::after {
     width: 100%;
   }
 
@@ -308,6 +307,20 @@ textarea {
 
   a:hover {
     opacity: 100%;
+  }
+
+  .not-active {
+    color: #61AFEF;
+    opacity: 60%;
+    pointer-events: none;
+  }
+
+  .not-active:is(:hover)::after {
+    width: 0%;
+  }
+
+  .not-active:hover {
+    opacity: 60%;
   }
 }
 
@@ -334,12 +347,17 @@ article {
   text-align: left;
 }
 
-.previous {
-  text-align: left;
+.pagination-nav {
+  text-align: center;
+  line-height: var(--line-height);
+  padding: calc((var(--line-height) * 0.5rem) - var(--line-width)); 
+  display:flex;
+  flex-flow: row wrap;
 }
 
-.next {
-  text-align: right;
+.pagination-nav > * {
+  flex-grow: 1;
+  margin: 0 var(--half-line);
 }
 
 .article-link {

@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-
 {% block content %}
 
 <h2 class="title">
@@ -7,6 +6,7 @@
 </h2>
 <p style="text-align: center;">Subscribe to the <a href="/rss.xml" target="_blank">RSS feed</a>.</p>
 
+<!-- Paginated Blog List - Displays 3 posts per page -->
 <center>
 {% for page in paginator.pages %}
 <a class="article-link" href="{{ page.permalink | safe }}">
@@ -27,17 +27,23 @@
 </center>
 
 <!-- Pagination navigation -->
-<nav class="pagination">
-  {% if paginator.previous %}
-  <div class="previous">
-    <a href="{{ paginator.previous }}">‹ Previous</a>
-  </div>
-  {% endif %}
-  {% if paginator.next %}
-  <div class="next">
-    <a href"{{ paginator.next }}">Next ›</a>
-  </div>
-  {% endif %}
-</nav>
+{% if paginator %}
+<nav class="pagination-nav">
 
+  {% if paginator.previous %}
+  <span><a href="{{ paginator.previous }}">‹ Previous</a></span>
+  {% else %}
+  <span class="not-active">‹ Previous</span>
+  {% endif %}
+
+  <span><small>{{ paginator.current_index }} / {{ paginator.number_pagers }}</small></span>
+
+  {% if paginator.next %}
+  <span><a href="{{ paginator.next }}">Next ›</a></span>
+  {% else %}
+  <span class="not-active"></a>Next ›</span>
+  {% endif %}
+
+</nav>
+{% endif %}
 {% endblock content %}

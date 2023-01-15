@@ -1,6 +1,6 @@
 +++
 title = "Blog"
 sort_by = "date"
-template = "blog.html"
 paginate_by = 3
+template = "blog.html"
 +++
