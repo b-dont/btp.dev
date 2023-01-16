@@ -370,6 +370,10 @@ article {
   color: #61AFEF;
 }
 
+.article-link:hover {
+  background-color: #2B303B;
+}
+
 .footer-content {
   text-align: center;
   max-width: 90%;
