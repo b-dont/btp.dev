@@ -308,7 +308,7 @@ textarea {
   }
 
   .not-active {
-    color: #61AFEF;
+    color: #383D48;
     opacity: 60%;
     pointer-events: none;
   }
