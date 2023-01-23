@@ -308,7 +308,7 @@ textarea {
   }
 
   .not-active {
-    color: #61AFEF;
+    color: #383D48;
     opacity: 60%;
     pointer-events: none;
   }
@@ -362,6 +362,10 @@ article {
 
 .article-link:hover h3 {
   color: #61AFEF;
+}
+
+.article-link:hover {
+  background-color: #2B303B;
 }
 
 .footer-content {
