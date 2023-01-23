@@ -10,4 +10,4 @@ The code of this site is free and [open-source](https://codeberg.org/brandont/br
 
 ### Assets
 
-This website is built with [Zola](https://getzola.org) and [readable.css](https://readable-css.freedomtowrite.org/)
+Made with [Zola](https://getzola.org) and [readable.css](https://readable-css.freedomtowrite.org/)

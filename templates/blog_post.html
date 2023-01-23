@@ -8,12 +8,11 @@
 
 <small>
   {% if page.updated %}
-  <p class="subtitle" style="color: #707682"><strong>Updated </strong>{{ page.updated }}</strong>
-  </br>
-  <strong>Published </strong>{{ page.date }}</strong>
+  <p class="subtitle" style="color: #707682"><strong>Updated </strong> · {{ page.updated }}</strong>
   </p>
+  </br>
   {% else %}
-  <p class="subtitle" style="color: #707682"><strong>Published </strong>{{ page.date }}</strong>
+  <p class="subtitle" style="color: #707682"><strong>Published </strong> · {{ page.date }}</strong>
   </p>
   {% endif %}
 </small>

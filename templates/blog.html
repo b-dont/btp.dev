@@ -12,13 +12,15 @@
 <a class="article-link" href="{{ page.permalink | safe }}">
   <article>
     <h3 class="article-header">{{ page.title }}</h3>
-    {{ page.description | safe }}
     <p>
-      <hr>
       {% if page.updated %}
-      <small style="color: #707682"><b>Updated: </b>{{ page.updated }}</small>
+      <small style="color: #707682"><b>Updated · </b>{{ page.updated }}</small>
+      {% else %}
+      <small style="color: #707682">{{ page.date }}</small>
       {% endif %}
-      <small style="color: #707682"><b>Published: </b>{{ page.date }}</small>
+    </br>
+    {{ page.description | safe }}
+    <hr>
     </p>
   </article>
   </a>
