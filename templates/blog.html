@@ -9,22 +9,20 @@
 <!-- Paginated Blog List - Displays 3 posts per page -->
 <center>
 {% for page in paginator.pages %}
-<a class="article-link" href="{{ page.permalink | safe }}">
-  <article>
-    <h3 class="article-header">{{ page.title }}</h3>
-    <p>
-      {% if page.updated %}
-      <small style="color: #707682"><b>Updated · </b>{{ page.updated }}</small>
-      {% else %}
-      <small style="color: #707682">{{ page.date }}</small>
-      {% endif %}
-    </br>
-    {{ page.description | safe }}
-    <hr>
-    </p>
-  </article>
+  <a class="article-link" href="{{ page.permalink | safe }}">
+    <article>
+      <h3 class="article-header">{{ page.title }}</h3>
+      <p>
+        {% if page.updated %}
+        <small style="color: #707682"><b>Updated · </b>{{ page.updated }}</small>
+        {% else %}
+        <small style="color: #707682">{{ page.date }}</small>
+        {% endif %}
+        </br>
+        {{ page.description | safe }}
+      </p>
+    </article>
   </a>
-  </br>
 {% endfor %}
 </center>
 
@@ -49,7 +47,6 @@
   <span style="text-align: right;" class="not-active">Next › ››
   {% endif %}
   </span>
-
 </nav>
 {% endif %}
 {% endblock content %}
