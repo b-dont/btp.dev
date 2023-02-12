@@ -345,6 +345,10 @@ article {
   text-align: left;
 }
 
+article h3 {
+  padding-top: 0px;  
+}
+
 .pagination-nav {
   text-align: center;
   display:flex;
@@ -384,5 +388,4 @@ article {
 
 .homepic {
   border-radius: 30px;
-  transform: scale(0.7);
 }
