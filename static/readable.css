@@ -1,18 +1,22 @@
 /* readable.css 1.0.0 */
 
 /* Font family support */
-html, html[data-font-family="serif"] {
+html,
+html[data-font-family="serif"] {
   --font-family: Fira-Code;
 }
+
 html[data-font-family="sans-serif"] {
   --font-family: Fira-Code;
 }
+
 html[data-font-family="monospace"] {
   --font-family: Fira-Code;
 }
 
 /* Color scheme support */
-html, html[data-theme="light"] {
+html,
+html[data-theme="light"] {
   --background-color: #ABB2BF;
   --color: #282C34;
 }
@@ -23,8 +27,8 @@ html[data-theme="dark"] {
 
 @media (prefers-color-scheme: dark) {
   html {
-  --background-color: #282C34;
-  --color: #ABB2BF;
+    --background-color: #282C34;
+    --color: #ABB2BF;
   }
 }
 
@@ -44,7 +48,10 @@ html[data-theme="dark"] {
   color: var(--color);
 }
 
-header, footer, h1, h2 {
+header,
+footer,
+h1,
+h2 {
   text-align: center;
 }
 
@@ -63,11 +70,12 @@ blockquote:not(.exclude) {
   padding-left: var(--one-line);
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: calc(var(--line-height) * 2rem);
 }
 
-:is(body, main, figure) > img:not(.exclude) {
+:is(body, main, figure)>img:not(.exclude) {
   max-width: 75%;
 }
 
@@ -75,12 +83,12 @@ figure:not(.exclude) {
   text-align: center;
 }
 
-figure:not(.exclude) > * ~ figcaption {
+figure:not(.exclude)>*~figcaption {
   margin-top: 0;
   font-style: italic;
 }
 
-article > aside:not(.exclude) {
+article>aside:not(.exclude) {
   border: var(--line-width) solid;
   border-radius: var(--half-line);
   padding: 0 var(--one-line);
@@ -99,11 +107,37 @@ hr {
 }
 
 /* Vertical Rhythm */
-p, ul, ol, figcaption, nav, td, th, label {
+p,
+ul,
+ol,
+figcaption,
+nav,
+td,
+th,
+label {
   line-height: var(--line-height);
 }
 
-h1, h2, h3, h4, h5, h6, p, blockquote, hr, footer, header, nav, figure, figcaption, ul, ol, :is(body, article, main) > img:not(.exclude), table, article > aside, article > aside {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+hr,
+footer,
+header,
+nav,
+figure,
+figcaption,
+ul,
+ol,
+:is(body, article, main)>img:not(.exclude),
+table,
+article>aside,
+article>aside {
   margin: var(--one-line) 0;
 }
 
@@ -113,7 +147,8 @@ header h1 {
   font-weight: normal;
 }
 
-h1, h2 {
+h1,
+h2 {
   line-height: calc(var(--line-height) * 2rem);
 }
 
@@ -125,37 +160,41 @@ h2 {
   font-size: 1.75rem;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   line-height: var(--one-line);
   padding-top: calc(var(--line-height) * 0.75rem);
   margin-bottom: calc(var(--line-height) * 0.25rem);
 }
 
-:is(h3, h4, h5, h6) ~ * {
+:is(h3, h4, h5, h6)~* {
   margin-top: 0;
 }
 
 /* Navbar */
-body > nav {   
+body>nav {
   text-align: center;
   border-width: var(--line-width) 0;
   border-style: solid;
   border-color: #383D48;
   line-height: var(--line-height);
   /* Put half a line's height on both top and bottom, then remove the width of the border */
-  padding: calc((var(--line-height) * 0.5rem) - var(--line-width)); 
-  display:flex;
+  padding: calc((var(--line-height) * 0.5rem) - var(--line-width));
+  display: flex;
   flex-flow: row wrap;
 }
 
-body > nav > * {
+body>nav>* {
   flex-grow: 1;
   margin: 0 var(--half-line);
   text-transform: lowercase;
 }
 
 /* Column */
-html, body {
+html,
+body {
   margin: 0 auto;
   width: min(95%, var(--column-width));
   position: relative;
@@ -232,7 +271,10 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 
 /* Some elements on smaller screens need to be wider */
 @media (max-width: 700px) {
-  form, a:is(.article-link), p:is(.footer-content) {
+
+  form,
+  a:is(.article-link),
+  p:is(.footer-content) {
     max-width: 100%
   }
 }
@@ -257,7 +299,7 @@ input:focus {
   outline: solid 0px;
 }
 
-textarea::placeholder, 
+textarea::placeholder,
 input::placeholder {
   font-size: 85%;
 }
@@ -279,14 +321,14 @@ textarea {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-   a:not(.article-link) {
+  a:not(.article-link) {
     text-decoration: none;
     display: inline-block;
     color: #61AFEF;
     opacity: 60%;
   }
 
-   a:after {
+  a:after {
     content: '';
     width: 0;
     height: 1px;
@@ -346,15 +388,15 @@ article {
 }
 
 article h3 {
-  padding-top: 0px;  
+  padding-top: 0px;
 }
 
 .pagination-nav {
   text-align: center;
-  display:flex;
+  display: flex;
 }
 
-.pagination-nav > * {
+.pagination-nav>* {
   flex-grow: 1;
 }
 
@@ -380,10 +422,6 @@ article h3 {
 .page-content {
   max-width: 70%;
   text-align: left;
-}
-
-.section {
-  padding-bottom: 5px;
 }
 
 .homepic {
