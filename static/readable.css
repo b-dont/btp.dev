@@ -394,6 +394,7 @@ article h3 {
 .pagination-nav {
   text-align: center;
   display: flex;
+  padding: 10px;
 }
 
 .pagination-nav>* {
@@ -425,5 +426,6 @@ article h3 {
 }
 
 .homepic {
-  border-radius: 30px;
+  border-radius: 10px;
+  width: 50%;
 }

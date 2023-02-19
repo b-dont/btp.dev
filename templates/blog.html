@@ -28,8 +28,7 @@
 
 <!-- Pagination navigation -->
 {% if paginator %}
-<nav class="pagination-nav">
-
+<section class="pagination-nav">
   {% if paginator.previous %}
   <span style="text-align: left;"><a href="{{ paginator.first }}">‹‹ </a>
   <a href="{{ paginator.previous }}">‹ Prev</a>
@@ -47,6 +46,6 @@
   <span style="text-align: right;" class="not-active">Next › ››
   {% endif %}
   </span>
-</nav>
+</section>
 {% endif %}
 {% endblock content %}
