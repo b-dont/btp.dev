@@ -14,10 +14,9 @@
       <h3 class="article-header">{{ page.title }}</h3>
       <p>
         {% if page.updated %}
-        <small style="color: #707682"><b>Updated · </b>{{ page.updated }}</small>
-        {% else %}
-        <small style="color: #707682">{{ page.date }}</small>
+        <small style="color: #707682"><b>Updated · </b>{{ page.updated }} | </small>
         {% endif %}
+        <small style="color: #707682"><b>Published · </b>{{ page.date }}</small>
         </br>
         {{ page.description | safe }}
       </p>

@@ -5,17 +5,14 @@
 <h2 class="title">
   {{ page.title }}
 </h2>
-
 <small>
-  {% if page.updated %}
-  <p class="subtitle" style="color: #707682"><strong>Updated </strong> · {{ page.updated }}</strong>
+  <p class="subtitle" style="color: #707682">
+    <b>Published</b> · {{ page.date }}
+    {% if page.updated %}
+    </br>
+    <b>Updated</b> · {{ page.updated }}
+    {% endif %}
   </p>
-  </br>
-  {% else %}
-  <p class="subtitle" style="color: #707682"><strong>Published </strong> · {{ page.date }}</strong>
-  </p>
-  {% endif %}
 </small>
 {{ page.content | safe }}
-
 {% endblock content %}
