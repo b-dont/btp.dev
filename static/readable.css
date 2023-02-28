@@ -426,7 +426,7 @@ article h3 {
 }
 
 .about-container {
-  padding-bottom: 20px;
+ padding-bottom: 20px;
   min-height: 350px;
 }
 
@@ -443,8 +443,7 @@ article h3 {
 
 .typewriter-container {
   float: right;
-  text-align: left;
-  width: 50%;
+  min-width: 45%;
 }
 
 #typewriter::after {
