@@ -7,12 +7,40 @@
     alt="Bearded white guy wearing glasses and a wide-brim hat"
     title="Me, lookin' sharp." 
   />
-  <div class="typewriter-container">
-    <p id="typewriter" style="text-align: center"></p>
-  </div>
-  <div class="about-text">
 
+  <div class="typewriter-container" style="max-width: 45%;">
+    <p id="typewriter" style="text-align: center"></p>
+    <script src="typewriter.js"></script>
+  </div>
+
+  <div class="about-text">
+  <small>
+  <center>
+    Welcome to my site! I'm Brandon, and I've been working in technology as a systems administrator since December of 2021. I spent a year and a half learning several programming languages such as Python, Rust, C, and C++ 
+    as well as various other technologies to pursue a new career in Software development, and continue learning every day. 
+    Afer I began my first tech job at Absolute Performance Inc. as a systems administrator, I quickly took to automation, and now work on DevOps projects and automation.
+  </center>
+  </small>
   </div>
 </div>
-<script src="typewriter.js"></script>
+
+<dev class="latest-blog">
+{% set section = get_section(path="blog/_index.md") %}
+{% set latest_post = section.pages | first %}
+  <h2 style="text-align: left">Latest Blog Post</h2>
+  <a class="article-link" style="min-width: 100%" href="{{ latest_post.permalink | safe }}">
+    <article>
+      <h3 class="article-header">{{ latest_post.title }}</h3>
+      <p>
+        {% if latest_post.updated %}
+        <small style="color: #707682"><b>Updated · </b>{{ latest_post.updated }} | </small>
+        {% endif %}
+        <small style="color: #707682"><b>Published · </b>{{ latest_post.date }}</small>
+        </br>
+        {{ latest_post.description | safe }}
+      </p>
+    </article>
+  </a>
+</dev>
+
 {% endblock content %}

@@ -426,13 +426,19 @@ article h3 {
 }
 
 .about-container {
-  min-height: 400px;
+  padding-bottom: 20px;
+  min-height: 350px;
 }
 
 .homepic {
   border-radius: 20px;
   width: 50%;
   float: left;
+}
+
+.about-text {
+  max-width: 45%;
+  float: right;
 }
 
 .typewriter-container {
@@ -446,7 +452,7 @@ article h3 {
   content: '█';
   width: 0;
   display: inline-block;
-  animation: cursor-blink 1s infinite;
+  border-left: 2px solid transparent;
 }
 
 @keyframes cursor-blink {
