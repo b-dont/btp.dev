@@ -272,6 +272,7 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 /* Some elements on smaller screens need to be wider */
 @media (max-width: 700px) {
 
+  .page-description,
   form,
   a:is(.article-link),
   p:is(.footer-content) {
@@ -288,11 +289,6 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 .contact-email {
   float: right;
   width: 48%
-}
-
-.contact-description {
-  max-width: 50%;
-  text-align: center;
 }
 
 input:focus {
@@ -423,6 +419,10 @@ article h3 {
 .page-content {
   max-width: 70%;
   text-align: left;
+}
+
+.page-description {
+  max-width: 50%;
 }
 
 .about-container {

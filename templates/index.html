@@ -16,9 +16,14 @@
   <div class="about-text">
   <small>
   <center>
-    Welcome to my site! I'm Brandon, and I've been working in technology as a systems administrator since December of 2021. I spent a year and a half learning several programming languages such as Python, Rust, C, and C++ 
-    as well as various other technologies to pursue a new career in Software development, and continue learning every day. 
-    Afer I began my first tech job at Absolute Performance Inc. as a systems administrator, I quickly took to automation, and now work on DevOps projects and automation.
+    Welcome! I'm Brandon, and I'm a systems administrator and devops engineer. In the Summer of 2020, I began learning programming and 
+    various other technologies to pursue a new career in Software development, and continue learning every day. 
+    </br>
+    </br>
+    Afer I began my first tech job at <a href="https://absolute-performance.com">Absolute Performance Inc.</a> as a systems administrator, I quickly took to automation, and now work on DevOps projects and automation.
+    </br>
+    </br>
+    If you'd like to get in touch regarding any freelance or open source contributions, please send me an <a href="/contact">email</a>.
   </center>
   </small>
   </div>
@@ -27,8 +32,8 @@
 <dev class="latest-blog">
 {% set section = get_section(path="blog/_index.md") %}
 {% set latest_post = section.pages | first %}
-  <h2 style="text-align: left">Latest Blog Post</h2>
-  <a class="article-link" style="min-width: 100%" href="{{ latest_post.permalink | safe }}">
+  <h3 style="text-align: left; padding-bottom: 5px;">Latest Blog Post</h2>
+  <a class="article-link" style="max-width: 50%" href="{{ latest_post.permalink | safe }}">
     <article>
       <h3 class="article-header">{{ latest_post.title }}</h3>
       <p>
@@ -42,5 +47,4 @@
     </article>
   </a>
 </dev>
-
 {% endblock content %}
