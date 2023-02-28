@@ -426,8 +426,12 @@ article h3 {
 }
 
 .about-container {
- padding-bottom: 20px;
+  padding-bottom: 20px;
   min-height: 350px;
+}
+
+.home-icons {
+  padding: 5px 10px 5px 10px;
 }
 
 .homepic {
