@@ -38,12 +38,10 @@ html[data-theme="dark"] {
   --form-width: 50ch;
   --line-width: 0.105rem;
   --line-height: 1.5;
-
   --one-line: calc(var(--line-height) * 1rem);
   --half-line: calc(var(--one-line) * 0.5);
 
   font-family: var(--font-family);
-
   background-color: var(--background-color);
   color: var(--color);
 }
@@ -150,6 +148,7 @@ header h1 {
 h1,
 h2 {
   line-height: calc(var(--line-height) * 2rem);
+  font-family: mono;
 }
 
 h1 {
@@ -164,6 +163,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: mono;
   line-height: var(--one-line);
   padding-top: calc(var(--line-height) * 0.75rem);
   margin-bottom: calc(var(--line-height) * 0.25rem);
@@ -175,6 +175,7 @@ h6 {
 
 /* Navbar */
 body>nav {
+  font-family: mono;
   text-align: center;
   border-width: var(--line-width) 0;
   border-style: solid;
@@ -448,6 +449,19 @@ article h3 {
 .typewriter-container {
   float: right;
   min-width: 45%;
+}
+
+.mastodon-feed {
+  float: right;
+  width: 45%;
+}
+
+.latest-blog {
+  max-width: 50%;
+}
+
+.home-feeds {
+  min-height: 400px;
 }
 
 #typewriter::after {
