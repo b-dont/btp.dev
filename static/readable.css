@@ -398,10 +398,13 @@ article h3 {
   flex-grow: 1;
 }
 
+.blog-list {
+  max-width: 70%;
+}
+
 .article-link {
   text-decoration: none;
   display: inline-block;
-  max-width: 70%;
 }
 
 .article-link:hover h3 {
@@ -457,11 +460,7 @@ article h3 {
 }
 
 .latest-blog {
-  max-width: 50%;
-}
-
-.home-feeds {
-  min-height: 400px;
+max-width: 50%;
 }
 
 #typewriter::after {

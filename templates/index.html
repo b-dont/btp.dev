@@ -19,7 +19,7 @@
     various other technologies to pursue a new career in Software development, and continue learning every day. 
     </br>
     </br>
-    Afer I began my first tech job at <a href="https://absolute-performance.com">Absolute Performance Inc.</a> as a systems administrator, I quickly took to automation, and now work on DevOps and automation projects.
+    Afer I began my first tech job at <a href="https://absolute-performance.com" target="_blank">Absolute Performance Inc.</a> as a systems administrator, I quickly took to automation, and now work on DevOps and automation projects.
     </br>
     </br>
     If you'd like to get in touch regarding any freelance or open source contributions, please send me an <a href="/contact">email</a>.
@@ -48,8 +48,8 @@
 </center>
 <hr>
 
-<dev class="home-feeds">
-  <dev class="latest-blog">
+<div class="home-feeds">
+  <div class="latest-blog">
   {% set section = get_section(path="blog/_index.md") %}
   {% set latest_post = section.pages | first %}
     <h3 style="text-align: left; padding-bottom: 5px;">Latest Blog Post</h2>
@@ -66,6 +66,6 @@
         </p>
       </article>
     </a>
-  </dev>
-</dev>
+  </div>
+</div>
 {% endblock content %}

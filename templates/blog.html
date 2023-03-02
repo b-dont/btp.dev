@@ -9,7 +9,7 @@
 </p>
 
 <!-- Paginated Blog List - Displays 5 posts per page -->
-<center>
+<div class="blog-list">
 {% for page in paginator.pages %}
   <a class="article-link" href="{{ page.permalink | safe }}">
     <article>
@@ -25,7 +25,7 @@
     </article>
   </a>
 {% endfor %}
-</center>
+</div>
 
 <!-- Pagination navigation -->
 {% if paginator %}
