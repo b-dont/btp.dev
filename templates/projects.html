@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="title">
+  {{ section.title }}
+</h2>
+<p style="text-align: center;">
+  <small>Projects I've worked on, or am currently working on.</small>
+</p>
+
+<!-- Paginated Project List -->
+
+
+<!-- Pagination navigation -->
+{% if paginator %}
+<section class="pagination-nav">
+  {% if paginator.previous %}
+  <span style="text-align: left;"><a href="{{ paginator.first }}">‹‹ </a>
+  <a href="{{ paginator.previous }}">‹ Prev</a>
+  {% else %}
+  <span style="text-align: left;" class="not-active">‹‹ ‹ Prev
+  {% endif %}
+  </span>
+
+  <span><small>{{ paginator.current_index }} / {{ paginator.number_pagers }}</small></span>
+
+  {% if paginator.next %}
+  <span style="text-align: right;"><a href="{{ paginator.next }}">Next ›</a>
+  <a href="{{ paginator.last }}"> ››</a>
+  {% else %}
+  <span style="text-align: right;" class="not-active">Next › ››
+  {% endif %}
+  </span>
+</section>
+{% endif %}
+{% endblock content %}

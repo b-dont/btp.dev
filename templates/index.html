@@ -32,7 +32,7 @@
   <div class="latest-blog">
   {% set section = get_section(path="blog/_index.md") %}
   {% set latest_post = section.pages | first %}
-    <h3 style="text-align: left; padding-bottom: 5px;">Latest Blog Post</h2>
+    <h3 style="text-align: left; padding-bottom: 5px;">Latest Blog Post</h3>
     <a class="article-link" href="{{ latest_post.permalink | safe }}">
       <article>
         <h3 class="article-header">{{ latest_post.title }}</h3>
@@ -48,6 +48,9 @@
     </a>
   </div>
 
+  <div class="latest-project">
+    <h3 style="text-align: left; padding-bottom: 5px;">Latest Project</h3>
+  </div>
 </div>
 <hr>
 
