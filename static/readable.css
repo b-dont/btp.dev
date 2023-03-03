@@ -460,13 +460,24 @@ article h3 {
   font-family: mono;
 }
 
-.mastodon-feed {
-  float: right;
-  width: 45%;
+.home-feeds {
+  min-height: 250px;
+}
+
+.latest-header {
+  text-align: left; 
+  padding: 5px 0px 5px 0px; 
+  margin: 5px 0px 5px 0px;
 }
 
 .latest-blog {
 max-width: 50%;
+float: left;
+}
+
+.latest-project {
+max-width: 50%;
+float: right;
 }
 
 #typewriter::after {
