@@ -10,6 +10,6 @@ The code of this site is free and [open-source](https://codeberg.org/brandont/br
 
 ### Credits
 
-Made with [Zola](https://getzola.org)  
-Styled with [readable.css](https://readable-css.freedomtowrite.org/)  
-Icons by [iconify.design](https://iconify.design/)  
+Powered by the [Zola](https://getzola.org) static site engine  
+Styled using [readable.css](https://readable-css.freedomtowrite.org/)  
+Icons from [iconify.design](https://iconify.design/)  
