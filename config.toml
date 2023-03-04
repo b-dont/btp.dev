@@ -13,7 +13,7 @@ generate_feed = true
 feed_filename="rss.xml"
 
 taxonomies = [
-  { name = "tags" },
+  { name = "tags", render = false },
 ]
 
 [markdown]

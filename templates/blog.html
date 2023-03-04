@@ -16,11 +16,27 @@
       <h3 class="article-header">{{ page.title }}</h3>
       <p>
         {% if page.updated %}
-        <small style="color: #707682"><b>Updated · </b>{{ page.updated }} | </small>
+          <small style="color: #707682"><b>Updated · </b>{{ page.updated }} | </small>
         {% endif %}
         <small style="color: #707682"><b>Published · </b>{{ page.date }}</small>
         </br>
+
         {{ page.description | safe }}
+
+        {% if page.taxonomies %}
+          </br>
+          {% set map = page.taxonomies %}
+          {% set_global tags = [] %}
+
+          {% for tax, tag in map %}
+            {% set_global tags = tags | concat(with=tag) %}
+          {% endfor %}
+
+          {% for tag in tags %}
+            <small>#{{ tag }} </small>
+          {% endfor %}
+        {% endif %}
+
       </p>
     </article>
   </a>

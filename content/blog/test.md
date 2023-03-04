@@ -4,6 +4,8 @@ date = 2019-11-27
 description = "This is the description for the test post. Nothing to see here, folks. Putting more text in here to test the article elements."
 updated = 2023-01-11
 template = "blog_post.html"
+[taxonomies]
+tags = ["test", "another-test", "testing"]
 +++
 
 ### Header 3

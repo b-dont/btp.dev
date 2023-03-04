@@ -8,6 +8,6 @@ The content of this site is released under the Creative Commons [Attribution-Non
 
 The code of this site is free and [open-source](https://codeberg.org/brandont/brandont.dev) and is licensed under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) license.
 
-### Assets
+### Credits
 
 Made with [Zola](https://getzola.org) and [readable.css](https://readable-css.freedomtowrite.org/)
