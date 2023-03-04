@@ -43,6 +43,21 @@
           <small style="color: #707682"><b>Published · </b>{{ latest_post.date }}</small>
           </br>
           {{ latest_post.description | safe }}
+
+          {% if latest_post.taxonomies %}
+            </br>
+            {% set map = latest_post.taxonomies %}
+            {% set_global tags = [] %}
+  
+            {% for tax, tag in map %}
+              {% set_global tags = tags | concat(with=tag) %}
+            {% endfor %}
+  
+            {% for tag in tags %}
+              <small>#{{ tag }} </small>
+            {% endfor %}
+          {% endif %}
+
         </p>
       </article>
     </a>
