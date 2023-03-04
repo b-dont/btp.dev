@@ -9,7 +9,10 @@
 <div class="page-description">
   <small>{{ page.description }}</small>
 </div>
-</center>
+
+<div class="page-content">
+  {{ page.content | safe }}
+</div>
 
 <form id="contact">
   <div class="form-top">
@@ -35,5 +38,5 @@
     </div>
   </button>
 </form> 
-
+</center>
 {% endblock content %}
