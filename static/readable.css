@@ -308,13 +308,14 @@ textarea {
   outline: solid 0px;
 }
 
-.footer-nav {
+.socials {
   display: flex;
   justify-content: center;
+  float: right;
 }
 
-.footer-icon {
-  padding: 8px;
+.social-icon {
+  padding: 0px 8px 0px 8px;
   float: left;
 }
 
@@ -335,7 +336,7 @@ textarea {
     transition: 200ms;
   }
 
-  a:is(:hover, :focus):not(.footer-icon, .article-link)::after {
+  a:is(:hover, :focus):not(.social-icon, .article-link)::after {
     width: 100%;
   }
 
