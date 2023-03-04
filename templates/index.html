@@ -19,7 +19,8 @@
     various other technologies to pursue a new career in Software development, and continue learning every day. 
     </br>
     </br>
-    Afer I began my first tech job at <a href="https://absolute-performance.com" target="_blank">Absolute Performance Inc.</a> as a systems administrator, I quickly took to automation, and now work on DevOps and automation projects.
+    Afer I began my first tech job at <a href="https://absolute-performance.com" target="_blank">Absolute Performance Inc.</a> 
+    as a systems administrator, I quickly took to automation, and now work on DevOps and automation projects.
     </br>
     </br>
     If you'd like to get in touch regarding any freelance or open source contributions, please send me an <a href="/contact">email</a>.
@@ -48,11 +49,11 @@
             </br>
             {% set map = latest_post.taxonomies %}
             {% set_global tags = [] %}
-  
+
             {% for tax, tag in map %}
               {% set_global tags = tags | concat(with=tag) %}
             {% endfor %}
-  
+
             {% for tag in tags %}
               <small>#{{ tag }} </small>
             {% endfor %}

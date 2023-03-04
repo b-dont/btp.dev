@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="title">
+  Tags
+</h2>
+
+<center>
+<div class="page-content">
+  {% for page in term.pages %}
+    <a href="{{ page.path }}">{{ page.title }}</a>
+    </br>
+  {% endfor %}
+</div>
+</center>
+</br>
+{% endblock content %}

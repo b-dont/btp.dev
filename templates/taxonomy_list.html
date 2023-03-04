@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2 class="title">
+  Tags
+</h2>
+
+<center>
+<div class="page-content">
+  {% for tag in terms %}
+    <a href="/{{ taxonomy.name }}/{{ tag.name }}">{{ tag.name }}</a>
+    </br>
+  {% endfor %}
+</div>
+</center>
+</br>
+{% endblock content %}
