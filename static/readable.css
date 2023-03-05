@@ -307,16 +307,16 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 .description-container {
   text-align: center;
   max-width: 40%;
-}***
+}
 
 .contact-name {
   float: left;
-  width: 48%
+  width: 47.5%
 }
 
 .contact-email {
   float: right;
-  width: 48%
+  width: 47.5%
 }
 
 input:focus {
