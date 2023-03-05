@@ -18,4 +18,4 @@ This website's analytics are powered by [Plausible](https://plausible.io) and ar
 
 This site is protected by hCaptcha and its [Privacy Policy](https://www.hcaptcha.com/privacy) and [Terms of Service](https://www.hcaptcha.com/terms) apply.  
 
-100% of my hCaptcha earnings from this site are donated to the [Wikimedia Foundation](https://wikimediafoundation.org).
+100% of my hCaptcha earnings from this site are donated to the [Wikimedia Foundation](https://wikimediafoundation.org)
