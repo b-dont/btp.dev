@@ -11,14 +11,18 @@
 <!-- Paginated Blog List - Displays 5 posts per page -->
 <div class="blog-list">
 {% for page in paginator.pages %}
-    <article class="blog-card" >
-      <a class="blog-link" href="{{ page.permalink | safe }}">
-        <h3 class="article-header">{{ page.title }}</h3>
+    <a class="blog-link" href="{{ page.permalink | safe }}">
+      <article>
+        <h3>{{ page.title }}</h3>
         <p>
         {% if page.updated %}
-          <small style="color: #707682"><b>Updated · </b>{{ page.updated }} | </small>
+          <small style="color: #707682">
+            <b>Updated · </b>{{ page.updated }} | 
+          </small>
         {% endif %}
-          <small style="color: #707682"><b>Published · </b>{{ page.date }}</small>
+          <small style="color: #707682">
+            <b>Published · </b>{{ page.date }}
+          </small>
         </br>
 
         {{ page.description | safe }}
@@ -37,8 +41,8 @@
           {% endfor %}
         {% endif %}
         </p>
-      </a>
-    </article>
+      </article>
+    </a>
 {% endfor %}
 </div>
 
