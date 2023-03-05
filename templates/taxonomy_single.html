@@ -3,15 +3,20 @@
 {% block content %}
 
 <h2 class="title">
-  Tags
+  #{{ term.name }}
 </h2>
 
 <center>
 <div class="page-content">
-  {% for page in term.pages %}
-    <a href="{{ page.path }}">{{ page.title }}</a>
-    </br>
+  {% for year, posts in term.pages | group_by(attribute="year") %}
+  <h3>{{ year }}</h3>
+  <ul>
+    {% for post in posts %}
+      <li><a href="{{ post.path }}">{{ post.title }}</a> - {{ post.date }}</li>
+    {% endfor %}
+  </ul>
   {% endfor %}
+    </p>
 </div>
 </center>
 </br>

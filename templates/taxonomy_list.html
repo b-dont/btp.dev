@@ -9,7 +9,7 @@
 <center>
 <div class="page-content">
   {% for tag in terms %}
-    <a href="/{{ taxonomy.name }}/{{ tag.name }}">{{ tag.name }}</a>
+    <a class="tag" href="/{{ taxonomy.name }}/{{ tag.name }}">{{ tag.name }}</a>
     </br>
   {% endfor %}
 </div>
