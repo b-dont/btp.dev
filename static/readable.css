@@ -384,7 +384,6 @@ article {
   padding: 0 35px 1px 35px;
   color: var(--color);
   text-align: left;
-  z-index: 1;
 }
 
 article h3 {
@@ -409,7 +408,6 @@ article h3 {
   text-decoration: none;
   display: inline-block;
   position: relative;
-  z-index: 0;
   overflow: hidden;
   vertical-align: bottom;
   transition: color .3s ease-out;
@@ -419,7 +417,7 @@ article h3 {
 .blog-link::before {
   content: "";
   position: absolute;
-  zindex: 0;
+  z-index: 0;
   top: 0;
   left: 0;
   transform: translateY(calc(100% - 0px));
@@ -427,6 +425,7 @@ article h3 {
   height: 100%;
   transition: transform .25s ease-out;
   background-color: #2B303B;
+  z-index: -1;
 }
 
 .blog-link:hover::before {
@@ -436,9 +435,6 @@ article h3 {
 
 .blog-link:hover h3 {
   color: #61AFEF;
-}
-
-.blog-link:hover {
 }
 
 .footer-content {

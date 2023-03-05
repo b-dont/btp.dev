@@ -9,42 +9,40 @@
 </p>
 
 <!-- Paginated Blog List - Displays 5 posts per page -->
+<center>
 <div class="blog-list">
 {% for page in paginator.pages %}
-    <a class="blog-link" href="{{ page.permalink | safe }}">
-      <article>
-        <h3>{{ page.title }}</h3>
-        <p>
-        {% if page.updated %}
-          <small style="color: #707682">
-            <b>Updated · </b>{{ page.updated }} | 
-          </small>
-        {% endif %}
-          <small style="color: #707682">
-            <b>Published · </b>{{ page.date }}
-          </small>
+  <a class="blog-link" href="{{ page.permalink | safe }}">
+    <article>
+      <h3>{{ page.title }}</h3>
+      <p>
+      {% if page.updated %}
+        <small style="color: #707682">
+          <b>Updated · </b>{{ page.updated }} | 
+        </small>
+      {% endif %}
+        <small style="color: #707682">
+          <b>Published · </b>{{ page.date }}
+        </small>
+      </br>
+      {{ page.description | safe }}
+      {% if page.taxonomies %}
         </br>
-
-        {{ page.description | safe }}
-
-        {% if page.taxonomies %}
-          </br>
-          {% set map = page.taxonomies %}
-          {% set_global tags = [] %}
-
-          {% for tax, tag in map %}
-            {% set_global tags = tags | concat(with=tag) %}
-          {% endfor %}
-
-          {% for tag in tags %}
-            <small>#{{ tag }} </small>
-          {% endfor %}
-        {% endif %}
-        </p>
-      </article>
-    </a>
+        {% set map = page.taxonomies %}
+        {% set_global tags = [] %}
+        {% for tax, tag in map %}
+          {% set_global tags = tags | concat(with=tag) %}
+        {% endfor %}
+        {% for tag in tags %}
+          <small>#{{ tag }} </small>
+        {% endfor %}
+      {% endif %}
+      </p>
+    </article>
+  </a>
 {% endfor %}
 </div>
+</center>
 
 <!-- Pagination navigation -->
 {% if paginator %}

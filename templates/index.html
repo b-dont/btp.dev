@@ -53,7 +53,7 @@
   {% set section = get_section(path="blog/_index.md") %}
   {% set latest_post = section.pages | first %}
     <h3 class="latest-header">Latest Blog Post</h3>
-    <a class="article-link" href="{{ latest_post.permalink | safe }}">
+    <a class="blog-link" href="{{ latest_post.permalink | safe }}">
       <article>
         <h3 class="article-header">{{ latest_post.title }}</h3>
         <p>
