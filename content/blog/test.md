@@ -11,14 +11,15 @@ tags = ["test", "another-test", "testing"]
 ### Header 3
 
 This is a test blog post
-***
 
 #### Header 4
 
 _Here's some italics._ **Also, some bold text.**
 
-```
-testing code bocks.
+```rust
+fn hello-world() {
+  print!("Hello, World!");
+}
 ```
 `This is inline code.`
 
@@ -40,6 +41,7 @@ testing code bocks.
 > - Brandon, 2023
 
 Here's what a link to [my blog](https://brandont.blog) looks like.
+***
 
 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. 
 

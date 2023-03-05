@@ -283,6 +283,32 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 }
 
 /* Custom CSS: Added classes and other elements that deviate from readable.css */
+.date-stamp {
+  color: #707682
+}
+
+.tag {
+  font-family: mono;
+  padding: 0px 5px 0px 5px;
+}
+
+.tag::before {
+  content: '#';
+}
+
+.tag-container {
+  text-align: center;
+}
+
+.title {
+  margin: 24px 0 0 0;
+}
+
+.description-container {
+  text-align: center;
+  max-width: 40%;
+}***
+
 .contact-name {
   float: left;
   width: 48%
@@ -364,6 +390,7 @@ textarea {
 }
 
 /* See `config.toml` for the code syntax highlighting generated in Zola */
+
 code {
   background-color: #2B303B;
   color: #D5C4A1;
@@ -420,7 +447,7 @@ article h3 {
   z-index: 0;
   top: 0;
   left: 0;
-  transform: translateY(calc(100% - 0px));
+  transform: translateX(calc(0px - 100%));
   width: 100%;
   height: 100%;
   transition: transform .25s ease-out;

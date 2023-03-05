@@ -1,18 +1,41 @@
 {% extends "base.html" %}
-
 {% block content %}
 
 <h2 class="title">
   {{ page.title }}
 </h2>
+
+<div class="tag-container">
+{% if page.taxonomies %}
+  {% set map = page.taxonomies %}
+  {% set_global tags = [] %}
+
+  {% for tax, tag in map %}
+    {% set_global tags = tags | concat(with=tag) %}
+  {% endfor %}
+
+  {% for tag in tags %}
+    <a href="/tags/{{ tag }}" class="tag">{{ tag }} </a>
+  {% endfor %}
+
+{% endif %}
+</div>
+
+<center>
+<div class="description-container">
+  <small>{{ page.description }}</small>
+</div>
+</center>
+
 <small>
-  <p style="color: #707682">
+  <p class="date-stamp">
     <b>Published</b> · {{ page.date }}
     {% if page.updated %}
-    </br>
-    <b>Updated</b> · {{ page.updated }}
+     | <b>Updated</b> · {{ page.updated }}
     {% endif %}
   </p>
 </small>
+<hr>
 {{ page.content | safe }}
+
 {% endblock content %}
