@@ -285,12 +285,12 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 /* Custom CSS: Added classes and other elements that deviate from readable.css */
 .contact-name {
   float: left;
-  width: 48%
+  width: 47.5%
 }
 
 .contact-email {
   float: right;
-  width: 48%
+  width: 47.5%
 }
 
 input:focus {
