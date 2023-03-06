@@ -15,7 +15,7 @@ Open Culture is a free, online resource for educational courses, articles, movie
 - [RSS Feed](https://www.openculture.com/feed/rss2)
 
 #### [The Tolkien Society](https://www.tolkiensociety.org/)
-I'm a huge Tolkien nerd and a current member of The Tolkien Society. You can subscribe to their RSS feed for free, or become a member and received the Amon Hen newsletter every other month and their annual Mallorn academic publication via email, or in the mailbox.
+I'm a huge Tolkien nerd and a current member of The Tolkien Society. You can subscribe to their RSS feed for free, or become a member and received the _Amon Hen_ newsletter every other month and their annual academic publication _Mallorn_ via email, or in the mailbox.
 - [RSS Feed](http://www.tolkiensociety.org/feed/rss/)
 
 #### [Wyrd Science](https://www.wyrdscience.online/)
