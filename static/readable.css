@@ -429,6 +429,20 @@ article h3 {
 
 .blog-list {
   max-width: 70%;
+  float: left;
+  border-color: #383D48;
+}
+
+.blog-container {
+  min-height: 800px;
+}
+
+.archive-container {
+  margin-left: 3px;
+  border-left: 1px solid;
+  border-color: #383D48;
+  padding-left: 10px;
+  text-align: left;
 }
 
 .blog-link {

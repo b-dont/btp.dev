@@ -8,41 +8,53 @@
   <small>Subscribe to the <a href="/rss.xml" target="_blank">RSS feed</a>.</small>
 </p>
 
-<!-- Paginated Blog List - Displays 5 posts per page -->
-<center>
-<div class="blog-list">
-{% for page in paginator.pages %}
-  <a class="blog-link" href="{{ page.permalink | safe }}">
-    <article>
-      <h3>{{ page.title }}</h3>
-      <p>
-      {% if page.updated %}
-        <small class="date-stamp">
-          <b>Updated · </b>{{ page.updated }} | 
-        </small>
-      {% endif %}
-        <small class="date-stamp">
-          <b>Published · </b>{{ page.date }}
-        </small>
-      </br>
-      {{ page.description | safe }}
-      {% if page.taxonomies %}
+<div class="blog-container">
+  <!-- Paginated Blog List - Displays 5 posts per page -->
+  <div class="blog-list">
+  {% for page in paginator.pages %}
+    <a class="blog-link" href="{{ page.permalink | safe }}">
+      <article>
+        <h3>{{ page.title }}</h3>
+        <p>
+        {% if page.updated %}
+          <small class="date-stamp">
+            <b>Updated · </b>{{ page.updated }} | 
+          </small>
+        {% endif %}
+          <small class="date-stamp">
+            <b>Published · </b>{{ page.date }}
+          </small>
         </br>
-        {% set map = page.taxonomies %}
-        {% set_global tags = [] %}
-        {% for tax, tag in map %}
-          {% set_global tags = tags | concat(with=tag) %}
-        {% endfor %}
-        {% for tag in tags %}
-          <small>#{{ tag }} </small>
-        {% endfor %}
-      {% endif %}
-      </p>
-    </article>
-  </a>
+        {{ page.description | safe }}
+        {% if page.taxonomies %}
+          </br>
+          {% set map = page.taxonomies %}
+          {% set_global tags = [] %}
+          {% for tax, tag in map %}
+            {% set_global tags = tags | concat(with=tag) %}
+          {% endfor %}
+          {% for tag in tags %}
+            <small>#{{ tag }} </small>
+          {% endfor %}
+        {% endif %}
+        </p>
+      </article>
+    </a>
+  {% endfor %}
+  </div>
+</div>
+
+<div class="archive-container" style="float: right">
+{% for year, posts in section.pages | group_by(attribute="year") %}
+  <b>{{ year }}</b>
+
+  <ul>
+  {% for post in posts %}
+    <li><a href="{{ post.permalink }}">{{ post.title }}</a> {{ post.date }}</li>
+  {% endfor %}
+  </ul>
 {% endfor %}
 </div>
-</center>
 
 <!-- Pagination navigation -->
 {% if paginator %}
