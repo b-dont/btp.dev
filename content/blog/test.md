@@ -17,6 +17,7 @@ This is a test blog post
 _Here's some italics._ **Also, some bold text.**
 
 ```rust
+// Here's a test function
 fn hello-world() {
   print!("Hello, World!");
 }

@@ -34,7 +34,7 @@
             {% set_global tags = tags | concat(with=tag) %}
           {% endfor %}
           {% for tag in tags %}
-            <small>#{{ tag }} </small>
+            <small>{{ tag }} </small>
           {% endfor %}
         {% endif %}
         </p>
@@ -42,18 +42,9 @@
     </a>
   {% endfor %}
   </div>
+
+<div class="archive-container">
 </div>
-
-<div class="archive-container" style="float: right">
-{% for year, posts in section.pages | group_by(attribute="year") %}
-  <b>{{ year }}</b>
-
-  <ul>
-  {% for post in posts %}
-    <li><a href="{{ post.permalink }}">{{ post.title }}</a> {{ post.date }}</li>
-  {% endfor %}
-  </ul>
-{% endfor %}
 </div>
 
 <!-- Pagination navigation -->

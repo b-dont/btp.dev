@@ -46,7 +46,6 @@ html[data-theme="dark"] {
   color: var(--color);
 }
 
-header,
 footer,
 h1,
 h2 {
@@ -127,7 +126,6 @@ p,
 blockquote,
 hr,
 footer,
-header,
 nav,
 figure,
 figcaption,
@@ -142,7 +140,7 @@ article>aside {
 
 /* Headings */
 
-header h1 {
+h1 {
   font-weight: normal;
 }
 
@@ -182,16 +180,24 @@ body>nav {
   border-style: solid;
   border-color: #383D48;
   line-height: var(--line-height);
-  /* Put half a line's height on both top and bottom, then remove the width of the border */
   padding: calc((var(--line-height) * 0.5rem) - var(--line-width));
   display: flex;
   flex-flow: row wrap;
+  margin-top: 0;
 }
 
 body>nav>* {
   flex-grow: 1;
   margin: 0 var(--half-line);
   text-transform: lowercase;
+}
+
+.header-container {
+  min-height: 70px;
+}
+
+.socials {
+  padding-top: 20px;
 }
 
 /* Column */
@@ -334,6 +340,12 @@ textarea {
   outline: solid 0px;
 }
 
+.base-header {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  float: left;
+}
+
 .socials {
   display: flex;
   justify-content: center;
@@ -443,6 +455,7 @@ article h3 {
   border-color: #383D48;
   padding-left: 10px;
   text-align: left;
+  float: right;
 }
 
 .blog-link {
