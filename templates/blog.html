@@ -4,21 +4,21 @@
 <h2 class="title">
   {{ section.title }}
 </h2>
+
 <p style="text-align: center;">
   <small>Subscribe to the <a href="/rss.xml" target="_blank">RSS feed</a>.</small>
   </br>
-  <small><a href="/blog/archive">Post Archive</a> · <a href="/tags">Tags</a></small>
+  <small><a href="/blog/archive">Archive</a> · <a href="/tags">Tags</a></small>
 </p>
 
 <center>
 <div class="blog-container">
   <!-- Paginated Blog List - Displays 5 posts per page -->
-  <div class="blog-list">
   {% for page in paginator.pages %}
     {% if page.title != "Archive" %}
-    <a class="blog-link" href="{{ page.permalink | safe }}">
-      <article>
-        <h3>{{ page.title }}</h3>
+      <article class="blog-link">
+        <h3><a class="blog-head" href="{{ page.permalink }}">{{ page.title }}</a></h3>
+
         <p>
         {% if page.updated %}
           <small class="date-stamp">
@@ -29,24 +29,28 @@
             <b>Published · </b>{{ page.date }}
           </small>
         </br>
+
         {{ page.description | safe }}
+
         {% if page.taxonomies %}
           </br>
           {% set map = page.taxonomies %}
           {% set_global tags = [] %}
+
           {% for tax, tag in map %}
             {% set_global tags = tags | concat(with=tag) %}
           {% endfor %}
           {% for tag in tags %}
-            <small>{{ tag }} </small>
+            <small>
+              <a class="tag" href="/tags/{{ tag }}">{{ tag }}</a>
+            </small>
           {% endfor %}
         {% endif %}
         </p>
+
       </article>
-    </a>
     {% endif %}
   {% endfor %}
-  </div>
 </div>
 </center>
 

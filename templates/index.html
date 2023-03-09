@@ -53,9 +53,8 @@
   {% set section = get_section(path="blog/_index.md") %}
   {% set latest_post = section.pages | first %}
     <h3 class="latest-header">Latest Blog Post</h3>
-    <a class="blog-link" href="{{ latest_post.permalink | safe }}">
-      <article>
-        <h3 class="article-header">{{ latest_post.title }}</h3>
+      <article class="blog-link">
+        <h3><a class="blog-head" href="{{ latest_post.permalink }}">{{ latest_post.title }}</h3></a>
         <p>
           {% if latest_post.updated %}
           <small style="color: #707682"><b>Updated · </b>{{ latest_post.updated }} | </small>
@@ -74,13 +73,13 @@
             {% endfor %}
 
             {% for tag in tags %}
-              <small>#{{ tag }} </small>
+              <small>
+                <a class="tag" href="/tags/{{ tag }}">{{ tag }}</a>
+              </small>
             {% endfor %}
           {% endif %}
-
         </p>
       </article>
-    </a>
   </div>
 
   <div class="latest-project">

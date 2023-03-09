@@ -270,7 +270,7 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 }
 
 .button-text {
-  opacity: 70%;
+  opacity: 80%;
   text-align: left;
 }
 
@@ -283,7 +283,7 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 
   .page-description,
   form,
-  a:is(.blog-link),
+  article:is(.blog-link),
   p:is(.footer-content) {
     max-width: 100%
   }
@@ -292,15 +292,6 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 /* Custom CSS: Added classes and other elements that deviate from readable.css */
 .date-stamp {
   color: #707682
-}
-
-.tag {
-  font-family: mono;
-  padding: 0px 5px 0px 5px;
-}
-
-.tag::before {
-  content: '#';
 }
 
 .tag-container {
@@ -359,7 +350,7 @@ textarea {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:not(.blog-link) {
+  a:not(.blog-head, .tag) {
     text-decoration: none;
     display: inline-block;
     color: #61AFEF;
@@ -375,7 +366,7 @@ textarea {
     transition: 200ms;
   }
 
-  a:is(:hover, :focus):not(.social-icon, .blog-link)::after {
+  a:is(:hover, :focus):not(.social-icon, .blog-head, .tag)::after {
     width: 100%;
   }
 
@@ -442,14 +433,11 @@ article h3 {
 
 .blog-container {
   min-height: 800px;
-}
-
-.blog-list {
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .blog-link {
-  min-width: 100%;
+  min-width: 70%;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -479,8 +467,42 @@ article h3 {
   transition: transform .25s ease-out;
 }
 
-.blog-link:hover h3 {
+.blog-link:hover a {
   color: #61AFEF;
+}
+
+.blog-head, 
+.tag {
+  color: #ABB2BF;
+  text-decoration: none;
+  display: inline-block;
+  font-family: mono;
+}
+
+.tag {
+  padding: 0px 5px 0px 5px;
+  opacity: 80%;
+}
+
+.tag::before {
+  content: '#';
+}
+
+.tag:is(:hover, :focus) {
+  color: #61AFEF;
+}
+
+.tag:after, 
+.blog-head:after {
+  content: '';
+  width: 0;
+  height: 1px;
+  transition: 200ms;
+}
+
+.tag:is(:hover, :focus)::after,
+.blog-head:is(:hover, :focus)::after {
+  width: 100%;
 }
 
 .footer-content {
