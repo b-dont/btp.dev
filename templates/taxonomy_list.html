@@ -5,12 +5,11 @@
 <h2 class="title">
   Tags
 </h2>
-
+</br>
 <center>
 <div class="page-content">
   {% for tag in terms %}
     <a class="tag" href="/{{ taxonomy.name }}/{{ tag.name }}">{{ tag.name }}</a>
-    </br>
   {% endfor %}
 </div>
 </center>
