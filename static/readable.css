@@ -194,6 +194,7 @@ body>nav>* {
 
 .header-container {
   min-height: 70px;
+  padding-bottom: 5px;
 }
 
 .socials {
@@ -439,26 +440,16 @@ article h3 {
   flex-grow: 1;
 }
 
-.blog-list {
-  max-width: 70%;
-  float: left;
-  border-color: #383D48;
-}
-
 .blog-container {
   min-height: 800px;
 }
 
-.archive-container {
-  margin-left: 3px;
-  border-left: 1px solid;
-  border-color: #383D48;
-  padding-left: 10px;
-  text-align: left;
-  float: right;
+.blog-list {
+  max-width: 70%;
 }
 
 .blog-link {
+  min-width: 100%;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -466,6 +457,7 @@ article h3 {
   vertical-align: bottom;
   transition: color .3s ease-out;
   line-height: 0;
+  margin: 3px 0 3px 0;
 }
 
 .blog-link::before {

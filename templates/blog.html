@@ -6,12 +6,16 @@
 </h2>
 <p style="text-align: center;">
   <small>Subscribe to the <a href="/rss.xml" target="_blank">RSS feed</a>.</small>
+  </br>
+  <small><a href="/blog/archive">Post Archive</a></small>
 </p>
 
+<center>
 <div class="blog-container">
   <!-- Paginated Blog List - Displays 5 posts per page -->
   <div class="blog-list">
   {% for page in paginator.pages %}
+    {% if page.title != "Archive" %}
     <a class="blog-link" href="{{ page.permalink | safe }}">
       <article>
         <h3>{{ page.title }}</h3>
@@ -40,12 +44,11 @@
         </p>
       </article>
     </a>
+    {% endif %}
   {% endfor %}
   </div>
-
-<div class="archive-container">
 </div>
-</div>
+</center>
 
 <!-- Pagination navigation -->
 {% if paginator %}
