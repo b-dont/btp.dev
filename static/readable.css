@@ -66,6 +66,7 @@ summary {
 
 blockquote:not(.exclude) {
   padding-left: var(--one-line);
+  font-style: italic;
 }
 
 ul,
@@ -401,10 +402,9 @@ code {
 }
 
 blockquote {
-  padding: 5px;
-  background-color: #2B303B;
-  border-left: 5px solid #A89984;
-  width: 80%;
+  padding: 10px;
+  color: #707682;
+  border-left: 5px solid #2B303B;
 }
 
 li::marker {
