@@ -6,9 +6,11 @@
   {{ page.title }}
 </h2>
 
+<center>
+<div class="page-content">
 {% for year, posts in section.pages | group_by(attribute="year") %}
   {% if year != "2000" %}
-    <h2>{{ year }}</h2>
+    <h3>{{ year }}</h3>
   {% endif %}
   
     <ul>
@@ -19,5 +21,8 @@
     {% endfor %}
     </ul>
 {% endfor %}
+</div>
+</center>
+</br>
 
 {% endblock content %}

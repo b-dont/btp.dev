@@ -23,7 +23,7 @@
     as a systems administrator, I quickly took to automation, and now work on DevOps and automation projects.
     </br>
     </br>
-    If you'd like to get in touch regarding any freelance or open source contributions, please send me an <a href="/contact">email</a>.
+    If you'd like to get in touch regarding any freelance or open source contributions, please send me an <a href="/connect">email</a>.
   </small>
   </div>
 </div>
@@ -48,43 +48,36 @@
 </center>
 
 <hr>
-<div class="home-feeds">
-  <div class="latest-blog">
-  {% set section = get_section(path="blog/_index.md") %}
-  {% set latest_post = section.pages | first %}
-    <h3 class="latest-header">Latest Blog Post</h3>
-      <article class="blog-link">
-        <h3><a class="blog-head" href="{{ latest_post.permalink }}">{{ latest_post.title }}</h3></a>
-        <p>
-          {% if latest_post.updated %}
-          <small style="color: #707682"><b>Updated · </b>{{ latest_post.updated }} | </small>
-          {% endif %}
-          <small style="color: #707682"><b>Published · </b>{{ latest_post.date }}</small>
-          </br>
-          {{ latest_post.description | safe }}
-
-          {% if latest_post.taxonomies %}
-            </br>
-            {% set map = latest_post.taxonomies %}
-            {% set_global tags = [] %}
-
-            {% for tax, tag in map %}
-              {% set_global tags = tags | concat(with=tag) %}
-            {% endfor %}
-
-            {% for tag in tags %}
-              <small>
-                <a class="tag" href="/tags/{{ tag }}">{{ tag }}</a>
-              </small>
-            {% endfor %}
-          {% endif %}
-        </p>
-      </article>
-  </div>
-
-  <div class="latest-project">
-    <h3 class="latest-header">Latest Project</h3>
-  </div>
+<center>
+<div class="latest-blog">
+{% set section = get_section(path="blog/_index.md") %}
+{% set latest_post = section.pages | first %}
+  <h2 class="latest-header">Latest Blog Post</h2>
+  <article class="blog-link">
+    <h3><a class="blog-head" href="{{ latest_post.permalink }}">{{ latest_post.title }}</h3></a>
+    <p>
+      {% if latest_post.updated %}
+      <small style="color: #707682"><b>Updated · </b>{{ latest_post.updated }} | </small>
+      {% endif %}
+      <small style="color: #707682"><b>Published · </b>{{ latest_post.date }}</small>
+      </br>
+      {{ latest_post.description | safe }}
+      {% if latest_post.taxonomies %}
+        </br>
+        {% set map = latest_post.taxonomies %}
+        {% set_global tags = [] %}
+        {% for tax, tag in map %}
+          {% set_global tags = tags | concat(with=tag) %}
+        {% endfor %}
+        {% for tag in tags %}
+          <small>
+            <a class="tag" href="/tags/{{ tag }}">{{ tag }}</a>
+          </small>
+        {% endfor %}
+      {% endif %}
+    </p>
+  </article>
 </div>
+</center>
 
 {% endblock content %}

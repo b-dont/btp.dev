@@ -479,6 +479,10 @@ article h3 {
   font-family: mono;
 }
 
+.project-card {
+  
+}
+
 .tag {
   padding: 0px 5px 0px 5px;
   opacity: 80%;
@@ -554,14 +558,13 @@ article h3 {
 }
 
 .latest-header {
-  text-align: left; 
+  text-align: center; 
   padding: 5px 0px 5px 0px; 
   margin: 5px 0px 5px 0px;
 }
 
 .latest-blog {
-max-width: 50%;
-float: left;
+max-width: 70%;
 }
 
 .latest-project {
