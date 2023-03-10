@@ -1,5 +1,6 @@
 +++
 title = "Privacy"
+description = "Privacy disclosures and transparency."
 +++
 
 This website does not store any private or personal data. There are no login or signup forms, and no user accounts.  

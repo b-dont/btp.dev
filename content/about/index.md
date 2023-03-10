@@ -1,5 +1,6 @@
 +++
-title = "About This Site"
+title = "About"
+description = "Licenses and Credits."
 +++
 
 ### Licenses

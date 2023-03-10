@@ -349,6 +349,11 @@ textarea {
 .social-icon {
   padding: 0px 8px 0px 8px;
   float: left;
+  opacity: 50%;
+}
+
+.social-icon:is(:hover, :focus) {
+  opacity: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -373,9 +378,6 @@ textarea {
 
   a:focus {
     outline: solid 0px;
-  }
-
-  a:hover {
   }
 
   .not-active {
