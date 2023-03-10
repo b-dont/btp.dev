@@ -337,6 +337,7 @@ textarea {
   margin-top: 20px;
   margin-bottom: 0px;
   float: left;
+  text-transform: lowercase;
 }
 
 .socials {
@@ -355,7 +356,6 @@ textarea {
     text-decoration: none;
     display: inline-block;
     color: #61AFEF;
-    opacity: 60%;
   }
 
   a:after {
@@ -376,7 +376,6 @@ textarea {
   }
 
   a:hover {
-    opacity: 100%;
   }
 
   .not-active {

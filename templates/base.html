@@ -29,9 +29,15 @@
 <body>
   <!-- Header & Nav-bar -->
   <div class="header-container">
-    <h1 class="base-header">
-      brandont.dev
-    </h1>
+    <h3 class="base-header">
+    {% if section.title %}
+      brandont.dev/{{ section.title }}
+    {% elif page.title %}
+      brandont.dev/{{ page.title }}
+    {% else %}
+      brandont.dev ~
+    {% endif %}
+    </h3>
     </br>
   
     <div class="socials">
