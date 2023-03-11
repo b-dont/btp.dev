@@ -408,6 +408,42 @@ textarea {
   .not-active:hover {
     opacity: 60%;
   }
+
+  .blog-link {
+    min-width: 70%;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    vertical-align: bottom;
+    transition: color .3s ease-out;
+    line-height: 0;
+    margin: 3px 0 3px 0;
+  }
+  
+  .blog-link::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    transform: translateX(calc(0px - 100%));
+    width: 100%;
+    height: 100%;
+    transition: transform .25s ease-out;
+    background-color: #2B303B;
+    z-index: -1;
+  }
+  
+  .blog-link:hover::before {
+    transform: translateY(0);
+    transition: transform .25s ease-out;
+  }
+  
+  .blog-link:hover a {
+    color: #61AFEF;
+  }
+  
 }
 
 /* See `config.toml` for the code syntax highlighting generated in Zola */
@@ -445,41 +481,6 @@ article h3 {
 
 .pagination-nav>* {
   flex-grow: 1;
-}
-
-.blog-link {
-  min-width: 70%;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  vertical-align: bottom;
-  transition: color .3s ease-out;
-  line-height: 0;
-  margin: 3px 0 3px 0;
-}
-
-.blog-link::before {
-  content: "";
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  transform: translateX(calc(0px - 100%));
-  width: 100%;
-  height: 100%;
-  transition: transform .25s ease-out;
-  background-color: #2B303B;
-  z-index: -1;
-}
-
-.blog-link:hover::before {
-  transform: translateY(0);
-  transition: transform .25s ease-out;
-}
-
-.blog-link:hover a {
-  color: #61AFEF;
 }
 
 .blog-head, 
