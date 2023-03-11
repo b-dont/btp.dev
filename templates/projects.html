@@ -4,12 +4,12 @@
 <h2 class="title">
   {{ section.title }}
 </h2>
-<p style="text-align: center;">
+<center>
+<div class="page-description">
   <small>Projects I've worked on, or am currently working on.</small>
-</p>
+</div>
 
 <!-- Paginated Project List -->
-<center>
 <div class="page-content">
   {% for page in paginator.pages %}
     <div class="project-card">
