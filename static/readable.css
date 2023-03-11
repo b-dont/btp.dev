@@ -282,21 +282,22 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 /* Some elements on smaller screens need to be wider */
 @media (max-width: 700px) {
 
-  .page-description,
   form,
   article:is(.blog-link),
-  p:is(.footer-content) {
+  p:is(.footer-content, .page-description) {
     max-width: 100%
   }
 }
 
 /* Custom CSS: Added classes and other elements that deviate from readable.css */
 .date-stamp {
-  color: #707682
+  color: #707682;
 }
 
 .tag-container {
-  text-align: center;
+  padding: 0px;
+  float: right;
+  margin-top: 20px;
 }
 
 .title {
@@ -333,11 +334,16 @@ textarea {
   outline: solid 0px;
 }
 
-.base-header {
+.path-header {
   margin-top: 20px;
   margin-bottom: 0px;
   float: left;
   text-transform: lowercase;
+}
+
+.base-head {
+  margin-bottom: 0px;
+  text-align: left;
 }
 
 .socials {
@@ -435,6 +441,7 @@ article h3 {
 .blog-container {
   min-height: 800px;
   max-width: 80%;
+  padding-top: 20px;
 }
 
 .blog-link {
@@ -522,6 +529,7 @@ article h3 {
 
 .page-description {
   max-width: 50%;
+  text-align: center;
 }
 
 .about-container {

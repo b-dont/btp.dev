@@ -5,13 +5,13 @@
   {{ section.title }}
 </h2>
 
-<p style="text-align: center;">
-  <small>Subscribe to the <a href="/rss.xml" target="_blank">RSS feed</a>.</small>
-  </br>
-  <small><a href="/blog/archive">Archive</a> · <a href="/tags">Tags</a></small>
-</p>
-
 <center>
+<div class="page-description">
+  <small>Subscribe to the <a href="/rss.xml" target="_blank">RSS feed</a>.
+  </br>
+  <a href="/blog/archive">Archive</a> · <a href="/tags">Tags</a></small>
+</div>
+
 <div class="blog-container">
   <!-- Paginated Blog List - Displays 5 posts per page -->
   {% for page in paginator.pages %}

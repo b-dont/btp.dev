@@ -5,6 +5,12 @@
   {{ page.title }}
 </h2>
 
+<center>
+<div class="description-container">
+  <small>{{ page.description }}</small>
+</div>
+</center>
+
 <div class="tag-container">
 {% if page.taxonomies %}
   {% set map = page.taxonomies %}
@@ -15,28 +21,22 @@
   {% endfor %}
 
   {% for tag in tags %}
-    <a href="/tags/{{ tag }}" class="tag">{{ tag }} </a>
+    <small><a href="/tags/{{ tag }}" class="tag">{{ tag }} </a></small>
   {% endfor %}
 
 {% endif %}
 </div>
 
-<center>
-<div class="description-container">
-  <small>{{ page.description }}</small>
-</div>
-</center>
-
 <small>
   <p class="date-stamp">
     <b>Published</b> · {{ page.date }}
     {% if page.updated %}
-     | <b>Updated</b> · {{ page.updated }}
+    <b>Updated</b> · {{ page.updated }}
     {% endif %}
   </p>
 </small>
-<hr>
 
+<hr>
 <div class="post-container">
   {{ page.content | safe }}
 </div>

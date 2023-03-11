@@ -2,7 +2,7 @@
 <html lang="en">
 
 {% set_global site_base = "brandont.dev" %}
-{% set_global base_path = site_base ~ ": ~/" %}
+{% set_global base_path = "~/" %}
 <head>
   {% block head %}
 
@@ -29,8 +29,9 @@
 
 <body>
   <!-- Header & Nav-bar -->
+  <h1 class="base-head">{{ site_base }}</h1>
   <div class="header-container">
-    <h3 class="base-header">
+    <h3 class="path-header">
     {% if section.title %}
       {% set_global section_title = section.title | slugify %}
       {{ base_path ~ section.title }}
@@ -52,7 +53,7 @@
     {% endif %}
     </h3>
     </br>
-  
+
     <div class="socials">
       <div>
         <a class="social-icon" rel="me" href="https://fosstodon.org/@brandont" target="_blank">
@@ -62,7 +63,7 @@
           </svg>
         </a>
       </div>
-  
+
       <div>
         <a class="social-icon" href="https://codeberg.org/brandont" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
@@ -98,7 +99,7 @@
     <span><a href="/blog">/Blog</a></span>
     <span><a href="/projects">/Projects</a></span>
     <span><a href="/blogroll">/Blogroll</a></span>
-    <span><a href="/connect">/Connect</a></span>
+    <span><a href="/contact">/Contact</a></span>
   </nav>
 
   <!-- Body Content -->
@@ -118,7 +119,7 @@
           ·
           <a href="https://plausible.io/brandont.dev" target="_blank">Analytics</a>
           ·
-          <a href="/connect">Contact</a>
+          <a href="/contact">Contact</a>
           </br>
           ⓒ  2023 Brandon Phillips
         </small>
