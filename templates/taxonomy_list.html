@@ -8,9 +8,15 @@
 </br>
 <center>
 <div class="page-content">
+  <p style="text-align: center">
   {% for tag in terms %}
-    <a class="tag" href="/{{ taxonomy.name }}/{{ tag.name }}">{{ tag.name }}</a>
+    {% if not loop.last %}
+      <a class="tag" href="/{{ taxonomy.name }}/{{ tag.name }}">{{ tag.name }}</a> · 
+    {% else %}
+      <a class="tag" href="/{{ taxonomy.name }}/{{ tag.name }}">{{ tag.name }}</a>
+    {% endif %}
   {% endfor %}
+  </p>
 </div>
 </center>
 </br>

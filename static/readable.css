@@ -283,7 +283,8 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 @media (max-width: 700px) {
   form,
   article:is(.blog-link),
-  h4:is(.path-header),
+  h6:is(.path-header),
+  h2:is(.site-header),
   img:is(.homepic),
   div:is(.socials, .about-text, .typewriter-container, .page-content, .page-description, .latest-blog),
   p:is(.footer-content, .page-description) {
@@ -294,8 +295,9 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   }
 
   svg:is(.home-icons) {
-    padding: 5px;
+    padding: 3px;
   }
+
 }
 
 /* Custom CSS: Added classes and other elements that deviate from readable.css */
@@ -344,10 +346,16 @@ textarea {
 }
 
 .path-header {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 0px;
+  padding: 0px;
   float: left;
   text-transform: lowercase;
+}
+
+.site-header {
+  margin-bottom: 0px;
+  text-align: left;
 }
 
 .base-head {
@@ -357,8 +365,11 @@ textarea {
 
 .socials {
   display: flex;
-  justify-content: center;
   float: right;
+  padding: 0px;
+  position: absolute;
+  top: 48px;
+  right: 0px;
 }
 
 .social-icon {
