@@ -283,7 +283,7 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 @media (max-width: 700px) {
   form,
   article:is(.blog-link),
-  h6:is(.path-header),
+  h4:is(.path-header),
   h2:is(.site-header),
   img:is(.homepic),
   div:is(.socials, .about-text, .typewriter-container, .page-content, .page-description, .latest-blog),
@@ -346,11 +346,12 @@ textarea {
 }
 
 .path-header {
-  margin-top: 0px;
-  margin-bottom: 0px;
   padding: 0px;
   float: left;
   text-transform: lowercase;
+  position: absolute;
+  top: 22px;
+
 }
 
 .site-header {

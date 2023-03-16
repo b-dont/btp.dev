@@ -2,7 +2,7 @@
 <html lang="en">
 
 {% set_global site_base = "brandont.dev" %}
-{% set_global base_path = "~/" %}
+{% set_global base_path = site_base ~ ": ~/" %}
 <head>
   {% block head %}
 
@@ -30,10 +30,7 @@
 <body>
   <!-- Header & Nav-bar -->
   <div class="header-container">
-    <h2 class="site-header">
-      brandont.dev
-    </h2>
-    <h6 class="path-header">
+    <h5 class="path-header">
     {% if section.title %}
       {% set_global section_title = section.title | slugify %}
       {{ base_path ~ section.title }}
@@ -54,7 +51,7 @@
     {% else %}
       {{ base_path }}
     {% endif %}
-    </h6>
+    </h5>
     </br>
 
     <div class="socials">
