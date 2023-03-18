@@ -2,7 +2,6 @@
 <html lang="en">
 
 {% set_global site_base = "brandont.dev" %}
-{% set_global base_path = site_base ~ ": ~/" %}
 <head>
   {% block head %}
 
@@ -30,28 +29,6 @@
 <body>
   <!-- Header & Nav-bar -->
   <div class="header-container">
-    <h5 class="path-header">
-    {% if section.title %}
-      {% set_global section_title = section.title | slugify %}
-      {{ base_path ~ section.title }}
-
-    {% elif page.title %}
-      {% set_global page_title = page.title | slugify %}
-      {% set_global ancestor = page.ancestors | last %}
-
-      {% if ancestor is matching("^[Bb]log|[Pp]rojects") %}
-        {% set_global page_section = get_section(path=ancestor) %}
-        {% set_global page_section_title = page_section.title  %}
-        {{ base_path ~ page_section_title ~ "/" ~ page_title }}
-
-      {% else %}
-        {{ base_path ~ page_title }}
-      {% endif %}
-
-    {% else %}
-      {{ base_path }}
-    {% endif %}
-    </h5>
     </br>
 
     <div class="socials">

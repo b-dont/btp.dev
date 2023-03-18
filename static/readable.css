@@ -55,7 +55,7 @@ footer,
 h1,
 h2 {
   text-align: center;
-  font-family: mono;
+  font-family: monospace;
 }
 
 footer:not(.exclude) {
@@ -164,6 +164,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-size: 1.25rem;
   font-family: monospace;
   line-height: var(--one-line);
   padding-top: calc(var(--line-height) * 0.75rem);
@@ -176,6 +177,7 @@ h6 {
 
 /* Navbar */
 body>nav {
+  font-size: 1rem;
   font-family: monospace;
   text-align: center;
   border-width: var(--line-width) 0;
@@ -506,6 +508,7 @@ article h3 {
 
 .tag {
   padding: 0px 5px 0px 5px;
+  font-size: 0.75rem;
 }
 
 .tag::before {
@@ -532,6 +535,9 @@ article h3 {
 .footer-content {
   text-align: center;
   max-width: 90%;
+  font-family: monospace;
+  font-size: 1rem;
+
 }
 
 .page-content {
@@ -573,6 +579,7 @@ article h3 {
 #typewriter {
   margin: 5px;
   font-family: monospace;
+  font-size: 1rem;
 }
 
 .home-feeds {
