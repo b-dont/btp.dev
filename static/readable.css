@@ -32,6 +32,11 @@ html[data-theme="dark"] {
   }
 }
 
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* Generic styles */
 :root {
   --column-width: 95ch;
