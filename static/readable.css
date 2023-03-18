@@ -1,5 +1,3 @@
-/* readable.css 1.0.0 */
-
 /* Font family support */
 html,
 html[data-font-family="serif"] {
@@ -303,7 +301,6 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 
 }
 
-/* Custom CSS: Added classes and other elements that deviate from readable.css */
 .date-stamp {
   color: #707682;
 }
