@@ -149,7 +149,7 @@ h1 {
 h1,
 h2 {
   line-height: calc(var(--line-height) * 2rem);
-  font-family: mono;
+  font-family: monospace;
 }
 
 h1 {
@@ -164,7 +164,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: mono;
+  font-family: monospace;
   line-height: var(--one-line);
   padding-top: calc(var(--line-height) * 0.75rem);
   margin-bottom: calc(var(--line-height) * 0.25rem);
@@ -176,7 +176,7 @@ h6 {
 
 /* Navbar */
 body>nav {
-  font-family: mono;
+  font-family: monospace;
   text-align: center;
   border-width: var(--line-width) 0;
   border-style: solid;
@@ -501,7 +501,7 @@ article h3 {
   color: #ABB2BF;
   text-decoration: none;
   display: inline-block;
-  font-family: mono;
+  font-family: monospace;
 }
 
 .tag {
@@ -572,7 +572,7 @@ article h3 {
 
 #typewriter {
   margin: 5px;
-  font-family: mono;
+  font-family: monospace;
 }
 
 .home-feeds {
@@ -595,7 +595,7 @@ float: right;
 }
 
 #typewriter::after {
-  font-family: mono;
+  font-family: monospace;
   content: '█';
   width: 0;
   display: inline-block;
