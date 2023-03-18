@@ -18,8 +18,9 @@ Copyright ⓒ  2023 Brandon Phillips
 
 ### Credits
 Made with ![Heart](heart.svg) and ![Code](code.svg) using these awesome projects.  
-- Powered by the [Zola](https://getzola.org) static site engine
-- Styled using [readable.css](https://readable-css.freedomtowrite.org/) by [Benjamin Hollon](https://benjaminhollon.com/)
+- Powered by [Zola](https://getzola.org)
+- Styled with [readable.css](https://readable-css.freedomtowrite.org/) by [Benjamin Hollon](https://benjaminhollon.com/)
 - Icons from [iconify.design](https://iconify.design/)
-- Analytics are powered by [Plausible](https://plausible.io)
-- Contact Captcha by [hCaptcha](https://www.hcaptcha.com/)
+- System fonts with [Modern Font Stacks](https://github.com/system-fonts/modern-font-stacks)
+- Analytics by [Plausible](https://plausible.io)
+- Captcha by [hCaptcha](https://www.hcaptcha.com/)
