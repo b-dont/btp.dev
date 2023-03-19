@@ -1,16 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
 
-<h2 class="title">
+<h2 class="blog-title">
   {{ page.title }}
 </h2>
 
-<center>
-<div class="description-container">
-  <small>{{ page.description }}</small>
+<div class="post-container">
+  {{ page.content | safe }}
 </div>
-</center>
 
+<div class="post-footer">
+<small>
+  <p class="date-stamp">
+    <b>Published</b> · {{ page.date }}
+    {% if page.updated %}
+    | <b>Updated</b> · {{ page.updated }}
+    {% endif %}
+  </p>
+</small>
 <div class="tag-container">
 {% if page.taxonomies %}
   {% set map = page.taxonomies %}
@@ -27,18 +34,6 @@
 {% endif %}
 </div>
 
-<small>
-  <p class="date-stamp">
-    <b>Published</b> · {{ page.date }}
-    {% if page.updated %}
-    | <b>Updated</b> · {{ page.updated }}
-    {% endif %}
-  </p>
-</small>
-
-<hr>
-<div class="post-container">
-  {{ page.content | safe }}
 </div>
 
 {% endblock content %}
