@@ -10,6 +10,7 @@ const typewriterPrompts = [
   'Open Source Advocate',
   'Blogger~~~~~~~~~~ Sometimes..',
   'Table-top RPG Lover',
+  'Very okay person',
 ];
 
 let currentTypewriterIndex = 0;

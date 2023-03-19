@@ -506,6 +506,7 @@ article h3 {
 .tag {
   padding: 0px 5px 0px 5px;
   font-size: 0.75rem;
+  text-decoration: underline;
 }
 
 .tag::before {
@@ -516,7 +517,6 @@ article h3 {
   color: #61AFEF;
 }
 
-.tag:after, 
 .blog-head:after {
   content: '';
   width: 0;
@@ -524,7 +524,6 @@ article h3 {
   transition: 200ms;
 }
 
-.tag:is(:hover, :focus)::after,
 .blog-head:is(:hover, :focus)::after {
   width: 100%;
 }
