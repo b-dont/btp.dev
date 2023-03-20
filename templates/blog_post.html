@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+% extends "base.html" %}
 {% block content %}
 
 <h2 class="blog-title">
@@ -12,10 +12,10 @@
 <div class="post-footer">
 <small>
   <p class="date-stamp">
-    <b>Published</b> · {{ page.date }}
     {% if page.updated %}
-    | <b>Updated</b> · {{ page.updated }}
+    <b>Updated</b> · {{ page.updated }} |
     {% endif %}
+    <b>Published</b> · {{ page.date }}
   </p>
 </small>
 <div class="tag-container">
