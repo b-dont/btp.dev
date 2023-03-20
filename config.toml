@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://brandont.dev"
+base_url = "brandont.dev"
 title = "brandont.dev"
 description = "Brandon's personal website. Blogs, projects, and more."
 
