@@ -7,7 +7,7 @@ This website does not store any private or personal data. There are no login or 
 
 ### Analytics
 
-This website's analytics are powered by [Plausible](https://plausible.io) and are publically available at [plausible.io/brandont.dev](https://plausible.io/brandont.dev).
+Analytics are powered by [Plausible](https://plausible.io) and are publically available at [plausible.io/brandont.dev](https://plausible.io/brandont.dev).
 
 ### hCaptcha
 
