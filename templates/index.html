@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
+
+<center>
+<div class="typewriter-container">
+  <p id="typewriter"></p>
+  <script src="typewriter.js"></script>
+</div>
+</br>
+
 <div class="about-container">
   <img 
     class="homepic" 
@@ -7,12 +15,6 @@
     alt="Bearded white guy wearing glasses and a wide-brim hat"
     title="Me, lookin' sharp." 
   />
-
-  <div class="typewriter-container">
-    <p id="typewriter"></p>
-    <script src="typewriter.js"></script>
-  </div>
-
   <div class="about-text">
   <small>
     Welcome! I'm Brandon, and I'm a systems administrator and devops engineer. In the Summer of 2020, I began learning programming and 
@@ -48,7 +50,6 @@
 </center>
 
 <hr>
-<center>
 <div class="latest-blog">
 {% set section = get_section(path="blog/_index.md") %}
 {% set latest_post = section.pages | first %}

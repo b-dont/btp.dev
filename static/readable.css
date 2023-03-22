@@ -1,9 +1,9 @@
 /* Font family support */
-html,
 html[data-font-family="serif"] {
   --font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
 
+html,
 html[data-font-family="sans-serif"] {
   --font-family: system-ui, sans-serif;
 }
@@ -53,7 +53,7 @@ html {
 footer,
 h2 {
   text-align: center;
-  font-family: monospace;
+  font-family: sans-serif;
 }
 
 footer:not(.exclude) {
@@ -147,7 +147,7 @@ h1 {
 h1,
 h2 {
   line-height: calc(var(--line-height) * 2rem);
-  font-family: monospace;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -163,7 +163,7 @@ h4,
 h5,
 h6 {
   font-size: 1.25rem;
-  font-family: monospace;
+  font-family: sans-serif;
   line-height: var(--one-line);
   padding-top: calc(var(--line-height) * 0.75rem);
   margin-bottom: calc(var(--line-height) * 0.25rem);
@@ -538,7 +538,6 @@ article h3 {
   max-width: 90%;
   font-family: monospace;
   font-size: 1rem;
-
 }
 
 .page-content {
@@ -555,6 +554,7 @@ article h3 {
 .about-container {
   padding-bottom: 20px;
   min-height: 350px;
+  max-width: 95%;
 }
 
 .home-icons {
@@ -565,16 +565,18 @@ article h3 {
   border-radius: 20px;
   width: 50%;
   float: left;
+  margin-bottom: 10px;
 }
 
 .about-text {
   max-width: 45%;
   float: right;
+  text-align: left;
 }
 
 .typewriter-container {
-  float: right;
-  min-width: 45%;
+  max-width: 95%;
+  text-align: left;
 }
 
 #typewriter {
