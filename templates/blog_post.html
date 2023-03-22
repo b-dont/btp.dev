@@ -1,13 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
+<center>
+<div class="page-content">
 <h2 class="blog-title">
   {{ page.title }}
 </h2>
 
-<div class="post-container">
   {{ page.content | safe }}
 </div>
+</center>
 
 <div class="post-footer">
 <small>
@@ -33,7 +35,5 @@
 
 {% endif %}
 </div>
-
 </div>
-
 {% endblock content %}
