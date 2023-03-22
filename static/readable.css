@@ -283,7 +283,7 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   h4:is(.path-header),
   h2:is(.site-header),
   img:is(.homepic),
-  div:is(.socials, .about-text, .typewriter-container, .page-content, .page-description, .latest-blog),
+  div:is(.about-text, .typewriter-container, .page-content, .page-description, .latest-blog),
   p:is(.footer-content, .page-description) {
     max-width: 100%;
     width: 100%;
@@ -467,6 +467,7 @@ textarea {
 code {
   background-color: #2B303B;
   color: #D5C4A1;
+  font-size: 11pt;
 }
 
 blockquote {
