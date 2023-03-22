@@ -577,12 +577,31 @@ article h3 {
 .typewriter-container {
   max-width: 95%;
   text-align: left;
+  background-color: #2B303B;
+  padding: 10px;
 }
 
 #typewriter {
   margin: 5px;
   font-family: monospace;
   font-size: 1rem;
+}
+
+#typewriter::after {
+  font-family: monospace;
+  content: '█';
+  width: 0;
+  display: inline-block;
+  border-left: 2px solid transparent;
+}
+
+#typewriter::before {
+  content: '$: '
+}
+
+@keyframes cursor-blink {
+  from {opacity: 1}
+  to {opacity: 0}
 }
 
 .home-feeds {
@@ -602,17 +621,4 @@ max-width: 70%;
 .latest-project {
 max-width: 50%;
 float: right;
-}
-
-#typewriter::after {
-  font-family: monospace;
-  content: '█';
-  width: 0;
-  display: inline-block;
-  border-left: 2px solid transparent;
-}
-
-@keyframes cursor-blink {
-  from {opacity: 1}
-  to {opacity: 0}
 }
