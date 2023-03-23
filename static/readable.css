@@ -568,18 +568,20 @@ article h3 {
   margin-bottom: 10px;
 }
 
-.about-text {
-  padding-top: 25px;
-  max-width: 45%;
-  float: right;
-  text-align: left;
+.terminal-text {
+  font-family: monospace;
+  font-size: 1rem;
+  margin: 5px;
 }
 
 .typewriter-container {
-  max-width: 95%;
+  min-width: 45%;
   text-align: left;
   background-color: #2B303B;
   padding: 10px;
+  float: right;
+  max-width: 45%;
+  margin-top: 5px;
 }
 
 #typewriter {
@@ -594,10 +596,6 @@ article h3 {
   width: 0;
   display: inline-block;
   border-left: 2px solid transparent;
-}
-
-#typewriter::before {
-  content: '$: '
 }
 
 @keyframes cursor-blink {
