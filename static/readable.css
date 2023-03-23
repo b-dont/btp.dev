@@ -569,6 +569,7 @@ article h3 {
 }
 
 .about-text {
+  padding-top: 25px;
   max-width: 45%;
   float: right;
   text-align: left;
