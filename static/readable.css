@@ -510,7 +510,7 @@ article h3 {
 
 .tag {
   padding: 0px 5px 0px 5px;
-  font-size: 0.75rem;
+  font-size: 10pt;
   text-decoration: underline;
 }
 
@@ -621,4 +621,17 @@ max-width: 70%;
 .latest-project {
 max-width: 50%;
 float: right;
+}
+
+.project-card {
+  padding: 10px;
+}
+
+.project-title {
+  text-align: left;
+}
+
+.project-description {
+  text-align: left;
+  margin-top: 5px;
 }
