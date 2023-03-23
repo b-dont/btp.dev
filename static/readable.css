@@ -283,7 +283,7 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   h4:is(.path-header),
   h2:is(.site-header),
   img:is(.homepic),
-  div:is(.about-text, .typewriter-container, .page-content, .page-description, .latest-blog),
+  div:is(.tech-icons, .about-text, .typewriter-container, .page-content, .page-description, .latest-blog),
   p:is(.footer-content, .page-description) {
     max-width: 100%;
     width: 100%;
@@ -607,19 +607,17 @@ article h3 {
   min-height: 250px;
 }
 
-.latest-header {
-  text-align: center; 
-  padding: 5px 0px 5px 0px; 
-  margin: 5px 0px 5px 0px;
-}
-
 .latest-blog {
-max-width: 70%;
+  max-width: 70%;
 }
 
-.latest-project {
-max-width: 50%;
-float: right;
+.latest-container {
+  min-height: 200px;
+}
+
+.tech-icons {
+  max-width: 50%;
+  padding: 10px;
 }
 
 .project-card {
