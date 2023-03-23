@@ -2,6 +2,14 @@
 title = "About"
 description = "Licenses and Credits."
 +++
+### Credits
+Made with ![Heart](heart.svg) and ![Code](code.svg) using these awesome projects.  
+- Powered by [Zola](https://getzola.org)
+- Styled with [readable.css](https://readable-css.freedomtowrite.org/) by Benjamin Hollon
+- Icons from [iconify.design](https://iconify.design/)
+- System fonts with [Modern Font Stacks](https://github.com/system-fonts/modern-font-stacks)
+- Analytics by [Plausible](https://plausible.io)
+- Captcha by [hCaptcha](https://www.hcaptcha.com/)
 
 ### Licenses
 
@@ -15,12 +23,3 @@ The content of this site is released under the Creative Commons [Attribution-Non
 ![Share Alike](creative-commons-sharealike.svg)
 
 Copyright ⓒ  2023 Brandon Phillips
-
-### Credits
-Made with ![Heart](heart.svg) and ![Code](code.svg) using these awesome projects.  
-- Powered by [Zola](https://getzola.org)
-- Styled with [readable.css](https://readable-css.freedomtowrite.org/) by Benjamin Hollon
-- Icons from [iconify.design](https://iconify.design/)
-- System fonts with [Modern Font Stacks](https://github.com/system-fonts/modern-font-stacks)
-- Analytics by [Plausible](https://plausible.io)
-- Captcha by [hCaptcha](https://www.hcaptcha.com/)
