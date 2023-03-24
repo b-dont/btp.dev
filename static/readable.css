@@ -290,10 +290,6 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
     padding: 0px;
   }
 
-  svg:is(.home-icons) {
-    padding: 3px;
-  }
-
   div:is(.footer-nav, .footer-license) {
     text-align: center;
   }
@@ -365,22 +361,18 @@ textarea {
   text-align: left;
 }
 
-.socials {
-  display: flex;
-  padding: 0px;
-}
-
 .social-icon {
-  padding: 0px 8px 0px 8px;
-  opacity: 50%;
+  padding: 10px 10px 10px 10px;
+  color: #ABB2BF;
+  display: inline-block;
 }
 
 .social-icon:is(:hover, :focus) {
-  opacity: 100%;
+   color: #61AFEF;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:not(.blog-head, .tag) {
+  a:not(.blog-head, .tag, .social-icon) {
     text-decoration: none;
     display: inline-block;
     color: #61AFEF;
