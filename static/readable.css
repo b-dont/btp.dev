@@ -236,7 +236,7 @@ table:not(.exclude) td {
 
 /* Forms */
 form {
-  max-width: 60%;
+  max-width: 75%;
   margin: var(--half-line) auto;
 }
 
@@ -276,14 +276,14 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   opacity: 100%;
 }
 
-/* Some elements on smaller screens need to be wider */
+/* Styling on smaller screens */
 @media (max-width: 700px) {
   form,
   article:is(.blog-link),
   h2:is(.site-head),
   img:is(.homepic),
-  div:is(.tech-icons, .about-text, .typewriter-container, .page-content, .page-description, .latest-blog),
-  p:is(.footer-content, .page-description) {
+  div:is(.footer-nav, .footer-license, .tech-icons, .about-text, .typewriter-container, .page-content, .page-description, .latest-blog),
+  p:is(.page-description) {
     max-width: 100%;
     width: 100%;
     float: none;
@@ -292,6 +292,10 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 
   svg:is(.home-icons) {
     padding: 3px;
+  }
+
+  div:is(.footer-nav, .footer-license) {
+    text-align: center;
   }
 }
 
@@ -521,10 +525,18 @@ article h3 {
   width: 100%;
 }
 
-.footer-content {
-  max-width: 90%;
+.footer-nav {
   font-family: monospace;
   font-size: 1rem;
+  float: left;
+}
+
+.footer-license {
+  font-family: monospace;
+  font-size: 1rem;
+  float: right;
+  text-align: right;
+  padding-bottom: 25px;
 }
 
 .page-content {

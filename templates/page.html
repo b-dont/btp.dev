@@ -13,10 +13,12 @@
 
 <div class="page-content">
   {% if page.updated %}
+  <center>
     <small>
       <p class="date-stamp">
         <b>Last Updated</b> · {{ page.updated }}</small>
       </p>
+  </center>
   {% endif %}
   {{ page.content | safe }}
 
