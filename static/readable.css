@@ -269,6 +269,7 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 .button-text {
   opacity: 80%;
   text-align: left;
+  padding: 10px;
 }
 
 .button-text:hover {
