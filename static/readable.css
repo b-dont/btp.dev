@@ -354,7 +354,6 @@ textarea {
   text-transform: lowercase;
   position: absolute;
   top: 22px;
-
 }
 
 .site-header {
@@ -370,12 +369,10 @@ textarea {
 .socials {
   display: flex;
   padding: 0px;
-
 }
 
 .social-icon {
   padding: 0px 8px 0px 8px;
-  float: left;
   opacity: 50%;
 }
 
