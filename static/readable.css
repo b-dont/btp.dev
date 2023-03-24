@@ -279,8 +279,7 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 @media (max-width: 700px) {
   form,
   article:is(.blog-link),
-  h4:is(.path-header),
-  h2:is(.site-header),
+  h2:is(.site-head),
   img:is(.homepic),
   div:is(.tech-icons, .about-text, .typewriter-container, .page-content, .page-description, .latest-blog),
   p:is(.footer-content, .page-description) {
@@ -348,17 +347,11 @@ textarea {
   outline: solid 0px;
 }
 
-.path-header {
-  padding: 0px;
-  float: left;
-  text-transform: lowercase;
-  position: absolute;
-  top: 22px;
-}
-
-.site-header {
+.site-head {
   margin-bottom: 0px;
+  padding-bottom: 0px;
   text-align: left;
+  font-family: monospace;
 }
 
 .base-head {
