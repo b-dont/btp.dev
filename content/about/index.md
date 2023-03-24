@@ -8,7 +8,7 @@ Made with ![Heart](heart.svg) and ![Code](code.svg) using these awesome projects
 - Styled with [readable.css](https://readable-css.freedomtowrite.org/) by Benjamin Hollon
 - Icons from [iconify.design](https://iconify.design/)
 - System fonts with [Modern Font Stacks](https://github.com/system-fonts/modern-font-stacks)
-- Analytics by [Plausible](https://plausible.io)
+- Analytics are publicly available on [Plausible](https://plausible.io/brandont.dev)
 - Captcha by [hCaptcha](https://www.hcaptcha.com/)
 
 ### Licenses

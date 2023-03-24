@@ -367,12 +367,19 @@ textarea {
   display: inline-block;
 }
 
-.social-icon:is(:hover, :focus) {
+.footer-icon {
+  padding: 10px 10px 10px 0px;
+  color: #ABB2BF;
+  display: inline-block;
+}
+
+.social-icon:is(:hover, :focus),
+.footer-icon:is(:hover, :focus) {
    color: #61AFEF;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:not(.blog-head, .tag, .social-icon) {
+  a:not(.blog-head, .tag, .social-icon, .footer-icon) {
     text-decoration: none;
     display: inline-block;
     color: #61AFEF;
@@ -387,7 +394,7 @@ textarea {
     transition: 200ms;
   }
 
-  a:is(:hover, :focus):not(.social-icon, .blog-head, .tag)::after {
+  a:is(:hover, :focus):not(.footer-icon, .social-icon, .blog-head, .tag)::after {
     width: 100%;
   }
 
