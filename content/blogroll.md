@@ -1,6 +1,7 @@
 +++
 title = "Blogroll"
 description = "Feeds I follow, reading lists, and other cool stuff."
+updated = 2023-03-24
 +++
 
 ### Blogs & Newsletters
