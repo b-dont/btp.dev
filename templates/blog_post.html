@@ -6,10 +6,7 @@
 <h2 class="blog-title">
   {{ page.title }}
 </h2>
-
-  {{ page.content | safe }}
-</div>
-</center>
+{{ page.content | safe }}
 
 <div class="post-footer">
 <small>
@@ -36,4 +33,6 @@
 {% endif %}
 </div>
 </div>
+</br>
+</center>
 {% endblock content %}

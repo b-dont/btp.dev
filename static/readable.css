@@ -312,10 +312,11 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 }
 
 .post-footer {
-    border-top: var(--line-width) solid;
+  border-top: var(--line-width) solid;
   border-color: #383D48;
   padding-top: 15px;
-  display: block;}
+  display: block;
+}
 
 .description-container {
   text-align: center;
