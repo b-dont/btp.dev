@@ -50,7 +50,6 @@ html {
   color: var(--color);
 }
 
-footer,
 h2 {
   text-align: center;
   font-family: sans-serif;
@@ -370,11 +369,8 @@ textarea {
 
 .socials {
   display: flex;
-  float: right;
   padding: 0px;
-  position: absolute;
-  top: 48px;
-  right: 0px;
+
 }
 
 .social-icon {
@@ -534,7 +530,6 @@ article h3 {
 }
 
 .footer-content {
-  text-align: center;
   max-width: 90%;
   font-family: monospace;
   font-size: 1rem;
