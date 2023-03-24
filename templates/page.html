@@ -10,8 +10,16 @@
 <div class="page-description">
   <small>{{ page.description }}</small>
 </div>
+
 <div class="page-content">
+  {% if page.updated %}
+    <small>
+      <p class="date-stamp">
+        <b>Last Updated</b> · {{ page.updated }}</small>
+      </p>
+  {% endif %}
   {{ page.content | safe }}
+
 </div>
 </center>
 </br>
