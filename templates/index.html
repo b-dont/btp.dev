@@ -47,6 +47,7 @@
 
 <div class="latest-blog">
 <h3>Latest Blog Post</h3>
+</br>
 {% set section = get_section(path="blog/_index.md") %}
 {% set latest_post = section.pages | first %}
   <article class="blog-link">
@@ -57,7 +58,8 @@
       {% endif %}
       <small style="color: #707682"><b>Published · </b>{{ latest_post.date }}</small>
       </br>
-      {{ latest_post.description | safe }}
+      {{ latest_post.summary | safe }}
+      <a class="continue-reading" href="{{ latest_post.permalink }}#continue-reading">...Continue Reading</a>
       {% if latest_post.taxonomies %}
         </br>
         {% set map = latest_post.taxonomies %}

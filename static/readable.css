@@ -390,7 +390,7 @@ textarea {
     transition: 200ms;
   }
 
-  a:is(:hover, :focus):not(.footer-icon, .social-icon, .blog-head, .tag)::after {
+  a:is(:hover, :focus):not(.footer-icon, .social-icon, .blog-head, .tag, .continue-reading)::after {
     width: 100%;
   }
 
@@ -423,6 +423,7 @@ textarea {
     transition: color .3s ease-out;
     line-height: 0;
     margin: 3px 0 3px 0;
+    padding-bottom: 20px;
   }
   
   .blog-link::before {
@@ -447,7 +448,6 @@ textarea {
   .blog-link:hover a {
     color: #61AFEF;
   }
-  
 }
 
 /* See `config.toml` for the code syntax highlighting generated in Zola */
@@ -607,6 +607,10 @@ article h3 {
 
 .latest-container {
   min-height: 200px;
+}
+
+.continue-reading {
+  float: right;
 }
 
 .tech-icons {
