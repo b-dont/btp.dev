@@ -4,6 +4,7 @@
 <h2 class="title">
   {{ section.title }}
 </h2>
+
 <center>
 <div class="page-description">
   <small>Projects I've worked on, or am currently working on.</small>
@@ -13,9 +14,7 @@
 <div class="page-content">
 
   {% for page in paginator.pages %}
-
     <div class="project-card">
-
       <h3 class="project-title">
         <a href="{{ page.permalink }}">
           {{ page.title }}
@@ -59,9 +58,17 @@
       </span>
     {% endif %}
 
+    {% if page.extra.site %}
+      <span>
+        <a href="https://{{ page.extra.site }}" target="_blank">
+          {{ page.extra.site }}
+        </a>
+      </span>
+    {% endif %}
+
   </div>
   {% endfor %}
-</br>
+<hr>
 </div>
 </center>
 
