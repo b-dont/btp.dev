@@ -417,7 +417,8 @@ textarea {
   }
 
   .blog-link {
-    min-width: 70%;
+    min-width: 90%;
+    max-width: 90%;
     text-decoration: none;
     display: inline-block;
     position: relative;

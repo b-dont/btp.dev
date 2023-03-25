@@ -10,9 +10,7 @@ tags = [
 ]
 
 [extra]
-repositories = [
-  "https://codeberg.org/brandont/brandont.dev", 
-  "https://github.com/b-dont/brandont.dev", 
-  "https://gitlab.com/bdont/brandont.dev"
-]
+codeberg = "https://codeberg.org/brandont/brandont.dev"
+github = "https://github.com/b-dont/brandont.dev"
+gitlab = "https://gitlab.com/bdont/brandont.dev"
 +++
