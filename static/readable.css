@@ -289,10 +289,6 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
     float: none;
     padding: 0px;
   }
-
-  div:is(.footer-nav, .footer-license) {
-    text-align: center;
-  }
 }
 
 .date-stamp {
@@ -528,12 +524,14 @@ article h3 {
 .footer-nav {
   font-family: monospace;
   font-size: 1rem;
+  text-align: center;
 }
 
 .footer-license {
   font-family: monospace;
   font-size: 1rem;
   padding-bottom: 25px;
+  text-align: center;
 }
 
 .page-content {
