@@ -7,4 +7,4 @@ The site will be developed using the [Zola](https://getzola.org/) static site en
 
 Deployment is planned to be handled in [Podman](https://podman.io/); additionally, I'd like to mimic blot's "blog-in-a-folder" principle, and deploy blog posts to the site using git repositories.
 
-Badgest by [./badges](https://codeberg.org/lhinderberger/dot-slash-badges)
+Badges by [./badges](https://codeberg.org/lhinderberger/dot-slash-badges)
