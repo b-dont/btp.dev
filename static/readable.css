@@ -370,6 +370,7 @@ textarea {
 .footer-icon {
   color: #ABB2BF;
   display: inline-block;
+  padding: 10px 5px 5px 5px;
 }
 
 .social-icon:is(:hover, :focus),
@@ -526,14 +527,11 @@ article h3 {
 .footer-nav {
   font-family: monospace;
   font-size: 1rem;
-  float: left;
 }
 
 .footer-license {
   font-family: monospace;
   font-size: 1rem;
-  float: right;
-  text-align: right;
   padding-bottom: 25px;
 }
 
