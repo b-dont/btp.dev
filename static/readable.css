@@ -589,7 +589,7 @@ article h3 {
   content: '█';
   width: 0;
   display: inline-block;
-  border-left: 2px solid transparent;
+  border-left: 3px solid transparent;
 }
 
 @keyframes cursor-blink {

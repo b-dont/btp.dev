@@ -3,35 +3,37 @@
 
 <center>
 <div class="page-content">
-<h2 class="blog-title">
-  {{ page.title }}
-</h2>
-{{ page.content | safe }}
+  <h2 class="blog-title">
+    {{ page.title }}
+  </h2>
 
-<div class="post-footer">
-<small>
-  <p class="date-stamp">
-    {% if page.updated %}
-    <b>Updated</b> · {{ page.updated }} |
-    {% endif %}
-    <b>Published</b> · {{ page.date }}
-  </p>
-</small>
-<div class="tag-container">
-{% if page.taxonomies %}
-  {% set map = page.taxonomies %}
-  {% set_global tags = [] %}
+  {{ page.content | safe }}
+  
+  <div class="post-footer">
+  <small>
+    <p class="date-stamp">
+      {% if page.updated %}
+        <b>Updated</b> · {{ page.updated }} |
+      {% endif %}
+        <b>Published</b> · {{ page.date }}
+    </p>
+  </small>
+  
+  <div class="tag-container">
+  {% if page.taxonomies %}
+    {% set map = page.taxonomies %}
+    {% set_global tags = [] %}
+  
+    {% for tax, tag in map %}
+      {% set_global tags = tags | concat(with=tag) %}
+    {% endfor %}
+  
+    {% for tag in tags %}
+      <small><a href="/tags/{{ tag }}" class="tag">{{ tag }} </a></small>
+    {% endfor %}
+  {% endif %}
+  </div>
 
-  {% for tax, tag in map %}
-    {% set_global tags = tags | concat(with=tag) %}
-  {% endfor %}
-
-  {% for tag in tags %}
-    <small><a href="/tags/{{ tag }}" class="tag">{{ tag }} </a></small>
-  {% endfor %}
-
-{% endif %}
-</div>
 </div>
 </br>
 </center>
