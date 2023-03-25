@@ -1,5 +1,5 @@
 # [brandont.dev](https://brandont.dev)
-![License: GNU AGPLv3](/static/license.svg)
+[![License: GNU AGPLv3](/static/license.svg)](https://www.gnu.org/licenses/agpl-3.0.en.html)
 
 This is the public repo for my personal website, currently undergoing an entire redesign. The website will be structured with minimal, light-weight deployment and design principles, getting inspiration from [blot.im](https://blot.im), where I currently run [my blog](https://brandont.blog). 
 
