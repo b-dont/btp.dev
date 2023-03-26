@@ -33,25 +33,22 @@
           <small class="date-stamp">
             <b>Published · </b>{{ page.date }}
           </small>
-        </br>
-
-        {{ page.summary | safe }}
-        <a class="continue-reading" href="{{ page.permalink }}#continue-reading">...Continue Reading</a>
+        </p>
 
         {% if page.taxonomies %}
           </br>
-          {% set map = page.taxonomies %}
-          {% set_global tags = [] %}
-
-          {% for tax, tag in map %}
-            {% set_global tags = tags | concat(with=tag) %}
-          {% endfor %}
-          {% for tag in tags %}
+          {% for tag in page.taxonomies.tags %}
             <small>
               <a class="tag" href="/tags/{{ tag }}">{{ tag }}</a>
             </small>
           {% endfor %}
         {% endif %}
+
+        <p>
+          {{ page.summary | safe }}
+          <a class="continue-reading" href="{{ page.permalink }}#continue-reading">
+            Continue Reading
+          </a>
         </p>
 
       </article>

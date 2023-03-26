@@ -50,29 +50,34 @@
 {% set section = get_section(path="blog/_index.md") %}
 {% set latest_post = section.pages | first %}
   <article class="blog-link">
-    <h3><a class="blog-head" href="{{ latest_post.permalink }}">{{ latest_post.title }}</h3></a>
+    <h3>
+      <a class="blog-head" href="{{ latest_post.permalink }}">{{ latest_post.title }}</h3>
+    </a>
+
     <p>
       {% if latest_post.updated %}
-      <small style="color: #707682"><b>Updated · </b>{{ latest_post.updated }} | </small>
+        <small style="color: #707682"><b>Updated · </b>{{ latest_post.updated }} | </small>
       {% endif %}
-      <small style="color: #707682"><b>Published · </b>{{ latest_post.date }}</small>
+        <small style="color: #707682"><b>Published · </b>{{ latest_post.date }}</small>
       </br>
-      {{ latest_post.summary | safe }}
-      <a class="continue-reading" href="{{ latest_post.permalink }}#continue-reading">...Continue Reading</a>
+    </p>
+
       {% if latest_post.taxonomies %}
         </br>
-        {% set map = latest_post.taxonomies %}
-        {% set_global tags = [] %}
-        {% for tax, tag in map %}
-          {% set_global tags = tags | concat(with=tag) %}
-        {% endfor %}
-        {% for tag in tags %}
+        {% for tag in latest_post.taxonomies.tags %}
           <small>
-            <a class="tag" href="/tags/{{ tag }}">{{ tag }}</a>
+            <a class="tag" href="/tags/{{ tag }}">{{ tag }}</a></span>
           </small>
         {% endfor %}
       {% endif %}
+
+    <p>
+      {{ latest_post.summary | safe }}
+      <a class="continue-reading" href="{{ latest_post.permalink }}#continue-reading">
+        Continue Reading
+      </a>
     </p>
+
   </article>
 </div>
 </center>

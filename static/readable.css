@@ -592,11 +592,6 @@ article h3 {
   border-left: 3px solid transparent;
 }
 
-@keyframes cursor-blink {
-  from {opacity: 1}
-  to {opacity: 0}
-}
-
 .home-feeds {
   min-height: 250px;
 }
@@ -611,6 +606,7 @@ article h3 {
 
 .continue-reading {
   float: right;
+  margin-bottom: 20px;
 }
 
 .tech-icons {
