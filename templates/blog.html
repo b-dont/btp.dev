@@ -45,10 +45,14 @@
         {% endif %}
 
         <p>
+        {% if page.summary %}
           {{ page.summary | safe }}
           <a class="continue-reading" href="{{ page.permalink }}#continue-reading">
             Continue Reading
           </a>
+        {% else %}
+          {{ page.description }}
+        {% endif %}
         </p>
 
       </article>

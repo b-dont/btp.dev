@@ -366,7 +366,7 @@ textarea {
 .footer-icon {
   color: #ABB2BF;
   display: inline-block;
-  padding: 10px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
 }
 
 .social-icon:is(:hover, :focus),
