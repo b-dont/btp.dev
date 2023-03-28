@@ -13,4 +13,5 @@ tags = [
 codeberg = "https://codeberg.org/brandont/brandont.dev"
 github = "https://github.com/b-dont/brandont.dev"
 gitlab = "https://gitlab.com/bdont/brandont.dev"
+site = "fosstodon.org/@brandont"
 +++
