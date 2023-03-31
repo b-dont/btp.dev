@@ -1,3 +1,3 @@
-FROM ghcr.io/getzola/zola:v0.17.2 as zola
+FROM nginx
 
-ENV RUST_BACKTRACE=full
+
