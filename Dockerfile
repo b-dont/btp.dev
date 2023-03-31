@@ -1,10 +1,10 @@
 FROM docker.io/nginx
 
+RUN apt update && apt upgrade
+
 VOLUME ["/etc/nginx", "/etc/letsencrypt", "/var/www/brandont.dev/public"]
 
-RUN apt update && apt upgrade && \
-apt install slirp4netns && \
-chown -R nginx:nginx /etc/letsencrypt && \
+RUN chown -R nginx:nginx /etc/letsencrypt && \
 chmod -R 700 /etc/letsencrypt && \
 chown -R nginx:nginx /etc/nginx && \
 chmod -R 700 /etc/nginx && \
