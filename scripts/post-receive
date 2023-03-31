@@ -6,3 +6,6 @@ foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C /var/www/brandont
 
 cd /var/www/brandont.dev-prod                                                                                                               │
 git --git-dir=/var/www/brandont.dev-prod/.git pull prod main 
+
+# Sync the bare repo's git hooks
+rsync -avt $PWD/scripts/post-receive /var/www/bare-brandont.dev-prod/hooks/post-receive
