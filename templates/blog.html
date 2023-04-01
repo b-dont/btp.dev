@@ -22,7 +22,7 @@
   {% for page in paginator.pages %}
     {% if page.title != "Archive" %}
       <article class="blog-link">
-        <h3><a class="blog-head" href="http://{{ page.permalink }}">{{ page.title }}</a></h3>
+        <h3><a class="blog-head" href="/{{ page.slug }}">{{ page.title }}</a></h3>
 
         <p>
         {% if page.updated %}
@@ -47,7 +47,7 @@
         <p>
         {% if page.summary %}
           {{ page.summary | safe }}
-          <a class="continue-reading" href="http://{{ page.permalink }}#continue-reading">
+          <a class="continue-reading" href="/{{ page.slug }}#continue-reading">
             Continue Reading
           </a>
         {% else %}
