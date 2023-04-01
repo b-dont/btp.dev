@@ -51,7 +51,7 @@
 {% set latest_post = section.pages | first %}
   <article class="blog-link">
     <h3>
-      <a class="blog-head" href="http://{{ latest_post.permalink }}">{{ latest_post.title }}</h3>
+      <a class="blog-head" href="/{{ latest_post.slug }}">{{ latest_post.title }}</h3>
     </a>
 
     <p>
