@@ -51,7 +51,7 @@
 {% set latest_post = section.pages | first %}
   <article class="blog-link">
     <h3>
-      <a class="blog-head" href="/{{ latest_post.slug }}">{{ latest_post.title }}</h3>
+      <a class="blog-head" href="{{ latest_post.slug }}">{{ latest_post.title }}</h3>
     </a>
 
     <p>
@@ -73,7 +73,7 @@
 
     <p>
       {{ latest_post.summary | safe }}
-      <a class="continue-reading" href="http://{{ latest_post.permalink }}#continue-reading">
+      <a class="continue-reading" href="{{ latest_post.slug }}#continue-reading">
         Continue Reading
       </a>
     </p>
