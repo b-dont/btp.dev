@@ -16,7 +16,7 @@
   {% for page in paginator.pages %}
     <div class="project-card">
       <h3 class="project-title">
-        <a href="https://{{ page.permalink }}">
+        <a href="http://{{ page.permalink }}">
           {{ page.title }}
         </a>
       </h2>
@@ -30,7 +30,7 @@
 
     {% if page.extra.site %}
       <span>
-        <a href="https://{{ page.extra.site }}" target="_blank">
+        <a href="http://{{ page.extra.site }}" target="_blank">
           {{ page.extra.site }}
         </a>
       </span>
