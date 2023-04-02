@@ -2,15 +2,11 @@
 base_url = "brandont.dev"
 title = "brandont.dev"
 description = "Brandon's personal website. Blogs, projects, and more."
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
-
 default_language = "en"
-
-# Generate RSS feed
 generate_feed = true
 feed_filename="rss.xml"
+ignored_content = ["*.sh"]
 
 taxonomies = [
   { name = "tags", render = true },
