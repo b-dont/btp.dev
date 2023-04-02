@@ -13,7 +13,9 @@
 <!-- Paginated Project List -->
 <div class="page-content">
 
+  <ul>
   {% for page in paginator.pages %}
+  <li>
     <div class="project-card">
       <h3 class="project-title">
         <a href="/{{ page.path }}">
@@ -68,8 +70,9 @@
     {% endif %}
 
   </div>
+  </li>
   {% endfor %}
-<hr>
+</ul>
 </div>
 </center>
 
