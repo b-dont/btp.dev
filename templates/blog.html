@@ -51,7 +51,7 @@
         <p>
         {% if page.summary %}
           {{ page.summary | safe }}
-          <a class="continue-reading" href="/{{ page.path }}#continue-reading">
+          <a class="continue-reading" href="{{ page.permalink }}#continue-reading">
             Continue Reading
           </a>
         {% else %}
