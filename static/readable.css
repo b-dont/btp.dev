@@ -302,7 +302,7 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 @media (max-width: 700px) {
   form,
   article:is(.blog-link),
-  h2:is(.site-head),
+  h1:is(.site-head),
   img:is(.homepic),
   div:is(.footer-nav, .footer-license, .tech-icons, .about-text, .typewriter-container, .page-content, .page-description, .latest-blog),
   p:is(.page-description) {
@@ -397,7 +397,7 @@ textarea {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:not(.blog-head, .tag, .social-icon, .footer-icon) {
+  a:not(.blog-head, .tag, .social-icon, .footer-icon, .site-head-a) {
     text-decoration: none;
     display: inline-block;
     color: var(--link-color);
@@ -412,7 +412,7 @@ textarea {
     transition: 200ms;
   }
 
-  a:is(:hover, :focus):not(.footer-icon, .social-icon, .blog-head, .tag, .continue-reading)::after {
+  a:is(:hover, :focus):not(.footer-icon, .social-icon, .blog-head, .tag, .continue-reading, .site-head-a)::after {
     width: 100%;
   }
 
@@ -469,6 +469,11 @@ textarea {
   
   .blog-link:hover a {
     color: var(--link-color);
+  }
+
+  .site-head-a {
+    color: var(--color);
+    text-decoration: none;
   }
 }
 
