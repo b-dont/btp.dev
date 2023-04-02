@@ -17,9 +17,9 @@
     {% for post in posts %}
       {% if post.title != "Archive" %}
         {% if post.updated %}
-          <li><a href="{{ post.permalink }}">{{ post.title }}</a> · {{ post.date }} · Updated {{ post.updated }}</li>
+          <li><a href="{{ post.path }}">{{ post.title }}</a> · {{ post.date }} · Updated {{ post.updated }}</li>
         {% else %}
-          <li><a href="{{ post.permalink }}">{{ post.title }}</a> · {{ post.date }}</li>
+          <li><a href="{{ post.path }}">{{ post.title }}</a> · {{ post.date }}</li>
         {% endif %}
       {% endif %}
     {% endfor %}
