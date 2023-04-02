@@ -6,6 +6,14 @@
 
 <center>
 <div class="page-content">
+<h2>Projects</h2>
+<ul>
+{% for page in term.pages %}
+  {% if page.path is containing("projects") %}
+    <li><a href="{{ page.path }}">{{ page.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
 
 <h2>Blog Posts</h2>
   {% for year, posts in term.pages | group_by(attribute="year") %}
