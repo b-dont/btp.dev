@@ -10,7 +10,7 @@
 <ul>
 {% for page in term.pages %}
   {% if page.path is containing("projects") %}
-    <li><a href="{{ page.path }}">{{ page.title }}</a></li>
+    <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
@@ -20,7 +20,7 @@
   <b>{{ year }}</b>
   <ul>
     {% for post in posts %}
-      <li><a href="{{ post.path }}">{{ post.title }}</a> - {{ post.date }}</li>
+      <li><a href="{{ post.permalink }}">{{ post.title }}</a> - {{ post.date }}</li>
     {% endfor %}
   </ul>
   {% endfor %}

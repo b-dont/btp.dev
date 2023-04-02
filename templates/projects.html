@@ -18,7 +18,7 @@
   <li>
     <div class="project-card">
       <h3 class="project-title">
-        <a href="/{{ page.path }}">
+        <a href="{{ page.permalink }}">
           {{ page.title }}
         </a>
       </h2>
@@ -32,7 +32,7 @@
 
     {% if page.extra.site %}
       <span>
-        <a href="http://{{ page.extra.site }}" target="_blank">
+        <a href="https://{{ page.extra.site }}" target="_blank">
           {{ page.extra.site }}
         </a>
       </span>
