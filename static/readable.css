@@ -332,6 +332,11 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 
 .blog-title {
   text-align: left;
+  margin-bottom: 0px;
+}
+
+.blog-description {
+  color: var(--secondary-color);
 }
 
 .post-footer {
