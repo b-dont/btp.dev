@@ -98,6 +98,10 @@ ol {
   max-width: 75%;
 }
 
+img {
+  max-width: 100%;
+}
+
 figure:not(.exclude) {
   text-align: center;
 }
