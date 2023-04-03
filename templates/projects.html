@@ -17,9 +17,7 @@
 <!-- Paginated Project List -->
 <div class="page-content">
 
-  <ul>
   {% for page in paginator.pages %}
-  <li>
     <div class="project-card">
       <h3 class="project-title">
         <a href="{{ page.permalink }}">
@@ -74,9 +72,7 @@
     {% endif %}
 
   </div>
-  </li>
   {% endfor %}
-</ul>
 </div>
 </center>
 
