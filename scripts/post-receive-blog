@@ -7,4 +7,5 @@ foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C /var/www/brandont
 cd /var/www/brandont.dev-prod/content/blog
 git --git-dir=/var/www/brandont.dev-prod/content/blog/.git pull prod main 
 
-/var/www/brandont.dev-prod/scripts/build-zola.sh
+cd /var/www/brandont.dev-prod/
+./scripts/build-zola.sh
