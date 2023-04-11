@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -euf 
-
 # When working on a outside repo from the hook, unset git env variables
 local_desc=$(git describe)
 foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C /var/www/brandont.dev-prod/content/blog/.git describe)
