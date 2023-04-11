@@ -1,4 +1,0 @@
-#!/bin/bash
-
-cd /var/www/brandont.dev-prod/content/blog
-git --git-dir=/var/www/brandont.dev-prod/content/blog/.git pull origin main

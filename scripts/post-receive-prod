@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -euf 
+
+# When working on a outside repo from the hook, unset git env variables
+local_desc=$(git describe)
+foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C /var/www/brandont.dev-prod/content/blog/.git describe)
+
+# Pull the production main branch for the blog repo
+cd /var/www/brandont.dev-prod/content/blog
+git --git-dir=/var/www/brandont.dev-prod/content/blog/.git pull prod main
+
+local_desc=$(git describe)
+foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C /var/www/brandont.dev-prod/.git describe)
+
+# Pull the production main branch for the website repo
+cd /var/www/brandont.dev-prod/
+git --git-dir=/var/www/brandont.dev-prod/.git pull prod main 
+
+# Re-build the website
+./scripts/build-zola.sh
