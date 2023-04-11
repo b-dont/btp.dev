@@ -20,9 +20,7 @@
   {% for page in paginator.pages %}
     <div class="project-card">
       <h3 class="project-title">
-        <a href="{{ page.permalink }}">
-          {{ page.title }}
-        </a>
+        {{ page.title }}
       </h2>
 
     {% for tag in page.taxonomies.tags %}
