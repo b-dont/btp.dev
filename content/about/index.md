@@ -11,6 +11,10 @@ Made with ![Heart](heart.svg) and ![Code](code.svg) using these awesome projects
 - Analytics are publicly available on [Plausible](https://plausible.io/brandont.dev)
 - Captcha by [hCaptcha](https://www.hcaptcha.com/)
 
+Proud member of the [512kb.club](https://512kb.club) Orange Team.
+
+![a proud member of the orange team of 512KB club](orange-team.svg)
+
 ### Licenses
 
 The code of this site is free and [open-source](https://codeberg.org/brandont/brandont.dev) and is licensed under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) license.
