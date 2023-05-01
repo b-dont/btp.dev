@@ -7,4 +7,6 @@ tags = ["python", "django", "webdev", "ttrpg"]
 
 [extra]
 codeberg = "https://codeberg.org/Worldmaster/worldmaster"
+gitlab = "https://gitlab.com/worldmaster-ttrpg/worldmaster"
+github = "https://github.com/WorldMaster-ttrpg/WorldMaster"
 +++
