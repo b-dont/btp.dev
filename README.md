@@ -1,10 +1,15 @@
 # [brandont.dev](https://brandont.dev)
-[![License: GNU AGPLv3](/static/license.svg)](https://www.gnu.org/licenses/agpl-3.0.en.html)
+[![License: GNU AGPLv3](.repo/license.svg)](https://www.gnu.org/licenses/agpl-3.0.en.html)
 
-This is the public repo for my personal website, currently undergoing an entire redesign. The website will be structured with minimal, light-weight deployment and design principles, getting inspiration from [blot.im](https://blot.im), where I currently run [my blog](https://brandont.blog). 
+This is the public repo for my personal website [brandont.dev](https://brandont.dev). This is where I host my blog, post my favorite personal projects, and list my other goings-on around the internet.
 
-The site will be developed using the [Zola](https://getzola.org/) static site engine, and the [readable.css](https://readable-css.freedomtowrite.org/) framework. 
-
-Deployment is planned to be handled in [Podman](https://podman.io/); additionally, I'd like to mimic blot's "blog-in-a-folder" principle, and deploy blog posts to the site using git repositories.
+### Credits
+Made with ![Heart](.repo/heart.svg) and ![Code](.repo/code.svg) using these awesome projects.  
+- Powered by [Zola](https://getzola.org)
+- Styled with [readable.css](https://readable-css.freedomtowrite.org/) by Benjamin Hollon
+- Icons from [iconify.design](https://iconify.design/)
+- System fonts with [Modern Font Stacks](https://github.com/system-fonts/modern-font-stacks)
+- Analytics are publicly available on [Plausible](https://plausible.io/brandont.dev)
+- Captcha by [hCaptcha](https://www.hcaptcha.com/)
 
 Badges by [./badges](https://codeberg.org/lhinderberger/dot-slash-badges)
