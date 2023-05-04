@@ -26,6 +26,7 @@ description = "Blogs, podcasts, and newsletters I follow."
 - [Schneier on Security](https://www.schneier.com/)
 - [Swords](https://swordscomic.com/comic/)
 - [The Tolkien Society](https://www.tolkiensociety.org/)
+- [tty1.blog](https://tty1.blog/feed/)
 - [Vintage Computing and Gaming](https://www.vintagecomputing.com/)
 - [Web3 is Going Just Great](https://web3isgoinggreat.com/)
 - [Wyrd Science](https://www.wyrdscience.online/)
