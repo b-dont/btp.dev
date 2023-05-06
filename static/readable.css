@@ -361,6 +361,25 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   width: 47.5%
 }
 
+.search-bar-container {
+  max-width: 100%;
+}
+
+.search-button {
+  max-width: 20%;
+}
+
+.is-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 input:focus {
   outline: solid 0px;
 }
