@@ -15,7 +15,7 @@ Proud member of the [512kb.club](https://512kb.club) Orange Team.
 
 ![a proud member of the orange team of 512KB club](orange-team.svg)
 
-Credit to [Kev Quirk](https://https://kevquirk.com/) for the original page content here, and on the search page :)
+Credit to [Kev Quirk](https://kevquirk.com/) for the original page content [here](https://kevquirk.com/privacy), and on the [search](https://kevquirk.com/search) page :)
 
 ### Licenses
 The code of this site is free and [open-source](https://codeberg.org/brandont/brandont.dev) and is licensed under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) license.
