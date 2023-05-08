@@ -684,6 +684,7 @@ article h3 {
 .projects {
   position: relative;
   min-height: 975px;
+  margin-top: 10px;
 }
 
 .project-link-icons {
