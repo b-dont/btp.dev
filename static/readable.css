@@ -579,6 +579,7 @@ article h3 {
   font-family: monospace;
   font-size: 1rem;
   text-align: center;
+  position: relative;
 }
 
 .footer-license {
@@ -591,6 +592,7 @@ article h3 {
 .page-content {
   text-align: left;
   max-width: 80%;
+  min-height: 100%;
   padding-top: 10px;
 }
 
@@ -667,14 +669,37 @@ article h3 {
 }
 
 .project-card {
+  position: relative;
   padding: 10px;
+  width: 42%;
+  height: 250px;
+  display: block;
+  overflow: hidden;
+  float: left;
+  margin: 5px;
+  padding: 20px;
+  background-color: var(--secondary-background-color);
+}
+
+.projects {
+  position: relative;
+  min-height: 975px;
+}
+
+.project-link-icons {
+  position: absolute;
+  bottom: 0;
 }
 
 .project-title {
   text-align: left;
+  margin-top: 0px;
+  padding: 0px 0px 3px 0;
+  color: var(--link-color)
 }
 
 .project-description {
   text-align: left;
   margin-top: 5px;
+  margin-bottom: 10px;
 }

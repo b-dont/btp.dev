@@ -13,20 +13,22 @@
 <div class="page-description">
   <small>{{ page.description }}</small>
 </div>
+
+<div class="page-content">
+  <form class="search-form" method="get" action="https://duckduckgo.com/?q=" target="_blank">
+  
+    <div class="search-container"
+      <div class="search-bar-container">
+        <input type="hidden" name="sites" value="brandont.dev">
+        <input required id="search" class="search-bar" type="text" name="q" placeholder="Search this site on DuckDuckGo">
+      </div>
+  
+      <div class="search-button-container">
+        <input id="submit" class="search-button" type="submit" name="submit" value="Search">
+      </div>
+  
+    </div>
+  </form>
+</div>
 </center>
-
-<form class="search-form" method="get" action="https://duckduckgo.com/?q=" target="_blank">
-
-  <div class="search-container"
-    <div class="search-bar-container">
-      <input type="hidden" name="sites" value="brandont.dev">
-      <input required id="search" class="search-bar" type="text" name="q" placeholder="Search this site on DuckDuckGo">
-    </div>
-
-    <div class="search-button-container">
-      <input id="submit" class="search-button" type="submit" name="submit" value="Search">
-    </div>
-
-  </div>
-</form>
 {% endblock content %}
