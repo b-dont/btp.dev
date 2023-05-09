@@ -308,12 +308,13 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   article:is(.blog-link),
   h1:is(.site-head),
   img:is(.homepic),
-  div:is(.footer-nav, .footer-license, .tech-icons, .about-container, .typewriter-container, .page-content, .page-description, .latest-blog),
+  div:is(.footer-nav, .footer-license, .tech-icons, .about-container, .typewriter-container, .page-content, .page-description, .latest-blog, .project-card),
   p:is(.page-description) {
     max-width: 100%;
     width: 100%;
     float: none;
     padding: 0px;
+    background-color: transparent;
   }
 }
 
