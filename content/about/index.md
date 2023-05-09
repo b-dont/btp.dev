@@ -17,6 +17,7 @@ Proud member of the [512kb.club](https://512kb.club) Orange Team.
 
 Credit to [Kev Quirk](https://kevquirk.com/) for the original page content [here](https://kevquirk.com/privacy), and on the [search](https://kevquirk.com/search) page :)
 
+---
 ### Licenses
 The code of this site is free and [open-source](https://codeberg.org/brandont/brandont.dev) and is licensed under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) license.
 The content of this site is released under the Creative Commons [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0) license unless posted otherwise.
@@ -27,16 +28,17 @@ The content of this site is released under the Creative Commons [Attribution-Non
 ![Share Alike](creative-commons-sharealike.svg)
 
 Copyright ⓒ  2023 Brandon Phillips
+
 #### You are free to:
 - **Share** — copy and redistribute the material in any medium or format.
 - **Adapt** — remix, transform, and build upon the material.
-The licensor cannot revoke these freedoms as long as you follow the license terms.
-
 #### Under the following terms:
 - **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 - **NonCommercial** — You may not use the material for commercial purposes.
 - **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 - **No additional restrictions** — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
 
 #### Attribution Example
 An acceptable attribution that complies with the license would be something similar to the following:
