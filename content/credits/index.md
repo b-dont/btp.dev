@@ -1,6 +1,6 @@
 +++
-title = "About"
-description = "Licenses and Credits."
+title = "Credits & Licenses"
+description = "Third-party credits, licenses, and terms of use."
 +++
 ### Credits
 Made with ![Heart](heart.svg) and ![Code](code.svg) using these awesome projects.  
