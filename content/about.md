@@ -10,7 +10,7 @@ Technology has been a passion of mine since I was a kid and could use the family
 Now, I spend my time continuing to learn programming in various languages, and honing my skills in various technologies and frameworks. I've begun working on DevOps projects at my new job, and have grown interested in the field.
 
 ### I Have a _Lot_ of Hobbies
-I usually spend my free time programming, lurking the internet (I'm on a lot of sites, but rarely post outside of [Mastodon](https://fosstodon.org/@brandont)), and writting. At the moment, my writting is limited to occasional blog posts on this site, which I also cross-post to other sites, and TTRPG content for my playgroup that meets every Saturday (mostly..).
+I usually spend my free time programming, lurking the internet (I'm on a lot of sites, but rarely post outside of [Mastodon](https://fosstodon.org/@btp)), and writting. At the moment, my writting is limited to occasional blog posts on this site, which I also cross-post to other sites, and TTRPG content for my playgroup that meets every Saturday (mostly..).
 
 Some other obsessions I have:
 - Magic: The Gathering
