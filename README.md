@@ -17,3 +17,5 @@ Badges by [./badges](https://codeberg.org/lhinderberger/dot-slash-badges)
 Proud member of the [512kb.club](https://512kb.club) Orange Team.
 
 ![a proud member of the orange team of 512KB club](.repo/orange-team.svg)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B2CYZX9) [![liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/brandont/donate)
