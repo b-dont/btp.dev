@@ -20,6 +20,19 @@ Some other obsessions I have:
 - Lots of video games
 - Not finishing projects
 
+### Socials
+Find me on these other sites.
+
+[![Fosstodon](mastodon.svg)](https://fosstodon.org/@btp/)
+[![Hashnode](hashnode.svg)](https://hashnode.brandont.dev/)
+[![LinkedIn](linkedin.svg)](https://https://www.linkedin.com/in/bphillips-dev/)
+[![Polywork](polywork.svg)](https://www.polywork.com/brandont/)
+[![dev.to](dev.svg)](https://dev.to/btp/)
+[![Matrix](matrix.svg)](https://matrix.to/#/@brandon.exe:matrix.org)
+[![Codeberg](codeberg.svg)](https://codeberg.org/btp)
+[![GitHub](github.svg)](https://github.com/b-dont)
+[![Gitlab](gitlab.svg)](https://gitlab.com/bdont)
+
 ### Support
 If you'd like to support what I do online, and the content I create, then you can do so on [Ko-fi](https://ko-fi.com/brandont) or [Liberapay](https://liberapay.com/brandont/), or just subscribe to my [feed](https://brandont.dev/atom.xml) here on the site and share it with your friends. You can can also visit my [contact page](https://brandont.dev/contact) and find my various social links, and follow me there. 
 
