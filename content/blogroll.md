@@ -5,6 +5,7 @@ description = "Blogs, podcasts, and newsletters I follow."
 
 ### Blogs
 - [Amber Herbert](https://amberherbert.com/writing-journey/)
+- [Amir Alesheikh](https://www.amirography.com/)
 - [Lukas Barth](https://www.lukas-barth.net/blog/)
 - [bt.ht](https://bt.ht/)
 - [Computer Chronicles Revisited](https://smoliva.blog/)
