@@ -23,17 +23,18 @@ Some other obsessions I have:
 ### Socials
 Find me on these other sites.
 
-[![Fosstodon](mastodon.svg)](https://fosstodon.org/@btp/)
-[![Hashnode](hashnode.svg)](https://hashnode.brandont.dev/)
-[![LinkedIn](linkedin.svg)](https://https://www.linkedin.com/in/bphillips-dev/)
-[![Polywork](polywork.svg)](https://www.polywork.com/brandont/)
-[![dev.to](dev.svg)](https://dev.to/btp/)
-[![Matrix](matrix.svg)](https://matrix.to/#/@brandon.exe:matrix.org)
-[![Codeberg](codeberg.svg)](https://codeberg.org/btp)
-[![GitHub](github.svg)](https://github.com/b-dont)
-[![Gitlab](gitlab.svg)](https://gitlab.com/bdont)
+{{ icon_link(class="social-icon", alt="Fosstodon", src="mastodon.svg",link="https://fosstodon.org/@btp") }}
+{{ icon_link(class="social-icon", alt="Hashnode", src="hashnode.svg", link="https://hashnode.brandont.dev/") }}
+{{ icon_link(class="social-icon", alt="LinkedIn", src="linkedin.svg", link="https://https://www.linkedin.com/in/bphillips-dev/") }}
+{{ icon_link(class="social-icon", alt="Polywork", src="polywork.svg", link="https://www.polywork.com/brandont/") }}
+{{ icon_link(class="social-icon", alt="Dev.to", src="dev.svg", link="https://dev.to/btp/") }}
+{{ icon_link(class="social-icon", alt="Matrix", src="matrix.svg", link="https://matrix.to/#/@brandon.exe:matrix.org") }}
+{{ icon_link(class="social-icon", alt="Codeberg", src="codeberg.svg", link="https://codeberg.org/btp") }}
+{{ icon_link(class="social-icon", alt="Github", src="github.svg", link="https://github.com/b-dont") }}
+{{ icon_link(class="social-icon", alt="Gitlab", src="gitlab.svg", link="https://gitlab.com/bdont") }}
 
 ### Support
 If you'd like to support what I do online, and the content I create, then you can do so on [Ko-fi](https://ko-fi.com/brandont) or [Liberapay](https://liberapay.com/brandont/), or just subscribe to my [feed](https://brandont.dev/atom.xml) here on the site and share it with your friends. You can can also visit my [contact page](https://brandont.dev/contact) and find my various social links, and follow me there. 
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B2CYZX9) [![liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/brandont/donate)
+{{ icon_link(class="social-icon", alt="ko-fi", src="https://ko-fi.com/img/githubbutton_sm.svg", link="https://ko-fi.com/B0B2CYZX9") }}
+{{ icon_link(class="social-icon", alt="Liberapay", src="https://liberapay.com/assets/widgets/donate.svg", link="https://liberapay.com/brandont/donate") }}
