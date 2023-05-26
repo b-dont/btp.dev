@@ -424,7 +424,7 @@ textarea {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:not(.blog-head, .tag, .social-icon, .footer-icon, .site-head-a) {
+  a:not(.blog-head, .tag, .footer-icon, .site-head-a) {
     text-decoration: none;
     display: inline-block;
     color: var(--link-color);
