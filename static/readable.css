@@ -602,6 +602,7 @@ article h3 {
 
 .about-container {
   padding-top: 10px;
+  margin-top: 15px;
   min-height: 350px;
   max-width: 75%;
 }
