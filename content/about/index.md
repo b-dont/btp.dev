@@ -2,12 +2,31 @@
 title = "About Me"
 description = "Read a little about who I am and what I do."
 +++
+{{ image(class="homepic", src="brandon.png", alt="Bearded white guy wearing glasses and a wide-brim hat.", title="Me, lookin' sharp.") }}
 ### Hi, I'm Brandon
 Welcome to my website! I'm a systems administrator and devops rookie from Colorado Springs, CO. 
 
 Technology has been a passion of mine since I was a kid and could use the family computer, and in the Summer of 2020 I decided to pursue that passion as a career. I started learning to program and build my skills as a tech enthusiast, and it all payed off in the Winter of 2021 when I landed my first tech job as a systems administrator.
 
 Now, I spend my time continuing to learn programming in various languages, and honing my skills in various technologies and frameworks. I've begun working on DevOps projects at my new job, and have grown interested in the field.
+
+**Some Stuff I Work With**
+
+{{ icon(class="home-icons", title="Python", src="python.svg", alt="Python") }}
+{{ icon(class="home-icons", title="Bash", src="bash.svg", alt="Bash") }}
+{{ icon(class="home-icons", title="Django", src="django.svg", alt="Django") }}
+{{ icon(class="home-icons", title="Rust", src="rust.svg", alt="Rust") }}
+{{ icon(class="home-icons", title="PowerShell", src="powershell.svg", alt="PowerShell") }}
+{{ icon(class="home-icons", title="WordPress", src="wordpress.svg", alt="WordPress") }}
+{{ icon(class="home-icons", title="Lua", src="lua.svg", alt="Lua") }}
+{{ icon(class="home-icons", title="Git", src="git.svg", alt="Git") }}
+{{ icon(class="home-icons", title="C", src="c.svg", alt="C") }}
+{{ icon(class="home-icons", title="C++", src="cpp.svg", alt="C++") }}
+{{ icon(class="home-icons", title="Perl", src="perl.svg", alt="Perl") }}
+{{ icon(class="home-icons", title="Sqlite", src="sqlite.svg", alt="Sqlite") }}
+{{ icon(class="home-icons", title="Podman", src="podman.svg", alt="Podman") }}
+{{ icon(class="home-icons", title="Linux", src="linux.svg", alt="Linux") }}
+{{ icon(class="home-icons", title="Docker", src="docker.svg", alt="Docker") }}
 
 ### I Have a _Lot_ of Hobbies
 I usually spend my free time programming, lurking the internet (I'm on a lot of sites, but rarely post outside of [Mastodon](https://fosstodon.org/@btp)), and writting. At the moment, my writting is limited to occasional blog posts on this site, which I also cross-post to other sites, and TTRPG content for my playgroup that meets every Saturday (mostly..).
