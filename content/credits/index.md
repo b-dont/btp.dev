@@ -11,7 +11,7 @@ Made with ![Heart](heart.svg) and ![Code](code.svg) using these awesome projects
 - Analytics are publicly available on [Plausible](https://plausible.io/brandont.dev)
 - Captcha by [hCaptcha](https://www.hcaptcha.com/)
 
-Proud member of the [512kb.club](https://512kb.club) Orange Team.
+Proud member of the [512kb.club](https://512kb.club) Green Team.
 
 ![a proud member of the green team of the 512KB club](green-team.svg)
 

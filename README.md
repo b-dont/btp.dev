@@ -14,7 +14,7 @@ Made with ![Heart](.repo/heart.svg) and ![Code](.repo/code.svg) using these awes
 
 Badges by [./badges](https://codeberg.org/lhinderberger/dot-slash-badges)
 
-Proud member of the [512kb.club](https://512kb.club) Orange Team.
+Proud member of the [512kb.club](https://512kb.club) Green Team.
 
 ![a proud member of the green team of the 512KB club](.repo/green-team.svg)
 
