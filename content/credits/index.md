@@ -13,7 +13,7 @@ Made with ![Heart](heart.svg) and ![Code](code.svg) using these awesome projects
 
 Proud member of the [512kb.club](https://512kb.club) Orange Team.
 
-![a proud member of the orange team of 512KB club](orange-team.svg)
+![a proud member of the green team of the 512KB club](green-team.svg)
 
 Credit to [Kev Quirk](https://kevquirk.com/) for the original page content [here](https://kevquirk.com/privacy), and on the [search](https://kevquirk.com/search) page :)
 
