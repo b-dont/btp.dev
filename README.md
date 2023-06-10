@@ -3,6 +3,8 @@
 
 This is the public repo for my personal website [brandont.dev](https://brandont.dev). This is where I host my blog, post my favorite personal projects, and list my other goings-on around the internet.
 
+If you'd like to fork this site and develop from that, then just fork the repo, install [Zola](https://getzola.org/) and run `zola serve` from the root directory. Then, navigate to `http://127.0.0.1:1111/` to see the static site. See the [Zola docs](https://www.getzola.org/documentation/getting-started/overview/) for more info.
+
 ### Credits
 Made with ![Heart](.repo/heart.svg) and ![Code](.repo/code.svg) using these awesome projects.  
 - Powered by [Zola](https://getzola.org)
