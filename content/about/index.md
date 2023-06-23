@@ -17,13 +17,11 @@ Now, I spend my time continuing to learn programming in various languages, and h
 {{ icon(class="home-icons", title="Django", src="django.svg", alt="Django") }}
 {{ icon(class="home-icons", title="Rust", src="rust.svg", alt="Rust") }}
 {{ icon(class="home-icons", title="PowerShell", src="powershell.svg", alt="PowerShell") }}
-
 {{ icon(class="home-icons", title="WordPress", src="wordpress.svg", alt="WordPress") }}
 {{ icon(class="home-icons", title="Lua", src="lua.svg", alt="Lua") }}
 {{ icon(class="home-icons", title="Git", src="git.svg", alt="Git") }}
 {{ icon(class="home-icons", title="C", src="c.svg", alt="C") }}
 {{ icon(class="home-icons", title="C++", src="cpp.svg", alt="C++") }}
-
 {{ icon(class="home-icons", title="Perl", src="perl.svg", alt="Perl") }}
 {{ icon(class="home-icons", title="Sqlite", src="sqlite.svg", alt="Sqlite") }}
 {{ icon(class="home-icons", title="Podman", src="podman.svg", alt="Podman") }}
@@ -54,7 +52,7 @@ Find me on these other sites.
 {{ icon_link(class="social-icon", alt="Codeberg", src="codeberg.svg", link="https://codeberg.org/btp") }}
 {{ icon_link(class="social-icon", alt="Github", src="github.svg", link="https://github.com/b-dont") }}
 {{ icon_link(class="social-icon", alt="Gitlab", src="gitlab.svg", link="https://gitlab.com/bdont") }}
-{{ icon_link(class="social-icon", alt="Keyoxide", src="keyoxide.svg", link="https://keyoxide.org/btp@brandont.dev") }}
+{{ icon_link(class="social-icon", alt="SpaceHey", src="spacehey.svg", link="https://spacehey.com/btp") }}
 
 ### Support
 If you'd like to support what I do online, and the content I create, then you can do so on [Ko-fi](https://ko-fi.com/brandont) or [Liberapay](https://liberapay.com/brandont/), or just subscribe to my [feed](https://brandont.dev/atom.xml) here on the site and share it with your friends. You can can also visit my [contact page](https://brandont.dev/contact) and find my various social links, and follow me there. 
