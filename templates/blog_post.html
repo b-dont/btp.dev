@@ -12,9 +12,7 @@
   </h2>
   <small class="blog-description">{{ page.description }}</small>
 
-  {{ page.content | safe }}
-  
-  <div class="post-footer">
+  <div class="post-dates">
   <small>
     <p class="date-stamp">
       {% if page.updated %}
@@ -39,6 +37,8 @@
   {% endif %}
   </div>
 
+  {{ page.content | safe }}
+  
 </div>
 </br>
 </center>
