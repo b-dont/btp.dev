@@ -10,17 +10,21 @@
   <h2 class="blog-title">
     {{ page.title }}
   </h2>
-  <small class="blog-description">{{ page.description }}</small>
+
+  <small class="blog-description">
+    {{ page.description }}
+  </small>
 
   <div class="post-dates">
-  <small>
-    <p class="date-stamp">
-      {% if page.updated %}
-        <b>Updated</b> · {{ page.updated }} |
-      {% endif %}
-        <b>Published</b> · {{ page.date }}
-    </p>
-  </small>
+    <small>
+      <p class="date-stamp">
+        {% if page.updated %}
+          <b>Updated</b> · {{ page.updated }} |
+        {% endif %}
+          <b>Published</b> · {{ page.date }}
+      </p>
+    </small>
+  </div>
   
   <div class="tag-container">
   {% if page.taxonomies %}
