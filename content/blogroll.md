@@ -10,7 +10,7 @@ description = "Blogs, podcasts, and newsletters I follow."
 - [bt.ht](https://bt.ht/)
 - [Computer Chronicles Revisited](https://smoliva.blog/)
 - [David Revoy](https://www.davidrevoy.com/)
-- [fasterthanli.me](fasterthanli.me)
+- [fasterthanli.me](https://fasterthanli.me/)
 - [Joelchrono12](https://joelchrono12.xyz/)
 - [Julia Evans](https://jvns.ca/)
 - [Kev Quirk](https://kevquirk.com/)
