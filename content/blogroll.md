@@ -11,7 +11,7 @@ description = "Blogs, podcasts, and newsletters I follow."
 - [Computer Chronicles Revisited](https://smoliva.blog/)
 - [David Revoy](https://www.davidrevoy.com/)
 - [fasterthanli.me](https://fasterthanli.me/)
-- [Joelchrono12](https://joelchrono12.xyz/)
+- [Joelchrono](https://joelchrono.xyz/blog/)
 - [Julia Evans](https://jvns.ca/)
 - [Kev Quirk](https://kevquirk.com/)
 - [Krebs on Security](https://krebsonsecurity.com/)
