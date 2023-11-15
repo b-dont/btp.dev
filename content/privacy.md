@@ -14,7 +14,7 @@ Articles on this site may include embedded content (e.g. videos, images, article
 I will never embed content that tracks my visitors or collects data on them, however the content I do use may use cookies. Any exeptions will be disclosed where the content is embedded.
 
 ### Analytics
-Analytics are powered by [Plausible](https://plausible.io) and are publically available at [plausible.io/brandont.dev](https://plausible.io/brandont.dev). I use these analytics because I think their cool, and I'd like to support a neat project.
+Analytics are powered by [Plausible](https://plausible.io) and are publically available at [plausible.io/brandont.dev](https://plausible.io/brandont.dev).
 
 ### Cookies
 This site is protected by hCaptcha and its [Privacy Policy](https://www.hcaptcha.com/privacy) and [Terms of Service](https://www.hcaptcha.com/terms) apply. **hCaptcha uses cookies for cross-site analytics.**
