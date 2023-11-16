@@ -1,0 +1,11 @@
+#!/bin/bash
+
+local_desc=$(git describe)
+foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C /var/www/brandont.dev-prod/content/blog/.git describe)
+
+# Pull the production main branch for the blog repo
+cd /var/www/brandont.dev-prod/content/blog || exit
+git --git-dir=/var/www/brandont.dev-prod/content/blog/.git pull prod main
+
+# Re-build the website
+./var/www/brandont.dev-prod/scripts/build-zola.sh
