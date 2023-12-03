@@ -8,4 +8,4 @@ cd /var/www/brandont.dev-prod/content/blog || exit
 git --git-dir=/var/www/brandont.dev-prod/content/blog/.git pull prod main
 
 # Re-build the website
-./var/www/brandont.dev-prod/scripts/build-zola.sh
+/usr/bin/bash /var/www/brandont.dev-prod/scripts/build-zola.sh
