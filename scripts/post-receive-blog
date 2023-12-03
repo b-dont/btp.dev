@@ -5,7 +5,7 @@ foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C /var/www/brandont
 
 # Pull the production main branch for the blog repo
 cd /var/www/brandont.dev-prod/content/blog || exit
-git --git-dir=/var/www/brandont.dev-prod/content/blog/.git pull prod main
+git --git-dir=/var/www/brandont.dev-prod/content/blog/.git pull origin main
 
 # Re-build the website
 /usr/bin/bash /var/www/brandont.dev-prod/scripts/build-zola.sh
