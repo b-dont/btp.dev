@@ -19,7 +19,7 @@ Credit to [Kev Quirk](https://kevquirk.com/) for the original page content [here
 
 ---
 ### Licenses
-The code of this site is free and [open-source](https://codeberg.org/brandont/brandont.dev) and is licensed under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) license.
+The code of this site is free and [open-source](https://codeberg.org/btp/brandont.dev) and is licensed under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) license.
 The content of this site is released under the Creative Commons [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0) license unless posted otherwise.
 
 ![Creative Commons](creative-commons-line.svg)
