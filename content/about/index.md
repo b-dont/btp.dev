@@ -45,7 +45,7 @@ Find me on these other sites.
 {{ icon_link(class="social-icon", alt="Fosstodon", src="mastodon.svg",link="https://fosstodon.org/@btp") }}
 {{ icon_link(class="social-icon", alt="Hashnode", src="hashnode.svg", link="https://hashnode.brandont.dev/") }}
 {{ icon_link(class="social-icon", alt="LinkedIn", src="linkedin.svg", link="https://www.linkedin.com/in/bphillips-dev/") }}
-{{ icon_link(class="social-icon", alt="Polywork", src="polywork.svg", link="https://www.polywork.com/brandont/") }}
+{{ icon_link(class="social-icon", alt="kbin", src="kbin.svg", link="https://kbin.social/u/btp") }}
 {{ icon_link(class="social-icon", alt="Dev.to", src="dev.svg", link="https://dev.to/btp/") }}
 
 {{ icon_link(class="social-icon", alt="Matrix", src="matrix.svg", link="https://matrix.to/#/@brandon.exe:matrix.org") }}
