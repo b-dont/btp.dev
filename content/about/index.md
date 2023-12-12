@@ -8,8 +8,6 @@ Welcome to my website! I'm a systems administrator and devops rookie from Colora
 
 Technology has been a passion of mine since I was a kid and could use the family computer, and in the Summer of 2020 I decided to pursue that passion as a career. I started learning to program and build my skills as a tech enthusiast, and it all payed off in the Winter of 2021 when I landed my first tech job as a systems administrator.
 
-Now, I spend my time continuing to learn programming in various languages, and honing my skills in various technologies and frameworks. I've begun working on DevOps projects at my new job, and have grown interested in the field.
-
 **Some Stuff I Work With**
 
 {{ icon(class="home-icons", title="Python", src="python.svg", alt="Python") }}
@@ -17,11 +15,13 @@ Now, I spend my time continuing to learn programming in various languages, and h
 {{ icon(class="home-icons", title="Django", src="django.svg", alt="Django") }}
 {{ icon(class="home-icons", title="Rust", src="rust.svg", alt="Rust") }}
 {{ icon(class="home-icons", title="PowerShell", src="powershell.svg", alt="PowerShell") }}
+
 {{ icon(class="home-icons", title="WordPress", src="wordpress.svg", alt="WordPress") }}
 {{ icon(class="home-icons", title="Lua", src="lua.svg", alt="Lua") }}
 {{ icon(class="home-icons", title="Git", src="git.svg", alt="Git") }}
 {{ icon(class="home-icons", title="C", src="c.svg", alt="C") }}
 {{ icon(class="home-icons", title="C++", src="cpp.svg", alt="C++") }}
+
 {{ icon(class="home-icons", title="Perl", src="perl.svg", alt="Perl") }}
 {{ icon(class="home-icons", title="Sqlite", src="sqlite.svg", alt="Sqlite") }}
 {{ icon(class="home-icons", title="Podman", src="podman.svg", alt="Podman") }}
@@ -53,6 +53,14 @@ Find me on these other sites.
 {{ icon_link(class="social-icon", alt="Github", src="github.svg", link="https://github.com/b-dont") }}
 {{ icon_link(class="social-icon", alt="Gitlab", src="gitlab.svg", link="https://gitlab.com/bdont") }}
 {{ icon_link(class="social-icon", alt="SpaceHey", src="spacehey.svg", link="https://spacehey.com/btp") }}
+
+### Keys
+OpenPGP Key: [23c7b7ff51d664f993c6330c2378397c36e07ee9](https://keys.openpgp.org/search?q=btp%40brandont.dev)
+
+SSH Key: 
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFlvFvSmzR8K8vR0n50evq+EwoBt4Iw6yyZXfZ49xBhu brandon@home
+```
 
 ### Support
 If you'd like to support what I do online, and the content I create, then you can do so on [Ko-fi](https://ko-fi.com/brandont) or [Liberapay](https://liberapay.com/brandont/), or just subscribe to my [feed](https://brandont.dev/atom.xml) here on the site and share it with your friends. You can can also visit my [contact page](https://brandont.dev/contact) and find my various social links, and follow me there. 
