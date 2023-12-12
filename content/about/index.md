@@ -8,6 +8,7 @@ Welcome to my website! I'm a systems administrator and devops rookie from Colora
 
 Technology has been a passion of mine since I was a kid and could use the family computer, and in the Summer of 2020 I decided to pursue that passion as a career. I started learning to program and build my skills as a tech enthusiast, and it all payed off in the Winter of 2021 when I landed my first tech job as a systems administrator.
 
+{{ centertop() }}
 **Some Stuff I Work With**
 
 {{ icon(class="home-icons", title="Python", src="python.svg", alt="Python") }}
@@ -27,6 +28,7 @@ Technology has been a passion of mine since I was a kid and could use the family
 {{ icon(class="home-icons", title="Podman", src="podman.svg", alt="Podman") }}
 {{ icon(class="home-icons", title="Linux", src="linux.svg", alt="Linux") }}
 {{ icon(class="home-icons", title="Docker", src="docker.svg", alt="Docker") }}
+{{ centerend() }}
 
 ### I Have a _Lot_ of Hobbies
 I usually spend my free time programming, lurking the internet (I'm on a lot of sites, but rarely post outside of [Mastodon](https://fosstodon.org/@btp)), and writting. At the moment, my writting is limited to occasional blog posts on this site, which I also cross-post to other sites, and TTRPG content for my playgroup that meets every Saturday (mostly..).
@@ -39,6 +41,7 @@ Some other obsessions I have:
 - Lots of video games
 - Not finishing projects
 
+{{ centertop() }}
 ### Socials
 Find me on these other sites.
 
@@ -53,6 +56,7 @@ Find me on these other sites.
 {{ icon_link(class="social-icon", alt="Github", src="github.svg", link="https://github.com/b-dont") }}
 {{ icon_link(class="social-icon", alt="Gitlab", src="gitlab.svg", link="https://gitlab.com/bdont") }}
 {{ icon_link(class="social-icon", alt="SpaceHey", src="spacehey.svg", link="https://spacehey.com/btp") }}
+{{ centerend() }}
 
 ### Keys
 OpenPGP Key: [23c7b7ff51d664f993c6330c2378397c36e07ee9](https://keys.openpgp.org/search?q=btp%40brandont.dev)
