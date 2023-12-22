@@ -1,4 +1,5 @@
 .env
+public/*
 public/blog
 public/about
 public/credits
