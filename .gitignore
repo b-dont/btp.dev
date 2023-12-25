@@ -1,8 +1,9 @@
 .env
+.gitmodules
+certs/*
 public/*
 public/blog
 public/about
 public/credits
 content/projects/*.sh
 content/blog/drafts/*
-.gitmodules

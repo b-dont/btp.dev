@@ -2,7 +2,7 @@
 
 #### Address & Root dir
 host = "::"
-port = 80
+port = 8787
 root = "./public"
 
 #### Logging
@@ -23,7 +23,7 @@ page404 = "templates/404.html"
 http2 = false
 http2-tls-cert = ""
 http2-tls-key = ""
-https-redirect = false
+https-redirect = true
 https-redirect-host = "localhost"
 https-redirect-from-port = 80
 https-redirect-from-hosts = "localhost"
