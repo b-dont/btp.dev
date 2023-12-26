@@ -6,7 +6,8 @@ port = 80
 root = "./public"
 
 #### Logging
-log-level = "error"
+log-level = "trace"
+log-remote-address = true
 
 #### Cache Control headers
 cache-control-headers = true
@@ -55,9 +56,6 @@ grace-period = 0
 
 #### Page fallback for 404s
 # page-fallback = ""
-
-#### Log request Remote Address if available
-log-remote-address = false
 
 #### Redirect to trailing slash in the requested directory uri
 redirect-trailing-slash = true
