@@ -9,7 +9,7 @@ build name:
 run name: (build name)
 	podman run --rm -it -d --name brandont.dev-{{name}} -p 8787:80 brandont.dev:{{name}}
 
-# stop a container
+# stop the latest container
 stop-container:
 	podman stop --latest
 
