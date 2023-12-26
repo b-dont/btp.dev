@@ -2,10 +2,9 @@ FROM ghcr.io/getzola/zola:v0.17.1 as zola
 
 COPY . /brandont.dev
 WORKDIR /brandont.dev
-RUN ["zola", "build"]
+RUN ["zola", "--config", "zola.config.toml", "build"]
 
 FROM ghcr.io/static-web-server/static-web-server:2
-WORKDIR /brandont.dev/server/
-COPY --from=zola /brandont.dev/public /brandont.dev/server/public
-
-ENV SERVER_CONFIG_FILE="/brandont.dev/server/server.config.toml"
+WORKDIR /
+COPY --from=zola /brandont.dev/public /public
+COPY ./config.toml /

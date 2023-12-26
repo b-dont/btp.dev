@@ -1,0 +1,21 @@
+# The URL the site will be built for
+base_url = "https://brandont.dev"
+title = "brandont.dev"
+description = "Brandon's personal website. Blogs, projects, and more."
+build_search_index = false
+default_language = "en"
+generate_feed = true
+feed_filename="atom.xml"
+ignored_content = ["*.{sh,txt}", "README.*", "**/content/blog/drafts/*"]
+
+taxonomies = [
+  { name = "tags", render = true },
+]
+
+[markdown]
+highlight_code = true
+highlight_theme = "one-dark"
+external_links_target_blank = true
+
+[slugify]
+taxonomies = "on"
