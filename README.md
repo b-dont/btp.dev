@@ -8,12 +8,12 @@ To run the development container, you'll need to install [`just`](https://github
 ```
 just -l
 Available recipes:
-    build name  # build an image
-    logs name   # Follow the container's logs
-    purge name  # stop a container then remove the images
-    rm name     # remove a specific image
-    run name ip # build an image, then run the container
-    stop name   # stop the latest container
+    build name    # build an image
+    logs name     # Follow the container's logs
+    purge name    # stop a container then remove the images
+    rm name       # remove a specific image
+    run name port # build an image, then run the container
+    stop name     # stop the latest container
 ```
 You can also run the static site from the `zola` development server with the following command.
 ```

@@ -9,13 +9,13 @@ build name:
 		.
 
 # build an image, then run the container
-run name ip: (build name)
+run name port: (build name)
 	podman run \
 		--rm \
 		-it \
 		-d \
 		--name brandont.dev-{{name}} \
-		-p {{ip}}:80 brandont.dev:{{name}}
+		-p {{port}}:80 brandont.dev:{{name}}
 
 # stop the latest container
 stop name:
