@@ -4,7 +4,7 @@
 This is the public repo for my personal website [brandont.dev](https://brandont.dev). This is where I host my blog, post my favorite personal projects, and list my other goings-on around the internet.
 
 ### Development
-To run the development server, you'll need to install [`just`](https://github.com/casey/just) and [`podman`](https://github.com/containers/podman) or [`docker`](https://docs.docker.com/get-docker/). The following `just` recipes are available.
+To run the development container, you'll need to install [`just`](https://github.com/casey/just) and [`podman`](https://github.com/containers/podman) or [`docker`](https://docs.docker.com/get-docker/). The following `just` recipes are available.
 ```
 just -l
 Available recipes:
@@ -14,6 +14,10 @@ Available recipes:
     rm name     # remove a specific image
     run name ip # build an image, then run the container
     stop name   # stop the latest container
+```
+You can also run the static site from the `zola` development server with the following command.
+```
+zola --config config/zola.config.toml serve
 ```
 
 ### Credits
