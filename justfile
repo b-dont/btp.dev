@@ -18,11 +18,11 @@ run name ip: (build name)
 		-p {{ip}}:80 brandont.dev:{{name}}
 
 # stop the latest container
-stop-container:
-	podman stop --latest
+stop name:
+	podman stop brandont.dev-{{name}}
 
 # stop a container then remove the images
-purge name: stop-container
+purge name: (stop name)
 	podman image prune -f
 	podman rmi brandont.dev:{{name}}
 
@@ -30,5 +30,6 @@ purge name: stop-container
 rm name:
 	podman rmi brandont.dev:{{name}}
 
+# Follow the container's logs
 logs name:
 	tail -f | podman logs brandont.dev-{{name}}
