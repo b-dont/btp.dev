@@ -1,0 +1,12 @@
+**/.git
+**/.gitignore
+**/.dockerignore
+**/.repo
+**/scripts
+**/docker-compose*
+**/compose*
+**/Dockerfile
+**/Containerfile
+LICENSE
+README.md
+justfile
