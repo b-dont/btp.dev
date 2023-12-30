@@ -5,7 +5,6 @@ set ignore-comments
 build name:
 	podman build \
 		-t brandont.dev:{{name}} \
-		-f ./config/{{name}}.Containerfile \
 		.
 
 # build an image, then run the container
