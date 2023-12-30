@@ -7,4 +7,4 @@ RUN ["zola", "--config", "config/zola.config.toml", "build"]
 FROM ghcr.io/static-web-server/static-web-server:2
 WORKDIR /
 COPY --from=zola /brandont.dev/public /public
-COPY ./config/dev.config.toml /config.toml
+COPY ./config/server.config.toml /config.toml
