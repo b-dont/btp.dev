@@ -1,0 +1,21 @@
+#!/bin/bash
+
+site_directory=/home/brandon/projects/web/test-brandont.dev
+
+local_desc=$(git describe)
+foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C $site_directory/.git describe)
+
+# Pull the production main branch for the blog repo
+cd $site_directory/content/blog || exit
+git --git-dir=$site_directory/content/blog/.git pull test deployment-refactor
+
+# Pull the production main branch for the website repo
+cd $site_directory || exit
+git --git-dir=$site_directory/.git pull origin deployment-refactor
+
+# Rebuild the site container and start it
+podman stop brandont.dev-dev
+podman rmi brandont.dev:dev
+podman build -t brandont.dev:dev .
+podman run --rm -it -d --name brandont.dev-dev -p 8787:80 brandont.dev:dev
+podman image prune -f
