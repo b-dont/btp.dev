@@ -16,6 +16,7 @@ run name port: (build name)
 		-d \
 		--name brandont.dev-{{name}} \
 		-p {{port}}:80 brandont.dev:{{name}}
+	podman image prune -f
 
 # stop the latest container
 stop name:
