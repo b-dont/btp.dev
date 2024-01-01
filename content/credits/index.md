@@ -27,7 +27,7 @@ The content of this site is released under the Creative Commons [Attribution-Non
 ![Non Commercial](creative-commons-noncommercial-us.svg)
 ![Share Alike](creative-commons-sharealike.svg)
 
-Copyleft ![Copyleft](copyleft-light.svg) 2023 Brandon Phillips
+Copyleft ![Copyleft](copyleft-light.svg) 2024 Brandon Phillips
 
 #### You are free to:
 - **Share** — copy and redistribute the material in any medium or format.
