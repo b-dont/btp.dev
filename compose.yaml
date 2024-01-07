@@ -1,0 +1,17 @@
+services:
+  zola:
+    image: zola:v0.17.1
+    environment-file: .env
+    build:
+      container_name: zola
+      dockerfile: ./config/zola.Containerfile
+
+  static-web-server:
+    image: static-web-server:2
+    build:
+      container_name: static-web-server
+      dockerfile: ./config/server.Containerfile
+
+secrets:
+  server-certificate:
+    external: true
