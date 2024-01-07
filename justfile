@@ -26,6 +26,11 @@ purge name: (stop name)
 	podman image prune -f
 	podman rmi brandont.dev:{{name}}
 
+# prune images and containers
+prune:
+	podman image prune -f
+	podman container prune -f
+
 # remove a specific image
 rm name:
 	podman rmi brandont.dev:{{name}}

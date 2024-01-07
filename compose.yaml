@@ -1,17 +1,31 @@
 services:
   zola:
     image: zola:v0.17.1
-    environment-file: .env
+    container_name: zola
+    env_file: 
+      - .dev.env
     build:
-      container_name: zola
+      context: .
       dockerfile: ./config/zola.Containerfile
 
   static-web-server:
+    depends_on: 
+      - zola
     image: static-web-server:2
+    container_name: static-web-server
+    env_file: 
+      - .dev.env
     build:
-      container_name: static-web-server
+      context: .
       dockerfile: ./config/server.Containerfile
+    ports:
+      - "1111:80"
+#     secrets:
+#       - server-certificate
+#       - cert-key
 
-secrets:
-  server-certificate:
-    external: true
+# secrets:
+#   server-certificate:
+#     file: ./certs/certificate.crt
+#   cert-key:
+#     file: ./certs/certificate.pem
