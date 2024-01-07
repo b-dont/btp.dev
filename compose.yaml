@@ -1,31 +1,26 @@
 services:
   zola:
-    image: zola:v0.17.1
     container_name: zola
+    image: zola:v0.17.1
     env_file: 
       - .dev.env
     build:
-      context: .
       dockerfile: ./config/zola.Containerfile
+    volumes:
+      - public:/brandont.dev/public
+    command: --config config/zola.config.toml build
 
   static-web-server:
-    depends_on: 
-      - zola
-    image: static-web-server:2
     container_name: static-web-server
+    image: static-web-server:2
     env_file: 
       - .dev.env
     build:
-      context: .
       dockerfile: ./config/server.Containerfile
     ports:
       - "1111:80"
-#     secrets:
-#       - server-certificate
-#       - cert-key
+    volumes_from:
+      - public:/public:ro
 
-# secrets:
-#   server-certificate:
-#     file: ./certs/certificate.crt
-#   cert-key:
-#     file: ./certs/certificate.pem
+volumes:
+  public:
