@@ -17,7 +17,7 @@ compression = true
 
 #### Error pages
 # Note: If a relative path is used then it will be resolved under the root directory.
-page404 = "/public/404.html"
+page404 = "404.html"
 # page50x = "./50x.html"
 
 #### HTTP/2 + TLS
