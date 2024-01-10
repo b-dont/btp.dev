@@ -1,0 +1,12 @@
+{
+	http_port 1111
+	https_port 8787
+}
+
+0.0.0.0 {
+	respond "Hello, World!"
+}
+
+0.0.0.0:2016 {
+	respond "Goodby, World!"
+}
