@@ -1,0 +1,27 @@
+services:
+
+  caddy:
+    image: caddy:latest
+    restart: unless-stopped
+    ports:
+      - "1111:80"
+      - "8787:443"
+      - "8383:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+
+  static-web-server:
+    restart: unless-stopped
+    depends_on:
+      - caddy
+    build:
+      dockerfile: config/server.Containerfile
+    ports:
+      - "8484:443"
+      - "8585:80"
+
+volumes:
+  caddy_data:
+  caddy_config:
