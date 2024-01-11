@@ -1,7 +1,16 @@
-localhost:80 {
-	reverse_proxy http://static-web-server
+{
+	http_port 1111
+	https_port 8787
 }
 
-localhost:443 {
-	reverse_proxy https://static-web-server
+*.brandont.dev {
+	reverse_proxy http://static-web-server
+	tls {
+		dns namecheap {
+			api_key $NAMECHEAP_SANDBOX_API_KEY
+			user $NAMECHEAP_SANDBOX_USER
+			client_ip 73.34.229.58
+			endpoint https://api.sandbox.namecheap.com/xml.response
+		}
+	}
 }
