@@ -1,3 +1,7 @@
-:2080
+localhost:80 {
+	reverse_proxy http://static-web-server
+}
 
-reverse_proxy :9000
+localhost:443 {
+	reverse_proxy https://static-web-server
+}

@@ -1,27 +1,33 @@
 services:
 
   caddy:
+    container_name: caddy-proxy
     image: caddy:latest
     restart: unless-stopped
     ports:
-      - "1111:80"
-      - "8787:443"
-      - "8383:443/udp"
+      - "2080:80"
     volumes:
-      - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./config/Caddyfile:/etc/caddy/Caddyfile:Z
       - caddy_data:/data
       - caddy_config:/config
+    networks:
+      - proxy-net
 
   static-web-server:
+    container_name: static-web-server
     restart: unless-stopped
     depends_on:
       - caddy
     build:
       dockerfile: config/server.Containerfile
     ports:
-      - "8484:443"
-      - "8585:80"
+      - "1111:80"
+    networks:
+      - proxy-net
 
 volumes:
   caddy_data:
   caddy_config:
+
+networks:
+  proxy-net:
