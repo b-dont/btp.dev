@@ -5,6 +5,7 @@ set ignore-comments
 build name:
 	podman build \
 		-t brandont.dev:{{name}} \
+		-f config/{{name}}.Containerfile \
 		.
 
 # build an image, then run the container
@@ -21,10 +22,14 @@ run name port: (build name)
 stop name:
 	podman stop brandont.dev-{{name}}
 
-# stop a container then remove the images
-purge name: (stop name)
+kill name: (stop name)(prune)
+
+# prune all hanging images, containers, and volumes
+prune:
 	podman image prune -f
-	podman rmi brandont.dev:{{name}}
+	podman container prune -f
+	podman volume prune -f
+	podman network prune -f
 
 # remove a specific image
 rm name:

@@ -3,7 +3,7 @@
 #### Address & Root dir
 host = "::"
 port = 80
-root = "./public"
+root = "/public"
 
 #### Logging
 log-level = "trace"
@@ -13,18 +13,18 @@ log-remote-address = true
 cache-control-headers = true
 
 #### Auto Compression
-compression = false
+compression = true
 
 #### Error pages
 # Note: If a relative path is used then it will be resolved under the root directory.
-page404 = "./404.html"
+page404 = "404.html"
 # page50x = "./50x.html"
 
 #### HTTP/2 + TLS
 http2 = false
-http2-tls-cert = ""
-http2-tls-key = ""
-https-redirect = false
+# http2-tls-cert = "/etc/certs/fullchain.pem"
+# http2-tls-key = "/etc/certs/privkey.pem"
+https-redirect = true
 https-redirect-host = "localhost"
 https-redirect-from-port = 80
 https-redirect-from-hosts = "localhost"

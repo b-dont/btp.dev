@@ -1,0 +1,10 @@
+btp.dev, *.btp.dev {
+	reverse_proxy https://static-web-server
+	tls {
+		dns namecheap {
+			user {env.NAMECHEAP_USER}
+			api_key {env.NAMECHEAP_API_KEY}
+			endpoint {env.NAMECHEAP_ENDPOINT}
+		}
+	}
+}

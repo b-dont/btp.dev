@@ -2,7 +2,6 @@
 **/.gitignore
 **/.dockerignore
 **/.repo
-**/scripts
 **/docker-compose*
 **/compose*
 **/Dockerfile
