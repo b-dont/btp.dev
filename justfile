@@ -29,6 +29,7 @@ prune:
 	podman image prune -f
 	podman container prune -f
 	podman volume prune -f
+	podman network prune -f
 
 # remove a specific image
 rm name:
