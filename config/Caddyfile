@@ -1,16 +1,10 @@
-{
-	http_port 1111
-	https_port 8787
-}
-
-*.brandont.dev {
-	reverse_proxy http://static-web-server
+btp.dev, *.btp.dev {
+	reverse_proxy https://static-web-server
 	tls {
 		dns namecheap {
-			api_key $NAMECHEAP_SANDBOX_API_KEY
-			user $NAMECHEAP_SANDBOX_USER
-			client_ip 73.34.229.58
-			endpoint https://api.sandbox.namecheap.com/xml.response
+			user {env.NAMECHEAP_USER}
+			api_key {env.NAMECHEAP_API_KEY}
+			endpoint {env.NAMECHEAP_ENDPOINT}
 		}
 	}
 }
