@@ -1,4 +1,4 @@
-btp.dev, *.btp.dev {
+{env.BRANDONT_DOMAIN} {
 	reverse_proxy https://static-web-server
 	tls {
 		dns namecheap {

@@ -6,8 +6,8 @@ services:
     build:
       dockerfile: config/caddy.Containerfile
     ports:
-      - "2080:80"
-      - "2880:443"
+      - "${HTTP_PORT}"
+      - "${HTTPS_PORT}"
     volumes:
       - ./config/Caddyfile:/etc/caddy/Caddyfile:Z
       - caddy_data:/data
@@ -23,8 +23,8 @@ services:
     build:
       dockerfile: config/server.Containerfile
     ports:
-      - "1111:80"
-      - "8787:443"
+      - "${HTTP_PORT}"
+      - "${HTTPS_PORT}"
     networks:
       - proxy-net
 
