@@ -3,7 +3,6 @@ html[data-font-family="serif"] {
   --font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
 }
 
-html,
 html[data-font-family="sans-serif"] {
   --font-family: system-ui, sans-serif;
 }
