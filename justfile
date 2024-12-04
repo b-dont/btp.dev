@@ -31,6 +31,9 @@ prune:
 	podman volume prune -f
 	podman network prune -f
 
+rmc:
+	podman rmi $(podman images -qa) -f
+
 # remove a specific image
 rm name:
 	podman rmi brandont.dev:{{name}}

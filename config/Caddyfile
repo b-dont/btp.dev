@@ -1,10 +1,10 @@
-{env.BRANDONT_DOMAIN} {
-	reverse_proxy https://static-web-server
-	tls {
-		dns namecheap {
-			user {env.NAMECHEAP_USER}
-			api_key {env.NAMECHEAP_API_KEY}
-			endpoint {env.NAMECHEAP_ENDPOINT}
-		}
-	}
+# :443 {
+# 	reverse_proxy static-web-server:80
+# 	tls internal {
+# 		on_demand
+# 	}
+# }
+
+:80 {
+	reverse_proxy static-web-server:80
 }
