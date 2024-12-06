@@ -27,9 +27,7 @@ services:
 
 volumes:
   caddy_data:
-    external: false
   caddy_config:
-    external: false
 
 networks:
   proxy-net:
