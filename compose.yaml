@@ -21,7 +21,7 @@ services:
     depends_on:
       - caddy
     build:
-      dockerfile: config/server.Containerfile
+      dockerfile: Containerfile
     networks:
       - proxy-net
 
