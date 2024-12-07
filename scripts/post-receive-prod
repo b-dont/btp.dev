@@ -10,5 +10,3 @@ git --git-dir=/var/www/brandont.dev-prod/content/blog/.git pull origin main
 # Pull the production main branch for the website repo
 cd /var/www/brandont.dev-prod || exit
 git --git-dir=/var/www/brandont.dev-prod/.git pull prod main 
-# Re-build the website
-./scripts/build-zola.sh
