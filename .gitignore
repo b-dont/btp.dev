@@ -1,6 +1,5 @@
 .env
 .dev.env
-.gitmodules
 justfile
 public/*
 public/blog
