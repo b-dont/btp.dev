@@ -4,18 +4,7 @@
 This is the public repo for my personal website [brandont.dev](https://brandont.dev). This is where I host my blog, post my favorite personal projects, and list my other goings-on around the internet.
 
 ### Development
-To run the development container, you'll need to install [`just`](https://github.com/casey/just) and [`podman`](https://github.com/containers/podman) or [`docker`](https://docs.docker.com/get-docker/). The following `just` recipes are available.
-```
-just -l
-Available recipes:
-    build name    # build an image
-    logs name     # Follow the container's logs
-    purge name    # stop a container then remove the images
-    rm name       # remove a specific image
-    run name port # build an image, then run the container
-    stop name     # stop the latest container
-```
-You can also run the static site from the `zola` development server with the following command.
+To run the development container, you'll need to install [`podman`](https://github.com/containers/podman) or [`docker`](https://docs.docker.com/get-docker/). You can also run the static site from the `zola` development server with the following command.
 ```
 zola --config config/zola.config.toml serve
 ```
@@ -35,4 +24,5 @@ Proud member of the [512kb.club](https://512kb.club) Green Team.
 
 ![a proud member of the green team of the 512KB club](.repo/green-team.svg)
 
+You can support me using these fine platforms <3
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B2CYZX9) [![liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/brandont/donate)
