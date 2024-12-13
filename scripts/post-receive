@@ -7,8 +7,8 @@ foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C $site_directory/.
 
 # Pull the production main branch for the blog repo
 cd $site_directory/content/blog || exit
-git --git-dir=$site_directory/content/blog/.git pull prod main
+git --git-dir=$site_directory/content/blog/.git pull origin main
 
 # Pull the production main branch for the website repo
 cd $site_directory || exit
-git --git-dir=$site_directory/.git pull prod main
+git --git-dir=$site_directory/.git pull origin main
