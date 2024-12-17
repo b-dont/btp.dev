@@ -1,14 +1,15 @@
 #!/bin/bash
 
 site_directory=/var/www/brandont.dev-prod
+blog_submodule=$site_directory/content/blog
 
 local_desc=$(git describe)
 foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C $site_directory/.git describe)
 
-# Pull the production main branch for the blog repo
+# Pull the origin main branch for the blog repo
 cd $site_directory/content/blog || exit
-git --git-dir=$site_directory/content/blog/.git pull origin main
+git --git-dir=$blog_submodule/.git pull origin main
 
-# Pull the production main branch for the website repo
+# Pull the origin main branch for the website repo
 cd $site_directory || exit
 git --git-dir=$site_directory/.git pull origin main
