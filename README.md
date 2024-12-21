@@ -6,7 +6,7 @@ This is the public repo for my personal website [brandont.dev](https://brandont.
 ### Development
 To run the development container, you'll need to install [`podman`](https://github.com/containers/podman) or [`docker`](https://docs.docker.com/get-docker/). You can also run the static site from the `zola` development server with the following command.
 ```
-zola --config config/zola.config.toml serve
+zola --config config/zola.toml serve
 ```
 
 ### Credits
