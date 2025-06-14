@@ -4,6 +4,6 @@
 	acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
 }
 
-localhost:80 {
+localhost:8080 {
 	reverse_proxy static-web-server:80
 }

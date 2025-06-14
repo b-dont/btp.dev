@@ -1,33 +1,4 @@
 services:
-
-  caddy:
-    env_file: .env
-    container_name: caddy
-    image: "caddy:latest"
-    restart: unless-stopped
-    ports:
-      - "${HTTPS_PORT}:443"
-      - "${HTTP_PORT}:80"
-    volumes:
-      - ./config/Caddyfile:/etc/caddy/Caddyfile
-      - caddy_data:/data
-      - caddy_config:/config
-    networks:
-      - proxy-net
-
   static-web-server:
-    env_file: .env
-    container_name: static-web-server
-    depends_on:
-      - caddy
     build:
-      dockerfile: Containerfile
-    networks:
-      - proxy-net
-
-volumes:
-  caddy_data:
-  caddy_config:
-
-networks:
-  proxy-net:
+      dockerfile: ./conf/Containerfile
