@@ -3,8 +3,8 @@
 site_directory=/var/www/brandont.dev-prod
 blog_submodule=$site_directory/content/blog
 
-local_desc=$(git describe)
-foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C $site_directory/.git describe)
+local_desc=$(git describe --always)
+foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C $site_directory/.git describe --always)
 
 # Pull the origin main branch for the blog repo
 cd $site_directory/content/blog || exit
