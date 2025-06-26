@@ -3,5 +3,6 @@
 src=/var/www/brandont.dev-prod/src
 scripts=/var/www/brandont.dev-prod/scripts
 
-./$src/build-zola.sh
+cd /$src || exit
+./"$scripts"/build-zola.sh
 
