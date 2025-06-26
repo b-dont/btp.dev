@@ -8,11 +8,11 @@ foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C $site_directory/.
 
 # Pull the origin main branch for the blog repo
 cd $site_directory/content/blog || exit
-git --git-dir=$blog_submodule/.git pull origin main
+git --git-dir=$blog_submodule/.git pull prod main
 
 # Pull the origin main branch for the website repo
 cd $site_directory || exit
-git --git-dir=$site_directory/.git pull origin main
+git --git-dir=$site_directory/.git pull prod main
 
 # Rebuild Zola site
 ./scripts/build-zola.sh
