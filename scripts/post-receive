@@ -13,6 +13,3 @@ git --git-dir=$blog_submodule/.git pull prod main
 # Pull the origin main branch for the website repo
 cd $site_directory || exit
 git --git-dir=$site_directory/.git pull prod main
-
-# Rebuild Zola site
-./scripts/build-zola.sh
