@@ -2,8 +2,8 @@
 
 blog_root=/var/www/brandont.dev-prod/content/blog
 
-local_desc=$(git describe)
-foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C $blog_root/.git describe)
+local_desc=$(git describe --alwasy)
+foreign_desc=$(unset $(git rev-parse --local-env-vars); git -C $blog_root/.git describe --always)
 
 # Pull the production main branch for the blog repo
 cd $blog_root || exit
