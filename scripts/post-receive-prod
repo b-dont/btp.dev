@@ -1,8 +1,3 @@
 #!/bin/bash
 
-src=/var/www/brandont.dev-prod/src
-scripts=/var/www/brandont.dev-prod/scripts
-
-cd /$src || exit
-./"$scripts"/build-zola.sh
 
