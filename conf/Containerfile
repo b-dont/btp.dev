@@ -1,8 +1,8 @@
 FROM ghcr.io/getzola/zola:v0.20.0 as zola
 
-COPY ./src/* /site-data
+ADD ./src /site-data
 WORKDIR /site-data
-RUN ["zola", "--config", "./zola.toml", "build"]
+RUN ["zola", "--config", "zola.toml", "build"]
 
 FROM ghcr.io/static-web-server/static-web-server:latest
 WORKDIR /

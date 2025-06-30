@@ -1,13 +1,7 @@
 {
-	email btp@brandont.dev
-	# Dev acme directory
 	acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
 }
 
-localhost:80 {
+https://btp.dev {
 	reverse_proxy http://static-web-server
-}
-
-localhost:443 {
-	reverse_proxy https://static-web-server
 }
