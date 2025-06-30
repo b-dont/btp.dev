@@ -1,7 +1,7 @@
 [general]
 
 #### Address & Root dir
-host = "127.0.0.1"
+host = "localhost"
 port = 80
 root = "/public"
 
@@ -64,7 +64,7 @@ redirect-trailing-slash = true
 compression-static = true
 
 #### Health-check endpoint (GET or HEAD `/health`)
-health = false
+health = true
 
 #### List of index files
 # index-files = "index.html, index.htm"
