@@ -50,14 +50,13 @@ Find me on these other sites.
 {{ icon_link(class="social-icon", alt="Matrix", src="matrix.svg", link="https://matrix.to/#/@brandon.exe:matrix.org") }}
 {{ icon_link(class="social-icon", alt="LinkedIn", src="linkedin.svg", link="https://www.linkedin.com/in/bphillips-dev/") }}
 
-{{ icon_link(class="social-icon", alt="Dev.to", src="dev.svg", link="https://dev.to/btp/") }}
 {{ icon_link(class="social-icon", alt="Codeberg", src="codeberg.svg", link="https://codeberg.org/btp") }}
 {{ icon_link(class="social-icon", alt="Github", src="github.svg", link="https://github.com/b-dont") }}
 {{ icon_link(class="social-icon", alt="Gitlab", src="gitlab.svg", link="https://gitlab.com/bdont") }}
 {{ centerend() }}
 
 ### Keys
-OpenPGP Key: [23c7b7ff51d664f993c6330c2378397c36e07ee9](https://keys.openpgp.org/search?q=btp%40brandont.dev)
+OpenPGP Key: [FA8072FE9D6E0741169E1451B4D6333E70D4826A](https://keys.openpgp.org/search?q=btp%40brandont.dev)
 
 SSH Key: 
 ```
