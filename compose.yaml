@@ -12,7 +12,7 @@ services:
       - caddy_config:/config
   static-web-server:
     container_name: static-web-server
-    user: 0
+    user: "0"
     build:
       dockerfile: ./conf/Containerfile
 
