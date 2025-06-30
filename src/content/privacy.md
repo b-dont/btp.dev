@@ -17,10 +17,4 @@ I will never embed content that tracks my visitors or collects data on them, how
 Analytics are powered by [Plausible](https://plausible.io) and are publically available at [plausible.io/btp.dev](https://plausible.io/btp.dev).
 
 ### Cookies
-This site is protected by hCaptcha and its [Privacy Policy](https://www.hcaptcha.com/privacy) and [Terms of Service](https://www.hcaptcha.com/terms) apply. **hCaptcha uses cookies for cross-site analytics.**
-
-I've also set a sub-domain with [hashnode.com](https://hashnode.com/), which does use cross-site cookies from my website. You can read more about how Hashnode uses cookies at [hashnode.com/privacy](https://hashnode.com/privacy).
-
-100% of my hCaptcha earnings from this site are donated to the [Wikimedia Foundation](https://wikimediafoundation.org).
-
-There are no other cookies used on this website.
+There are no cookies used on this website, with the exception of any embedded content from other websites, which may use cookies.
