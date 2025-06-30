@@ -7,12 +7,14 @@ services:
       - ${CADDY_HTTP}
       - ${CADDY_HTTPS}
     volumes:
+      - ./src/public:/public
       - ./conf:/etc/caddy
       - caddy_data:/data
       - caddy_config:/config
-  static-web-server:
-    container_name: static-web-server
-    user: "0"
+
+  zola:
+    volumes:
+      - ./src:/build
     build:
       dockerfile: ./conf/Containerfile
 

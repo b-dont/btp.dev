@@ -6,5 +6,6 @@
 }
 
 https://btp.dev {
-	reverse_proxy http://static-web-server
+	root * /public
+	file_server
 }
