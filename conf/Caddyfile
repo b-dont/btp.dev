@@ -1,5 +1,8 @@
 {
-	acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+	# Staging acme_ca
+	# acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
+	# Production acme_ca
+	acme_ca https://acme-v02.api.letsencrypt.org/directory
 }
 
 https://btp.dev {
