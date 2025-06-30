@@ -3,6 +3,7 @@
 .gitmodules
 justfile
 public/*
+src/public/*
 public/blog
 public/about
 public/credits
