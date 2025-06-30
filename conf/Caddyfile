@@ -6,6 +6,6 @@
 }
 
 https://btp.dev {
-	root * /public
+	root * /src/public
 	file_server
 }
