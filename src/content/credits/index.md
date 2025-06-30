@@ -8,8 +8,7 @@ Made with ![Heart](heart.svg) and ![Code](code.svg) using these awesome projects
 - Styled with [readable.css](https://readable-css.freedomtowrite.org/) by Benjamin Hollon
 - Icons from [iconify.design](https://iconify.design/)
 - System fonts with [Modern Font Stacks](https://github.com/system-fonts/modern-font-stacks)
-- Analytics are publicly available on [Plausible](https://plausible.io/brandont.dev)
-- Captcha by [hCaptcha](https://www.hcaptcha.com/)
+- Analytics are publicly available on [Plausible](https://plausible.io/btp.dev)
 
 Proud member of the [512kb.club](https://512kb.club) Green Team.
 
@@ -19,7 +18,7 @@ Credit to [Kev Quirk](https://kevquirk.com/) for the original page content [here
 
 ---
 ### Licenses
-The code of this site is free and [open-source](https://codeberg.org/btp/brandont.dev) and is licensed under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) license.
+The code of this site is free and [open-source](https://codeberg.org/btp/btp.dev) and is licensed under the [GNU AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) license.
 The content of this site is released under the Creative Commons [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0) license unless posted otherwise.
 
 ![Creative Commons](creative-commons-line.svg)
@@ -43,5 +42,5 @@ The licensor cannot revoke these freedoms as long as you follow the license term
 #### Attribution Example
 An acceptable attribution that complies with the license would be something similar to the following:
 ```html
-<p>Credit to <a href="https://brandont.dev">Brandon Phillips</a> for the original work.</p>
+<p>Credit to <a href="https://btp.dev">Brandon Phillips</a> for the original work.</p>
 ```
