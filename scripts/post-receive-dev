@@ -11,6 +11,6 @@ git --git-dir=$blog_submodule/.git pull origin main
 
 # Pull the origin main branch for the website repo
 cd $site_directory || exit
-git --git-dir=$site_directory/.git pull origin main
+git --git-dir=$site_directory/.git pull origin dev
 
 docker compose down && docker compose up --build -d
