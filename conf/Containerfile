@@ -1,6 +1,10 @@
 FROM ghcr.io/getzola/zola:v0.20.0 AS zola
 
 USER 0
-ADD ../src /build
+COPY ../src /build
 WORKDIR /build
 RUN ["zola", "--config", "zola.toml", "build"]
+
+FROM caddy:latest
+WORKDIR /
+COPY --from=zola /build/public /public

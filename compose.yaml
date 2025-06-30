@@ -1,13 +1,12 @@
 services:
   caddy:
-    container_name: caddy
+    build:
+      dockerfile: ./conf/Containerfile
     restart: unless-stopped
-    image: caddy:latest
     ports:
       - ${CADDY_HTTP}
       - ${CADDY_HTTPS}
     volumes:
-      - ./src:/src
       - ./conf:/etc/caddy
       - caddy_data:/data
       - caddy_config:/config

@@ -2,10 +2,15 @@
 	# Staging acme_ca
 	# acme_ca https://acme-staging-v02.api.letsencrypt.org/directory
 	# Production acme_ca
-	acme_ca https://acme-v02.api.letsencrypt.org/directory
+	# acme_ca https://acme-v02.api.letsencrypt.org/directory
+}
+
+http://localhost:8000 {
+	root * /public
+	file_server
 }
 
 https://btp.dev {
-	root * /src/public
+	root * /public
 	file_server
 }
