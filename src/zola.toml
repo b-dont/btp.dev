@@ -1,6 +1,6 @@
 # The URL the site will be built for
-base_url = "https://brandont.dev"
-title = "brandont.dev"
+base_url = "https://btp.dev"
+title = "btp.dev"
 description = "Brandon's personal website. Blogs, projects, and more."
 build_search_index = false
 default_language = "en"
