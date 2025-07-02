@@ -3,6 +3,7 @@
 
 <head>
   {% block head %}
+  {% endblock head %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="polyring:code" content="BLC3MBDN5GKC3VSG5E5VFQVYJ5LWYSOB">
@@ -18,7 +19,6 @@
   {% block rss %}
   <link rel="alternate" type="application/atom+xml" title="RSS" href="{{ get_url(path="atom.xml") }}">
   {% endblock rss %}
-  {% endblock head %}
 </head>
 
 <body>
