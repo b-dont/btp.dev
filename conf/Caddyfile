@@ -9,3 +9,8 @@ https://btp.dev {
 	root * /public
 	file_server
 }
+
+https://brandont.dev {
+	root * /public
+	file_server
+}
