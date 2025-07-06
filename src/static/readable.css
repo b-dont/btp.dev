@@ -66,14 +66,14 @@ html {
   --one-line: calc(var(--line-height) * 1rem);
   --half-line: calc(var(--one-line) * 0.5);
 
-  font-family: monospace;
+  font-family: sans-serif;
   background-color: var(--background-color);
   color: var(--color);
 }
 
 h2 {
-  text-align: center;
-  font-family: monospace;
+  text-align: left;
+  font-family: sans-serif;
 }
 
 footer:not(.exclude) {
@@ -171,7 +171,7 @@ h1 {
 h1,
 h2 {
   line-height: calc(var(--line-height) * 2rem);
-  font-family: monospace;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -187,7 +187,7 @@ h4,
 h5,
 h6 {
   font-size: 1.25rem;
-  font-family: monospace;
+  font-family: sans-serif;
   line-height: var(--one-line);
   padding-top: calc(var(--line-height) * 0.75rem);
   margin-bottom: calc(var(--line-height) * 0.25rem);
