@@ -1,11 +1,6 @@
 .env
 .dev.env
 .gitmodules
-justfile
-public/*
 src/public/*
-public/blog
-public/about
-public/credits
-content/projects/*.sh
-content/blog/drafts/*
+src/content/projects/*.sh
+src/content/blog/drafts/*
