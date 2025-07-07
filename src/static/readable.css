@@ -317,7 +317,7 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
 
 .date-stamp {
   color: var(--secondary-color);
-  margin: 10px;
+  margin-top: 10px;
 }
 
 .tag-container {
