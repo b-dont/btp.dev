@@ -344,6 +344,10 @@ form:not(.exclude) label:not(input:is([type="checkbox"], [type="radio"]) ~ label
   display: block;
 }
 
+.date-stamp {
+  padding-top: 10px;
+}
+
 .description-container {
   text-align: center;
   max-width: 40%;
