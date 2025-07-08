@@ -65,7 +65,7 @@ bots:
   - name: allow-rss
     action: ALLOW
     expression:
-      all:
+      any:
         - 'path == "/atom.xml"'
         - 'path == "/rss.xml"'
 
