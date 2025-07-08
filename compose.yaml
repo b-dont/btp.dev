@@ -18,6 +18,9 @@ services:
     environment:
       BIND: ${ANUBIS_PORT}
       TARGET: ${ANUBIS_TARGET}
+      POLICY_FNAME: "/data/cfg/botPolicy.yml"
+    volumes:
+      - "./conf/botPolicy.yml:/data/cfg/botPolicy.yml"
 
   static-web-server:
     build:
