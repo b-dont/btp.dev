@@ -1,8 +1,0 @@
-{
-  "name": "allow-rss",
-  "action": "ALLOW",
-  "any": [
-    'path == "/atom.xml"',
-    'path == "/rss.xml"'
-  ]
-}
