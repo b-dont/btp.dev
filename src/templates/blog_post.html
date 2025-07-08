@@ -30,24 +30,25 @@
     </small>
   </div>
   
-  <div class="tag-container">
-  {% if page.taxonomies %}
-    {% set map = page.taxonomies %}
-    {% set_global tags = [] %}
-  
-    {% for tax, tag in map %}
-      {% set_global tags = tags | concat(with=tag) %}
-    {% endfor %}
-  
-    {% for tag in tags %}
-      <small><a href="/tags/{{ tag }}" class="tag">{{ tag }} </a></small>
-    {% endfor %}
-  {% endif %}
-  </div>
-
   {{ page.content | safe }}
   
 </div>
 </br>
+
+<div class="tag-container">
+{% if page.taxonomies %}
+  {% set map = page.taxonomies %}
+  {% set_global tags = [] %}
+
+  {% for tax, tag in map %}
+    {% set_global tags = tags | concat(with=tag) %}
+  {% endfor %}
+
+  {% for tag in tags %}
+    <small><a href="/tags/{{ tag }}" class="tag">{{ tag }} </a></small>
+  {% endfor %}
+{% endif %}
+</div>
+
 </center>
 {% endblock content %}

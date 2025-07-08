@@ -48,7 +48,7 @@ Find me on these other sites.
 {{ icon_link(class="social-icon", alt="Fosstodon", src="mastodon.svg",link="https://fosstodon.org/@btp") }}
 {{ icon_link(class="social-icon", alt="Bluesky", src="bluesky.svg", link="https://bsky.app/profile/btp.dev/") }}
 {{ icon_link(class="social-icon", alt="Matrix", src="matrix.svg", link="https://matrix.to/#/@brandon.exe:matrix.org") }}
-{{ icon_link(class="social-icon", alt="LinkedIn", src="linkedin.svg", link="https://www.linkedin.com/in/bphillips-dev/") }}
+{{ icon_link(class="social-icon", alt="LinkedIn", src="linkedin.svg", link="https://www.linkedin.com/in/bphill") }}
 
 {{ icon_link(class="social-icon", alt="Codeberg", src="codeberg.svg", link="https://codeberg.org/btp") }}
 {{ icon_link(class="social-icon", alt="Github", src="github.svg", link="https://github.com/b-dont") }}
