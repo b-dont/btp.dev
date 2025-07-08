@@ -5,6 +5,6 @@ COPY ../src /build
 WORKDIR /build
 RUN ["zola", "--config", "zola.toml", "build"]
 
-FROM caddy:latest
+FROM joseluisq/static-web-server:2-alpine
 WORKDIR /
 COPY --from=zola /build/public /public

@@ -1,7 +1,6 @@
 services:
   caddy:
-    build:
-      dockerfile: ./conf/Containerfile
+    image: caddy:latest
     restart: unless-stopped
     ports:
       - ${CADDY_HTTP}
@@ -10,6 +9,28 @@ services:
       - ./conf:/etc/caddy
       - caddy_data:/data
       - caddy_config:/config
+    env_file:
+      .env
+
+  anubis:
+    image: ghcr.io/techarohq/anubis:latest
+    pull_policy: always
+    environment:
+      BIND: ${ANUBIS_PORT}
+      TARGET: ${ANUBIS_TARGET}
+
+  static-web-server:
+    build:
+      dockerfile: ./conf/Containerfile
+    container_name: "static-web-server"
+    ports:
+      - ${SWS_PORT}
+    restart: unless-stopped
+    environment:
+      - SERVER_ROOT=${SWS_SERVER_ROOT}
+      - SERVER_CONFIG_FILE=${SWS_CONFIG_FILE}
+    volumes:
+      - ./conf/server.toml:${SWS_CONFIG_FILE}
 
 volumes:
   caddy_data:
