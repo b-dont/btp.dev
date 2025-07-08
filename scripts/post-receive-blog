@@ -7,3 +7,4 @@ unset $(git rev-parse --local-env-vars); git -C $blog_root/.git describe --alway
 # Pull the production main branch for the blog repo
 cd $blog_root || exit
 git --git-dir=$blog_root/.git pull origin main
+docker compose down && docker compose up --build -d
