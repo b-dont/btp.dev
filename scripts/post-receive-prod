@@ -1,16 +1,11 @@
 #!/bin/bash
 
 site_directory=/var/www/btp.dev
-blog_submodule=$site_directory/src/content/blog
 
 unset "$(git rev-parse --local-env-vars)"; git -C $site_directory/.git describe --always
 
-# Pull the origin main branch for the blog repo
-cd $blog_submodule || exit
-git --git-dir=$blog_submodule/.git pull origin main
-
 # Pull the origin main branch for the website repo
 cd $site_directory || exit
-git --git-dir=$site_directory/.git pull origin main
+git --git-dir=$site_directory/.git pull --recurse-submodules origin main
 
 docker compose down && docker compose up --build -d
