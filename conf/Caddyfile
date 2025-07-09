@@ -2,11 +2,19 @@
 	acme_ca {$ACME_CA_URL}
 }
 
-{$CADDY_SITE} {
+{$STATIC_SITE} {
 	tls brandon@btp.dev
 
-	reverse_proxy {$CADDY_PROXY} {
+	reverse_proxy {$STATIC_SITE_PROXY} {
 		header_up X-Real-Ip {remote_host}
 		header_up X-Http-Version {http.request.proto}
 	}
+}
+
+{$STATUS_SITE} {
+	reverse_proxy {$STATUS_SITE_PROXY} {
+		header_up X-Real-Ip {remote_host}
+		header_up X-Http-Version {http.request.proto}
+	}
+
 }

@@ -5,6 +5,7 @@ services:
     ports:
       - ${CADDY_HTTP}
       - ${CADDY_HTTPS}
+      - ${CADDY_HTTP2}
     volumes:
       - ./conf:/etc/caddy
       - caddy_data:/data
@@ -34,6 +35,14 @@ services:
       - SERVER_CONFIG_FILE=${SWS_CONFIG_FILE}
     volumes:
       - ./conf/server.toml:${SWS_CONFIG_FILE}
+
+  php:
+    container_name: status
+    user: "${UID}:${GID}"
+    build:
+      dockerfile: ./monitor/conf/Containerfile
+    volumes:
+      - ./monitor/src:/var/www/html
 
 volumes:
   caddy_data:
