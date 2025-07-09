@@ -5,7 +5,6 @@ services:
     ports:
       - ${CADDY_HTTP}
       - ${CADDY_HTTPS}
-      - ${CADDY_HTTP2}
     volumes:
       - ./conf:/etc/caddy
       - caddy_data:/data
