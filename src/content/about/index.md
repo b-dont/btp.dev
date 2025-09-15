@@ -53,7 +53,7 @@ Find me on these other sites.
 {{ icon_link(class="social-icon", alt="Codeberg", src="codeberg.svg", link="https://codeberg.org/btp") }}
 {{ icon_link(class="social-icon", alt="Github", src="github.svg", link="https://github.com/b-dont") }}
 {{ icon_link(class="social-icon", alt="Gitlab", src="gitlab.svg", link="https://gitlab.com/bdont") }}
-{{ icon_link(class="social-icon", alt="Signal", src="signal.svg", link="https://signal.me/#eu/PuxFjqAaINiwdrP2gK4PcbO_WKkQXs5j8vwQmRWUkOXRcBsc8eFHX5foizvi2FNl") }}
+{{ icon_link(class="social-icon", alt="Signal", src="signal.svg", link="https://signal.me/#eu/Lpu4sngnU61sn4YcI8xDl36jsCFTsT1qjBQrrMFaK2gQjf8-DuVNZYfD6t3-vVUs") }}
 {{ centerend() }}
 
 ### Keys
