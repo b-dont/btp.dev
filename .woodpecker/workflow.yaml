@@ -3,5 +3,8 @@ when:
     branch: main
 
 steps:
-  - name: build
-    
+  - name: zola-build
+    image: zola:v0.20.0
+    commands:
+      - cd /src
+      - zola --config zola.toml build
