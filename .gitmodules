@@ -1,6 +1,6 @@
 [submodule "src/content/blog"]
 	path = src/content/blog
-	url = ssh://git@codeberg.org/btp/blog.git
+	url = https://git@codeberg.org/btp/blog.git
 [submodule "monitor"]
 	path = monitor
-	url = ssh://git@codeberg.org/btp/website-monitor.git
+	url = https://git@codeberg.org/btp/website-monitor.git
