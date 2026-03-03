@@ -4,3 +4,6 @@
 [submodule "monitor"]
 	path = monitor
 	url = https://git@codeberg.org/btp/website-monitor.git
+[submodule "purecomments"]
+	path = purecomments
+	url = git@github.com:b-dont/purecomments.git

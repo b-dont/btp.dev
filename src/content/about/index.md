@@ -57,7 +57,7 @@ Find me on these other sites.
 {{ centerend() }}
 
 ### Keys
-OpenPGP Key: [FA8072FE9D6E0741169E1451B4D6333E70D4826A](https://keys.openpgp.org/search?q=btp%40brandont.dev)
+OpenPGP Key: [FA8072FE9D6E0741169E1451B4D6333E70D4826A](https://keys.openpgp.org/search?q=brandon%40btp.dev)
 
 SSH Key: 
 ```

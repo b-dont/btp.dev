@@ -1,11 +1,9 @@
 when:
   - event: push
     branch: main
-
 workspace:
   base: /src
   path: /woodpecker/src/codeberg.org/btp/btp.dev/src
-
 steps:
   - name: zola-build
     image: ghcr.io/getzola/zola:v0.20.0
