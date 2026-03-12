@@ -57,11 +57,11 @@ Find me on these other sites.
 {{ centerend() }}
 
 ### Keys
-OpenPGP Key: [FA8072FE9D6E0741169E1451B4D6333E70D4826A](https://keys.openpgp.org/search?q=brandon%40btp.dev)
+OpenPGP Key: [BD352304E8298B4966ED456B57B4678B3336D37F](https://keys.openpgp.org/search?q=brandon%40btp.dev)
 
 SSH Key: 
 ```
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFlvFvSmzR8K8vR0n50evq+EwoBt4Iw6yyZXfZ49xBhu brandon@home
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK1wDOYqKgInRWJgMZjrF2nYcqjQAm28fHYqb4pH5nMU btp@home
 ```
 
 ### Support
