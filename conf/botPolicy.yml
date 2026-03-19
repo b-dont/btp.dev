@@ -104,10 +104,12 @@ bots:
   - name: generic-browser
     user_agent_regex: >-
       Mozilla|Opera
-    action: CHALLENGE
-    challenge:
-      difficulty: 1 # Number of seconds to wait before refreshing the page
-      algorithm: mearefresh # Specify a non-JS challenge method
+    action: WEIGH
+    wight:
+      adjust: 10
+    # challenge:
+    #   difficulty: 1 # Number of seconds to wait before refreshing the page
+    #   algorithm: mearefresh # Specify a non-JS challenge method
 
 dnsbl: false
 
